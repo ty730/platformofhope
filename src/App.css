@@ -238,3 +238,23 @@ ul {
   border-top: 2px solid;
   flex: 0.26 0 20px;
 }
+
+.instagram {
+  width: 100px;
+}
+
+.facebook {
+  padding: 30px;
+  width: 45px;
+}
+
+.icon {
+  padding: 20px;
+  width: 50px;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

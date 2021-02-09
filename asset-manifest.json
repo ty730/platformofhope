@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/platformofhope/static/css/main.afdda2d9.chunk.css",
+    "main.js": "/platformofhope/static/js/main.82a4ff09.chunk.js",
+    "main.js.map": "/platformofhope/static/js/main.82a4ff09.chunk.js.map",
+    "runtime-main.js": "/platformofhope/static/js/runtime-main.3cd18298.js",
+    "runtime-main.js.map": "/platformofhope/static/js/runtime-main.3cd18298.js.map",
+    "static/js/2.1eba0ad7.chunk.js": "/platformofhope/static/js/2.1eba0ad7.chunk.js",
+    "static/js/2.1eba0ad7.chunk.js.map": "/platformofhope/static/js/2.1eba0ad7.chunk.js.map",
+    "static/js/3.bbf15b52.chunk.js": "/platformofhope/static/js/3.bbf15b52.chunk.js",
+    "static/js/3.bbf15b52.chunk.js.map": "/platformofhope/static/js/3.bbf15b52.chunk.js.map",
+    "index.html": "/platformofhope/index.html",
+    "static/css/main.afdda2d9.chunk.css.map": "/platformofhope/static/css/main.afdda2d9.chunk.css.map",
+    "static/js/2.1eba0ad7.chunk.js.LICENSE.txt": "/platformofhope/static/js/2.1eba0ad7.chunk.js.LICENSE.txt",
+    "static/media/computerlab.d5808f27.jpg": "/platformofhope/static/media/computerlab.d5808f27.jpg",
+    "static/media/fakecompanylogo.6907728c.jpg": "/platformofhope/static/media/fakecompanylogo.6907728c.jpg",
+    "static/media/foodpantry.32567dba.jpg": "/platformofhope/static/media/foodpantry.32567dba.jpg",
+    "static/media/girlscouts.0a1607ab.png": "/platformofhope/static/media/girlscouts.0a1607ab.png",
+    "static/media/givelify.b26af6cf.png": "/platformofhope/static/media/givelify.b26af6cf.png",
+    "static/media/App.css": "/platformofhope/static/media/glare.6a7b1155.jpg",
+    "static/media/hands.728178aa.png": "/platformofhope/static/media/hands.728178aa.png",
+    "static/media/hotelroom.827f0d96.jpg": "/platformofhope/static/media/hotelroom.827f0d96.jpg",
+    "static/media/paypal.5e4a345f.png": "/platformofhope/static/media/paypal.5e4a345f.png",
+    "static/media/pohlogo.2567a518.JPG": "/platformofhope/static/media/pohlogo.2567a518.JPG",
+    "static/media/rentassistance.23722fd7.png": "/platformofhope/static/media/rentassistance.23722fd7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3cd18298.js",
+    "static/js/2.1eba0ad7.chunk.js",
+    "static/css/main.afdda2d9.chunk.css",
+    "static/js/main.82a4ff09.chunk.js"
+  ]
+}

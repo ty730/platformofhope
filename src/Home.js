@@ -12,7 +12,7 @@ function Home() {
   return (
     <div>
       <div className="home-image">
-        <h1>Platform of Hope</h1>
+        <h1>One Family at A Time</h1>
       </div>
       <div className="column-container home-page-top">
         <Column

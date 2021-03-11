@@ -10,11 +10,8 @@ import hotelroom from './images/hotelroom.jpg';
 import hands from './images/hands.png';
 
 function Services() {
-  return (
-    <div>
-      <div className="home-image">
-        <h1>Services</h1>
-      </div>
+  /*
+
       <div className="column-container">
         <Column
         src={foodpantry}
@@ -47,6 +44,12 @@ function Services() {
         header= "Mission Work"
         p="POH serves yearly on mission trips to impact throughout the world"
         imgclass="services-img" />
+      </div>
+  */
+  return (
+    <div>
+      <div className="home-image">
+        <h1>Services</h1>
       </div>
     </div>
   );

@@ -4,11 +4,8 @@ import Column from './Column';
 import glare from './glare.jpg';
 
 function About() {
-  return (
-    <div className="App">
-      <div className="home-image">
-        <h1>About Us</h1>
-      </div>
+  /*
+
       <div>
         <h2><span>Our Story</span></h2>
         <p>
@@ -58,6 +55,12 @@ function About() {
         services, educational assistance, GED/typing classes, Federal/State
         benefits application assistance, daycare resources, HIV testing,
         Address and mail service and much more. " />
+      </div>
+  */
+  return (
+    <div className="App">
+      <div className="home-image">
+        <h1>About Us</h1>
       </div>
 
     </div>

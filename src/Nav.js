@@ -6,8 +6,6 @@ import logo from "./images/pohlogo.png";
 function Nav() {
   return (
     <nav>
-      <div className="top">
-      </div>
       <div className="nav">
         <img src={logo} alt="Logo" className="logo"/>
         <ul className="nav-links">

@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
-import Column from './Column';
-import glare from './glare.jpg';
+import './../App.css';
+import Column from '../Components/Column';
+import glare from './../glare.jpg';
 
 function About() {
   /*

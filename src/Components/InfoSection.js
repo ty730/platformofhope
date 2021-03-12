@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './../App.css';
 
 function InfoSection({reverse, header, p, p2, src, button}) {
   return (

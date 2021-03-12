@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import glare from './glare.jpg';
+import './../App.css';
+import glare from './../glare.jpg';
 
 function NewsAndEvents() {
   return (

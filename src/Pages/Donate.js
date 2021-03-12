@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
-import Column from './Column';
-import glare from './glare.jpg';
-import cashapp from './images/cashapp.png';
-import paypal from './images/paypal.png';
-import givelify from './images/givelify.png';
-import venmo from './images/venmo.png';
+import './../App.css';
+// import Column from '../Column';
+// import glare from './../glare.jpg';
+// import cashapp from './images/cashapp.png';
+// import paypal from './images/paypal.png';
+// import givelify from './images/givelify.png';
+// import venmo from './images/venmo.png';
 
 function Donate() {
   /*

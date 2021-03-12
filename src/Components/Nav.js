@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
+import './../App.css';
 import {Link} from "react-router-dom";
-import logo from "./images/pohlogo.png";
+import logo from "./../images/pohlogo.png";
 
 function Nav() {
   return (
-    <nav>
+    <nav >
       <div className="nav">
         <img src={logo} alt="Logo" className="logo"/>
         <ul className="nav-links">

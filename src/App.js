@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Home from './Home';
-import Nav from './Nav';
-import Footer from './Footer';
-import About from './About';
-import Services from './Services';
-import Donate from './Donate';
+import Nav from './Components/Nav';
+import Footer from './Components/Footer';
+import About from './Pages/About';
+import Services from './Pages/Services';
+import Donate from './Pages/Donate';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import NewsAndEvents from './NewsAndEvents';
+import NewsAndEvents from './Pages/NewsAndEvents';
 
 function App() {
   return (

@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
-import Column from './Column';
-import glare from './glare.jpg';
-import computerlab from './images/computerlab.jpg';
-import foodpantry from './images/foodpantry.jpg';
-import rentassistance from './images/rentassistance.png';
-import girlscouts from './images/girlscouts.png';
-import hotelroom from './images/hotelroom.jpg';
-import hands from './images/hands.png';
+import './../App.css';
+// import Column from '../Components/Column';
+// import glare from './glare.jpg';
+// import computerlab from './images/computerlab.jpg';
+// import foodpantry from './images/foodpantry.jpg';
+// import rentassistance from './images/rentassistance.png';
+// import girlscouts from './images/girlscouts.png';
+// import hotelroom from './images/hotelroom.jpg';
+// import hands from './images/hands.png';
 
 function Services() {
   /*

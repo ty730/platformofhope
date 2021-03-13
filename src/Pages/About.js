@@ -1,5 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD:src/About.js
 import './App.css';
+=======
+import './../App.css';
+import Column from '../Components/Column';
+import glare from './../glare.jpg';
+>>>>>>> upstream/master:src/Pages/About.js
 
 /**
  * This is the About component that holds all information for the About page.

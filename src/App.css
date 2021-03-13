@@ -1,20 +1,18 @@
 .App {
   text-align: center;
-  line-height: 22pt;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  font-size: 14pt;
+  font-family: "Oswald", sans-serif;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  height: 80px;
   background: white;
   color: black;
-  box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+  box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
   margin-bottom: 0;
+  width: 100%;
 }
 
 footer {
@@ -27,14 +25,14 @@ footer {
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 60pt;
   color: #faa919;
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 32pt;
   line-height: 120%;
   color: rgb(0, 148, 0);
@@ -47,12 +45,10 @@ h3 {
 
 button {
   color: black;
-  font-size: 14pt;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
   background-color: transparent;
+  border: none;
 }
 
 button:hover {
@@ -63,15 +59,12 @@ button:hover {
 .logo {
   height: 100px;
   width: auto;
-  padding: 10px;
+  padding: 1rem;
 }
 .button {
   color: white;
   font-size: 24pt;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 0.8rem 1rem;
   background-color: rgb(0, 211, 0);
   border: 0;
   border-radius: 20px;
@@ -102,12 +95,12 @@ ul {
 }
 
 .nav-links {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 14pt;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .link {
@@ -118,17 +111,12 @@ ul {
 .nav-link {
   text-decoration: none;
   color: black;
-  padding: 20px 0px;
-  margin: 0px 20px;
-  display: inline-block;
-  position: relative;
 }
 
 .nav-link::before {
   transition: 300ms;
   height: 5px;
   content: "";
-  position: absolute;
   background-color: black;
 }
 
@@ -140,7 +128,6 @@ ul {
 .nav-link-ltr:hover::before {
   width: 100%;
 }
-
 
 .home-image {
   display: flex;
@@ -188,14 +175,11 @@ ul {
   background-color: transparent;
   border: solid rgb(0, 154, 123) 2px;
   color: rgb(0, 154, 123);
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 0.3rem 2rem;
   text-decoration: none;
-  font-size: 110%;
   letter-spacing: 1px;
   font-weight: bold;
+  border-radius: 1.5rem;
 }
 
 .donate-btn:hover {
@@ -244,7 +228,9 @@ ul {
   margin: 4%;
 }
 
-.column-img, .column-h, .column-p {
+.column-img,
+.column-h,
+.column-p {
   width: 100%;
   text-align: left;
 }
@@ -280,7 +266,7 @@ ul {
 
 .line-header:before,
 .line-header:after {
-  content: '';
+  content: "";
   border-top: 2px solid;
   flex: 0.26 0 20px;
 }

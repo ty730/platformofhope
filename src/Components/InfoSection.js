@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './../App.css';
 
 /**
  * This is a helper component to define a layout with an image on one side and a title with

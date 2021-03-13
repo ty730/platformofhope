@@ -1,11 +1,7 @@
 import React from 'react';
 import './../App.css';
 import {Link} from "react-router-dom";
-<<<<<<< HEAD:src/Nav.js
-import logo from "./images/pohlogowithwords.png";
-=======
-import logo from "./../images/pohlogo.png";
->>>>>>> upstream/master:src/Components/Nav.js
+import logo from "./../images/pohlogowithwords.png";
 
 /**
  * This is the Nav component with the logo in the top left and navigation links across the right.

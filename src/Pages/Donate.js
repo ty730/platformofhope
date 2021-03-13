@@ -1,7 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD:src/Donate.js
-import './App.css';
-=======
 import './../App.css';
 // import Column from '../Column';
 // import glare from './../glare.jpg';
@@ -9,7 +6,6 @@ import './../App.css';
 // import paypal from './images/paypal.png';
 // import givelify from './images/givelify.png';
 // import venmo from './images/venmo.png';
->>>>>>> upstream/master:src/Pages/Donate.js
 
 /**
  * This is the Donate component that holds all information for the Donate page.

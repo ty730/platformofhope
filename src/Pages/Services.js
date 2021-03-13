@@ -1,7 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD:src/Services.js
-import './App.css';
-=======
 import './../App.css';
 // import Column from '../Components/Column';
 // import glare from './glare.jpg';
@@ -11,7 +8,6 @@ import './../App.css';
 // import girlscouts from './images/girlscouts.png';
 // import hotelroom from './images/hotelroom.jpg';
 // import hands from './images/hands.png';
->>>>>>> upstream/master:src/Pages/Services.js
 
 /**
  * This is the Home component that holds all information for the Home page.

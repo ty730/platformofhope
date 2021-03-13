@@ -1,14 +1,7 @@
 import React from 'react';
 import './App.css';
-<<<<<<< HEAD
-import InfoSection from './InfoSection';
-import Column from './Column';
-=======
 import InfoSection from './Components/InfoSection';
 import Column from './Components/Column';
-import glare from './glare.jpg';
-import fakelogo from "./images/fakecompanylogo.jpg";
->>>>>>> upstream/master
 import seniorDeliveryFlyer from "./images/seniordeliverypohflyer.jpg";
 import hands from "./images/handsholdinghouse.jpg";
 
@@ -52,7 +45,7 @@ function Home() {
       button={<button>Request Help</button>}/>
       <h2 className="line-header">Thanks To Our Donors</h2>
       <div className="column-container home-page-top">
-        
+
         <Column ></Column>
         <Column ></Column>
         <Column ></Column>

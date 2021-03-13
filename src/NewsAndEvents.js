@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import glare from './glare.jpg';
 
+/**
+ * This is the Home component that holds all information for the Home page.
+ */
 function NewsAndEvents() {
   return (
     <div>

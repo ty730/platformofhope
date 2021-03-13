@@ -160,6 +160,10 @@ ul {
   color: #faa919;
 }
 
+.home-container {
+  display: flex;
+}
+
 .home-header {
   margin-top: 8%;
   margin-bottom: 10%;
@@ -228,7 +232,6 @@ ul {
     max-width: 100%;
     margin: 0;
   }
-
 }
 
 .column-container {

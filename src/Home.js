@@ -2,21 +2,23 @@ import React from 'react';
 import './App.css';
 import InfoSection from './InfoSection';
 import Column from './Column';
-import glare from './glare.jpg';
-import fakelogo from "./images/fakecompanylogo.jpg";
 import seniorDeliveryFlyer from "./images/seniordeliverypohflyer.jpg";
 import hands from "./images/handsholdinghouse.jpg";
 
+/**
+ * This is the Home component that holds all information for the Home page.
+ */
 function Home() {
   return (
     <div className="home">
-      <div>
+      <div className="home-container">
         <div className="home-header">
           <h2>Platform of Hope</h2>
           <p>Non-Profit Organization</p>
           <h1>ONE FAMILY AT A TIME</h1>
           <p className="home-image-paragraph"></p>
         </div>
+        <div className="orange-block"></div>
       </div>
       <div className="welcome">
         <h2>Welcome</h2>
@@ -25,7 +27,7 @@ function Home() {
         </p>
       </div>
       <InfoSection
-      header="The POH Difference"
+      title="The POH Difference"
       p="While other agencies look great on paper, thousands of dollars go toward bonuses to
       employees each year. Fortunately, while Platform of Hope awaits state and federal funding,
       every dime is allocated TO the client for stabilization. We rely heavily on donations from
@@ -34,7 +36,7 @@ function Home() {
       src={hands}/>
       <InfoSection
       reverse="reverse flyer"
-      header="Request a Free Senior Mobile Delivery"
+      title="Request a Free Senior Mobile Delivery"
       p="Are you over the age of 55?
       Are you low in food and essentials?
       Are you impacted by COVID-19?

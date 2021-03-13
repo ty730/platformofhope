@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.css';
 import {Link} from "react-router-dom";
-import logo from "./images/pohlogo.png";
+import logo from "./images/pohlogowithwords.png";
 
+/**
+ * This is the Nav component with the logo in the top left and navigation links across the right.
+ * The navigation links route to the corresponding pages as defined in the top level App component.
+ */
 function Nav() {
   return (
     <nav>

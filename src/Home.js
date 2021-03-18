@@ -21,10 +21,28 @@ function Home() {
         <div className="orange-block"></div>
       </div>
       <div className="welcome">
-        <h2>Welcome</h2>
+        <h3>Who We Are</h3>
         <p>Platform of Hope is an initiative designed to feed, house, clothe, and employ homeless
           families while empowering and transforming lives of the economically disadvantaged.
         </p>
+      </div>
+      <div className="home-data">
+        <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+           voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
+        <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+           voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
+        <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+           voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
+        <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+           voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
       </div>
       <InfoSection
       title="The POH Difference"
@@ -45,7 +63,6 @@ function Home() {
       button={<button>Request Help</button>}/>
       <h2 className="line-header">Thanks To Our Donors</h2>
       <div className="column-container home-page-top">
-
         <Column ></Column>
         <Column ></Column>
         <Column ></Column>

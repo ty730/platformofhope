@@ -1,3 +1,25 @@
+## To Do:
+### Overall:
+- Push to git hub pages
+- Incorporate bootstrap or styled components
+- Check color scheme
+### News & events:
+- Add calendar
+### Homepage
+- Nav bar and footer (Christian)
+- Icon images with text below them
+- Featured events
+- Swap poster to left side and make smaller
+### About (Save until later)
+- Draft on Figma
+### Services
+- Create layout from Figma (try bootstrap)
+Contact (Save until later)
+- Draft on Figma
+### Donate
+- Draft onto website
+- Change links layout on Figma
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +90,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

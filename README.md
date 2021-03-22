@@ -4,7 +4,7 @@
 - Incorporate bootstrap or styled components
 - Check color scheme
 ### News & events:
-- Add calendar
+- ~~Add calendar~~
 ### Homepage
 - Nav bar and footer (Christian)
 - Icon images with text below them
@@ -17,7 +17,7 @@
 Contact (Save until later)
 - Draft on Figma
 ### Donate
-- Draft onto website
+- ~~Draft onto website~~
 - Change links layout on Figma
 
 # Getting Started with Create React App

@@ -172,6 +172,7 @@ ul {
 .donate-btn:hover {
   background-color: transparent;
   color: rgb(0, 154, 123);
+  text-decoration: none;
 }
 
 .section {
@@ -211,7 +212,7 @@ ul {
   margin-right: 8%;
 }
 
-.column {
+.column-container > * {
   margin: 4%;
 }
 
@@ -313,4 +314,104 @@ ul {
   margin: 5%;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+.donate {
+  text-align: left;
+  line-height: 25pt;
+}
+
+.donate p {
+  color: black;
+}
+
+.donate h3 {
+  color: #faa919;
+}
+
+.donations-container {
+  display: inline-flex;
+  margin: 1.5%;
+  gap: 15%;
+}
+
+.donations-container > * {
+  flex: 1;
+}
+
+.donate > * {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.donate-header > * {
+  margin-bottom: 2%;
+}
+
+.donate-header > h2 {
+  margin-top: 5%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+.donate-links {
+  display: flex;
+}
+
+.donate-links img {
+  height: 30px;
+}
+
+.donate-links p {
+  margin-left: 2%;
+  margin-right: 5%;
+}
+
+.affiliate-container {
+  display: flex;
+  margin-bottom: 1%;
+}
+
+.affiliate-container > img {
+  width: 45%;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+.affiliate-container > div > div {
+  margin-bottom: 4%;
+}
+
+.appr-of-funding {
+  margin: 0;
+  background-color: #e9e9e9;
+}
+
+.appr-of-funding > * {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.appr-of-funding h2 {
+  padding-top: 5%;
+}
+
+.funding-container {
+  display: inline-flex;
+  gap: 8%;
+  margin-bottom: 2%;
+}
+
+.funding-container h4 {
+  font-size: 16pt;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.funding-container > * {
+  flex: 1;
 }

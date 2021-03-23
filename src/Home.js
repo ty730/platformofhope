@@ -23,7 +23,7 @@ function Home() {
       <div className="welcome">
         <h3>Who We Are</h3>
         <p>Platform of Hope is an initiative designed to feed, house, clothe, and employ homeless
-          families while empowering and transforming lives of the economically disadvantaged.
+        families while empowering and transforming lives of the economically disadvantaged.
         </p>
       </div>
       <div className="home-data">
@@ -45,22 +45,22 @@ function Home() {
            voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
       </div>
       <InfoSection
-      title="The POH Difference"
-      p="While other agencies look great on paper, thousands of dollars go toward bonuses to
+        title="The POH Difference"
+        p="While other agencies look great on paper, thousands of dollars go toward bonuses to
       employees each year. Fortunately, while Platform of Hope awaits state and federal funding,
       every dime is allocated TO the client for stabilization. We rely heavily on donations from
       family, friends, and the community for services and operating costs."
-      p2="Platform of Hope is 501(c)(3) approved as of April 2017."
-      src={hands}/>
+        p2="Platform of Hope is 501(c)(3) approved as of April 2017."
+        src={hands} />
       <InfoSection
-      reverse="reverse flyer"
-      title="Request a Free Senior Mobile Delivery"
-      p="Are you over the age of 55?
+        reverse="reverse flyer"
+        title="Request a Free Senior Mobile Delivery"
+        p="Are you over the age of 55?
       Are you low in food and essentials?
       Are you impacted by COVID-19?
       If yes, please request Free Mobile Delivery below."
-      src={seniorDeliveryFlyer}
-      button={<button>Request Help</button>}/>
+        src={seniorDeliveryFlyer}
+        button={<button>Request Help</button>} />
       <h2 className="line-header">Thanks To Our Donors</h2>
       <div className="column-container home-page-top">
         <Column ></Column>

@@ -28,14 +28,22 @@ function Donate() {
             or through traditional check or money order by mail. We accept
             contributions from anyone in Atlanta, Georgia or around the world.</p>
           <div className="donate-links">
-            <img src={venmo} alt=""/>
-            <p>@platformofhope</p>
-            <img src={cashapp} alt=""/>
-            <p>$platformofhope</p>
-            <img src={givelify} alt=""/>
-            <p>Givelify</p>
-            <img src={paypal} alt=""/>
-            <p>PayPal</p>
+            <a href="https://www.venmo.com/platformofhope" target="_blank" rel="noopener noreferrer">
+              <img src={venmo} alt=""/>
+              <p>@platformofhope</p>
+            </a>
+            <a href="https://cash.app/" target="_blank" rel="noopener noreferrer">
+              <img src={cashapp} alt=""/>
+              <p>$platformofhope</p>
+            </a>
+            <a href="https://www.givelify.com/" target="_blank" rel="noopener noreferrer">
+              <img src={givelify} alt=""/>
+              <p>Givelify</p>
+            </a>
+            <a href="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer">
+              <img src={paypal} alt=""/>
+              <p>PayPal</p>
+            </a>
           </div>
         </div>
         <div>

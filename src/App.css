@@ -1,15 +1,15 @@
 
 /* To prevent Navbar from changing positions when page does not have scroll bar. */
-html 
+html
 {
   overflow-y: scroll;
 }
 .App {
-  text-align: center;
+  text-align: left;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   background: #f3f3f3;
-  
+
 }
 .nav {
   display: flex;
@@ -43,7 +43,7 @@ h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   line-height: 120%;
-  color: rgb(0, 148, 0);
+  color: #009A7B;
 }
 
 h3 {
@@ -68,18 +68,6 @@ button:hover {
   width: auto;
   padding: 1rem;
 }
-.button {
-  color: white;
-  font-size: 24pt;
-  padding: 0.8rem 1rem;
-  background-color: rgb(0, 211, 0);
-  border: 0;
-  border-radius: 20px;
-}
-
-.button:hover {
-  background-color: rgb(0, 148, 0);
-}
 
 p {
   margin: auto;
@@ -96,7 +84,7 @@ ul {
 }
 
 .top {
-  background-color: rgb(0, 154, 123);
+  background-color: #009A7B;
   height: 70px;
 }
 
@@ -166,8 +154,8 @@ ul {
 }
 
 .donate-btn {
-  background-color: rgb(0, 154, 123);
-  border: solid rgb(0, 154, 123) 2px;
+  background-color: #009A7B;
+  border: solid #009A7B 2px;
   color: #faa919;;
   padding: 0.4rem 2.1rem;
   text-decoration: none;
@@ -178,7 +166,7 @@ ul {
 
 .donate-btn:hover {
   background-color: transparent;
-  color: rgb(0, 154, 123);
+  color: #009A7B;
   text-decoration: none;
 }
 
@@ -214,13 +202,12 @@ ul {
 }
 
 .column-container {
-  display: flex;
-  margin-left: 8%;
-  margin-right: 8%;
+  display: inline-flex;
+  gap: 10%;
 }
 
 .column-container > * {
-  margin: 4%;
+  flex: 1;
 }
 
 .column-img,
@@ -239,10 +226,14 @@ ul {
   width: 200px;
 }
 
+.services-main {
+  width: 80%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
 .services-img {
-  height: 250px;
-  max-width: 300px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .home-page-top {
@@ -300,7 +291,7 @@ ul {
 }
 
 .welcome > h3 {
-  color: rgb(0, 148, 0);
+  color: #009A7B;
   font-weight: 500;
   margin-bottom: 1%;
 }
@@ -374,7 +365,11 @@ hr {
 }
 
 .donate-links p {
-  margin-left: 2%;
+  margin-left: 8%;
+}
+
+.donate-links a {
+  display: flex;
   margin-right: 5%;
 }
 

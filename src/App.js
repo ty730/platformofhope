@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './Home';
-import Nav from './Components/Nav';
+import Nav from './Components/Navbar/Navbar';
 import Footer from './Components/Footer';
 import About from './Pages/About';
 import Services from './Pages/Services';

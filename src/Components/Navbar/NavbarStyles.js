@@ -1,13 +1,21 @@
 import styled from 'styled-components'
 
-
 export const Container = styled.div`
-	width: 1440px;
+	width: 100%;
+	height: auto;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+`
+
+export const NavContainer = styled.div`
+	max-width: 1440px;
 	margin: 0 auto;
 	height: auto;
 	display:flex;
 	align-items: center;
-	padding: 1rem 0;
+	padding: 1.2rem;
+	justify-content: space-between;
+
 `
 
 export const LogoContainer = styled.div`
@@ -30,6 +38,7 @@ export const ImageContainer = styled.div`
 export const LogoName = styled.div`
 	text-align:left;
 	height:auto;
+
 	a:hover{
 		text-decoration:none;
 	}
@@ -37,15 +46,58 @@ export const LogoName = styled.div`
 	{
 		padding: 0;
 		margin: 0;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		font-weight: 600;
 		color: #009A7B;
-		line-height: 28px;
+		line-height:18px;
 	}
 	p 
 	{
 		padding: 0;
 		margin: 0;
 		font-size:1rem;
+	}
+`
+
+export const NavLinks = styled.ul`
+	width:auto;
+	display: flex;
+	align-items: center;
+	height: auto;
+	padding: 0;
+	margin: 0;
+
+`
+
+export const NavLink = styled.li`
+	padding: .5rem;
+	font-weight: 400;
+	a
+	{
+		color: #000000;
+		padding: 0 .4rem;
+	}
+	a:hover
+	{
+		text-decoration: none;
+	}
+`
+
+export const NavButton = styled.button`
+	border:none;
+	border-style:none;
+	width: 120px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	margin-left: 1rem;
+	font-size: 1rem;
+	color: #fffffe;
+	font-weight: 500;
+	letter-spacing: 1.2px;
+	background-color: #F99F00;
+	&:hover 
+	{
+		background-color: #009A7B;
 	}
 `

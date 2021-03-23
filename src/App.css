@@ -1,12 +1,16 @@
 
+/* To prevent Navbar from changing positions when page does not have scroll bar. */
+html 
+{
+  overflow-y: scroll;
+}
 .App {
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   background: #f3f3f3;
-
+  
 }
-
 .nav {
   display: flex;
   justify-content: space-around;

@@ -157,9 +157,9 @@ ul {
   background-color: #009A7B;
   border: solid #009A7B 2px;
   color: #faa919;;
-  padding: 0.4rem 2.1rem;
+  padding: 0.2rem 1.4rem;
   text-decoration: none;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -337,7 +337,7 @@ ul {
   flex: 1;
 }
 
-.donate > * {
+.donate-row, .donate > * {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -358,6 +358,7 @@ hr {
 
 .donate-links {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .donate-links img {
@@ -378,8 +379,9 @@ hr {
   margin-bottom: 1%;
 }
 
-.affiliate-container > img {
-  width: 45%;
+.affiliate-img {
+  width: 100%;
+  margin-top: 10%;
   margin-left: auto;
   margin-bottom: auto;
 }
@@ -416,4 +418,12 @@ hr {
 
 .funding-container > * {
   flex: 1;
+}
+
+.btm-pd {
+  padding-bottom: 5%;
+}
+
+.col-md {
+  padding: 0;
 }

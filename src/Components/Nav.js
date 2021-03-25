@@ -2,6 +2,7 @@ import React from 'react';
 import './../App.css';
 import {Link} from "react-router-dom";
 import logo from "./../images/pohlogowithwords.png";
+;
 
 /**
  * This is the Nav component with the logo in the top left and navigation links across the right.
@@ -12,6 +13,7 @@ function Nav() {
     <nav >
       <div className="nav">
         <img src={logo} alt="Logo" className="logo"/>
+        
         <ul className="nav-links">
           <Link className="nav-link nav-link-ltr" to="/">
             <li className="">Home</li>
@@ -27,6 +29,7 @@ function Nav() {
           </Link>
           <Link className="donate-btn" to="/donate">
             <li>Donate</li>
+
           </Link>
         </ul>
       </div>

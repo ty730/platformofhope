@@ -13,7 +13,7 @@ export const NavContainer = styled.div`
 	height: auto;
 	display:flex;
 	align-items: center;
-	padding: 1.2rem;
+	padding: 1rem;
 	justify-content: space-between;
 
 `
@@ -38,9 +38,10 @@ export const ImageContainer = styled.div`
 export const LogoName = styled.div`
 	text-align:left;
 	height:auto;
-
+	padding-top: .5rem;
 	a:hover{
 		text-decoration:none;
+	
 	}
 	h4
 	{
@@ -66,12 +67,16 @@ export const NavLinks = styled.ul`
 	height: auto;
 	padding: 0;
 	margin: 0;
-
+	@media screen and (max-width: 1200px)
+	{
+		display: none;
+	}
 `
 
 export const NavLink = styled.li`
 	padding: .5rem;
-	font-weight: 400;
+	font-weight: 300;
+	font-size: 1rem;
 	a
 	{
 		color: #000000;
@@ -99,5 +104,19 @@ export const NavButton = styled.button`
 	&:hover 
 	{
 		background-color: #009A7B;
+	}
+`
+
+// Mobile Nav
+export const MobileIcon= styled.div`
+
+	display: none;
+	@media screen and (max-width: 1200px)
+	{
+		display: block;
+	}
+	svg 
+	{
+		font-size: 1.2rem;
 	}
 `

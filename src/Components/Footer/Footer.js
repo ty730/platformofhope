@@ -37,7 +37,7 @@ const Footer = () => {
 							</LogoName>
 
 						</LogoContainer>
-						<div className="info">
+						<div className="footer-info">
 						<CompanyInfo>
 							<div className="mailing-address">
 								<h4>Mailing Address: </h4>

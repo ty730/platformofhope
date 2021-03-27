@@ -16,17 +16,17 @@ export const Container = styled.div`
 	.logo-container 
 	{
 		 display: grid;
-		justify-content:center;
-		.info
+	
+		.footer-info
 		{
 			padding: 0;
 		}
 		@media screen and (max-width: 750px)
 		{
-
+			justify-content:center;
 			width: 100%;
 
-					.info 
+					.footer-info 
 				{
 					display:flex;
 					width: 100%;

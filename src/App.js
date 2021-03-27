@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Home from './Home';
 import Nav from './Components/Navbar/Navbar';
-import Footer from './Components/Footer';
+import Footer from './Components/Footer/Footer';
 import About from './Pages/About';
 import Services from './Pages/Services';
 import Donate from './Pages/Donate';
@@ -40,8 +40,10 @@ function App() {
           <Route path="/newsandevents" exact component={NewsAndEvents} />
           <Route path="/donate" exact component={Donate} />
         </Switch>
+
+        <Footer />
       </Router>
-      <Footer />
+
     </div>
 
   );

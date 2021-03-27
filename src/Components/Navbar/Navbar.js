@@ -22,7 +22,7 @@ const NavBar = ({handleClick}) => {
                     <LogoContainer>
                         <ImageContainer>
                             <Link to="/">
-                                <img src={logo} />
+                                <img src={logo} alt="platform of hope logo" />
                             </Link>
                         </ImageContainer>
                         <LogoName>
@@ -33,7 +33,7 @@ const NavBar = ({handleClick}) => {
                         </LogoName>
                     </LogoContainer>
                     {/* In progress */}
-                    <MobileIcon handleClick={handleClick} onClick={handleClick}>
+                    <MobileIcon onClick={handleClick}>
                         <GiHamburgerMenu />
                     </MobileIcon>
                     <NavLinks>
@@ -50,7 +50,7 @@ const NavBar = ({handleClick}) => {
                 </Link>
                         </NavLink>
                         <NavLink>
-                            <Link to="/donate">Donate</Link>
+                            <Link to="/contact">Contact</Link>
                         </NavLink>
                         <Link to="/donate" ><NavButton className="secondary">GET HELP</NavButton></Link>
                         <Link to="/donate" ><NavButton className="primary">DONATE</NavButton></Link>

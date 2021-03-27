@@ -12,13 +12,6 @@ function Home() {
   return (
     <div className="home">
       <div className="home-container">
-        <div className="home-header">
-          <h2>Platform of Hope</h2>
-          <p>Non-Profit Organization</p>
-          <h1>ONE FAMILY AT A TIME</h1>
-          <p className="home-image-paragraph"></p>
-        </div>
-        <div className="orange-block"></div>
       </div>
       <div className="welcome">
         <h3>Who We Are</h3>

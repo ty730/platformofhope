@@ -19,7 +19,7 @@ export const NavContainer = styled.div`
 `
 
 export const LogoContainer = styled.div`
-	width: 500px;
+	width: auto;
 	height: auto;
 	display:flex;
 	align-items: center;

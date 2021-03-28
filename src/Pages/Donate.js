@@ -113,8 +113,6 @@ function Donate() {
             supplies/necessities to immobilized senior citizens within four low-income apartment
             housing communities.</p>
           </div>
-        </div>
-        <div className="funding-container">
           <div>
             <h3>10%</h3>
             <h4>Christmas Holiday Program</h4>

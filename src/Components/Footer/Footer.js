@@ -67,13 +67,13 @@ const Footer = () => {
 							<div className="quick-links">
 								<h4>Quick Links</h4>
 								<ul className="footer-links">
-									<Link><li className="footer-link">Home</li></Link>
-									<Link><li className="footer-link">About Us</li></Link>
-									<Link><li className="footer-link">Services</li></Link>
-									<Link><li className="footer-link">Contact</li></Link>
+									<Link to="/"><li className="footer-link">Home</li></Link>
+									<Link to="/about"><li className="footer-link">About Us</li></Link>
+									<Link to="/services"><li className="footer-link">Services</li></Link>
+									<Link to="/contact"><li className="footer-link">Contact</li></Link>
 									<Link><li className="footer-link">Get Involved</li></Link>
 									<Link><li className="footer-link">Get Help</li></Link>
-									<Link><li className="footer-link">Donate</li></Link>
+									<Link to="/donate"><li className="footer-link">Donate</li></Link>
 								</ul>
 							</div>
 						</QuickLinks>

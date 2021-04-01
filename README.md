@@ -8,8 +8,8 @@
 - Make slideshow (swiper js or react js slideshow)
 - Make news and event information a seperate component
 ### Homepage
-- ~~Nav bar~~ and footer (Christian)
-- Icon images with text below them (Christian)
+- ~~Nav bar and footer~~ (Christian)
+- ~~Icon images with text below them~~ (Christian)
 - Featured events (Christian)
 - Swap poster to left side and make smaller/Draft on Figma (Tyler)
 - Arrow timeline (Tyler)

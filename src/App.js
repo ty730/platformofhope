@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer';
 import About from './Pages/About';
 import Services from './Pages/Services';
 import Donate from './Pages/Donate';
+import  HomeColumn from './Components/HomeColumn/HomeColumn'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NewsAndEvents from './Pages/NewsAndEvents';
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/services" exact component={Services} />
           <Route path="/newsandevents" exact component={NewsAndEvents} />
           <Route path="/donate" exact component={Donate} />
+          <Route path="/testing" exact component={HomeColumn} /> 
         </Switch>
 
         <Footer />

@@ -4,21 +4,67 @@ import InfoSection from './Components/InfoSection';
 import Column from './Components/Column';
 import seniorDeliveryFlyer from "./images/seniordeliverypohflyer.jpg";
 import hands from "./images/handsholdinghouse.jpg";
+import HomeColumn from './Components/HomeColumn/HomeColumn';
+import handsheart from './images/home-icons/handsheart.png'
+import holdhands from './images/home-icons/holdhands.png';
+import prayinghands from './images/home-icons/prayingicon.png';
+import { Row } from 'react-bootstrap'
+
 
 /**
  * This is the Home component that holds all information for the Home page.
  */
 function Home() {
+
+  const homeColumn = [
+   {
+      imageLink: handsheart,
+      title: "Lorem Ipsum",
+      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      alt: "hands with heart"
+
+    },
+     {
+      imageLink:  holdhands,
+      title:  "Lorem Ipsum",
+      paragraph:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      alt: "holding hands",
+    },
+    {
+      imageLink:  prayinghands,
+      title:  "Lorem Ipsum",
+      paragraph:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      alt: "praying hands"
+    }
+
+   ];
+
+
   return (
     <div className="home">
       <div className="home-container">
       </div>
-      <div className="welcome">
+      {/* <div className="welcome">
         <h3>Who We Are</h3>
         <p>Platform of Hope is an initiative designed to feed, house, clothe, and employ homeless
         families while empowering and transforming lives of the economically disadvantaged.
         </p>
       </div>
+    */}
+      <div className="home-section">
+          <Row>
+          {
+              homeColumn.map(function(items)
+              {
+                return <HomeColumn 
+                title={items.title} 
+                paragraph={items.paragraph} 
+                image={items.imageLink} alt={items.alt}
+                />
+              })
+            }
+          </Row>
+        </div>
       <div className="home-data">
         <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation

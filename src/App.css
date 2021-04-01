@@ -473,3 +473,13 @@ hr {
   position: absolute;
   bottom: 30px !important;
 }
+
+
+
+
+/* Row -bootsrap remove Margin */
+
+.row 
+{
+  margin: 0;
+}

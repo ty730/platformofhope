@@ -16,7 +16,7 @@ export const Container = styled.div`
 	.logo-container 
 	{
 		 display: grid;
-	
+		padding: 1rem;
 		.footer-info
 		{
 			padding: 0;

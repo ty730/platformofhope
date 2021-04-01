@@ -20,68 +20,68 @@ function Donate() {
         </p>
         <hr/>
       </div>
-        <Row className="donate-row">
-          <Col md>
-            <div className="monetary-donate">
-              <h3>Monetary Donation</h3>
-              <p>Platform of Hope greatly appreciates support of any kind.
-                The quickest, most efficient way to give is through monetary donations.
-                You may choose from PayPal, GoFundMe, Givelify, Venmo, Zelle, Cash App,
-                or through traditional check or money order by mail. We accept
-                contributions from anyone in Atlanta, Georgia or around the world.</p>
-              <div className="donate-links">
-                <a href="https://www.venmo.com/platformofhope" target="_blank" rel="noopener noreferrer">
-                  <img src={venmo} alt=""/>
-                  <p>@platformofhope</p>
-                </a>
-                <a href="https://cash.app/" target="_blank" rel="noopener noreferrer">
-                  <img src={cashapp} alt=""/>
-                  <p>$platformofhope</p>
-                </a>
-                <a href="https://www.givelify.com/" target="_blank" rel="noopener noreferrer">
-                  <img src={givelify} alt=""/>
-                  <p>Givelify</p>
-                </a>
-                <a href="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer">
-                  <img src={paypal} alt=""/>
-                  <p>PayPal</p>
-                </a>
-              </div>
+      <Row className="donate-row">
+        <Col md>
+          <div className="monetary-donate">
+            <h3>Monetary Donation</h3>
+            <p>Platform of Hope greatly appreciates support of any kind.
+              The quickest, most efficient way to give is through monetary donations.
+              You may choose from PayPal, GoFundMe, Givelify, Venmo, Zelle, Cash App,
+              or through traditional check or money order by mail. We accept
+              contributions from anyone in Atlanta, Georgia or around the world.</p>
+            <div className="donate-links">
+              <a href="https://www.venmo.com/platformofhope" target="_blank" rel="noopener noreferrer">
+                <img src={venmo} alt=""/>
+                <p>@platformofhope</p>
+              </a>
+              <a href="https://cash.app/" target="_blank" rel="noopener noreferrer">
+                <img src={cashapp} alt=""/>
+                <p>$platformofhope</p>
+              </a>
+              <a href="https://www.givelify.com/" target="_blank" rel="noopener noreferrer">
+                <img src={givelify} alt=""/>
+                <p>Givelify</p>
+              </a>
+              <a href="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer">
+                <img src={paypal} alt=""/>
+                <p>PayPal</p>
+              </a>
             </div>
-          </Col>
-          <Col md={{ offset: 1 }}>
-            <div>
-              <h3>In-Kind Donations</h3>
-              <p>Platform of Hope greatly appreciates easy-open non-perishables,
-                coats, blankets, toiletries, backpacks, and any other item easy for
-                homeless families to transport.</p>
-              <h3>Be A Volunteer</h3>
-              <p>Platform of Hope is founded on volunteer service, and it is volunteerism
-                that continues to be a life-giving force that will allow us to provide
-                top-quality assistance! Please call or email us, so we can discuss
-                on how you can volunteer.</p>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col md>
-            <h2>Be An Affiliate</h2>
-            <hr/>
-            <div className="btm-pd">
-              <h3>Business Partnerships</h3>
-              <p>Platform of Hope offers flexible opportunities for businesses to benefit throughout giving.</p>
-              <button className="donate-btn">Contact Us</button>
-            </div>
-            <div>
-              <h3>Civic/Group Partnerships</h3>
-              <p>Platform of Hope offers community awareness and strong networking.</p>
-              <button className="donate-btn">Contact Us</button>
-            </div>
-          </Col>
-          <Col md={{ offset: 1 }}>
-            <img className="affiliate-img" src={makeChange} alt=""/>
-          </Col>
-        </Row>
+          </div>
+        </Col>
+        <Col md={{ offset: 1 }}>
+          <div>
+            <h3>In-Kind Donations</h3>
+            <p>Platform of Hope greatly appreciates easy-open non-perishables,
+              coats, blankets, toiletries, backpacks, and any other item easy for
+              homeless families to transport.</p>
+            <h3>Be A Volunteer</h3>
+            <p>Platform of Hope is founded on volunteer service, and it is volunteerism
+              that continues to be a life-giving force that will allow us to provide
+              top-quality assistance! Please call or email us, so we can discuss
+              on how you can volunteer.</p>
+          </div>
+        </Col>
+      </Row>
+      <Row className="donate-row">
+        <Col md>
+          <h2>Be An Affiliate</h2>
+          <hr/>
+          <div className="btm-pd">
+            <h3>Business Partnerships</h3>
+            <p>Platform of Hope offers flexible opportunities for businesses to benefit throughout giving.</p>
+            <button className="donate-btn">Contact Us</button>
+          </div>
+          <div>
+            <h3>Civic/Group Partnerships</h3>
+            <p>Platform of Hope offers community awareness and strong networking.</p>
+            <button className="donate-btn">Contact Us</button>
+          </div>
+        </Col>
+        <Col md={{ offset: 1 }}>
+          <img className="affiliate-img" src={makeChange} alt=""/>
+        </Col>
+      </Row>
       <div className="appr-of-funding">
         <div className="donate-header">
           <h2>Appropriation of Funding</h2>

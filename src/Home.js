@@ -56,32 +56,14 @@ function Home() {
           {
               homeColumn.map(function(items)
               {
-                return <HomeColumn 
-                title={items.title} 
-                paragraph={items.paragraph} 
+                return <HomeColumn
+                title={items.title}
+                paragraph={items.paragraph}
                 image={items.imageLink} alt={items.alt}
                 />
               })
-            }
-          </Row>
-        </div>
-      <div className="home-data">
-        <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-           voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
-        <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-           voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
-        <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-           voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
-        <Column title="100+" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-           voluptate velit esse cillum dolore eu fugiat nulla pariatur."></Column>
+          }
+        </Row>
       </div>
       <InfoSection
         title="The POH Difference"

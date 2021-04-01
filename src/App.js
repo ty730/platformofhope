@@ -7,7 +7,7 @@ import About from './Pages/About';
 import Services from './Pages/Services';
 import Donate from './Pages/Donate';
 import  HomeColumn from './Components/HomeColumn/HomeColumn'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import NewsAndEvents from './Pages/NewsAndEvents';
 
 import MobileNavbar from './Components/MobileNav/MobileNavbar'
@@ -33,14 +33,16 @@ function App() {
       <Router>
         <Nav handleClick={handleClick} />
         <MobileNavbar isOpen={isOpen} handleClick={handleClick} />
-        
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route exact path="/">
+              <Redirect to="/platformofhope" />
+          </Route>
+          <Route path="/platformofhope" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/services" exact component={Services} />
           <Route path="/newsandevents" exact component={NewsAndEvents} />
           <Route path="/donate" exact component={Donate} />
-          <Route path="/testing" exact component={HomeColumn} /> 
+          <Route path="/testing" exact component={HomeColumn} />
         </Switch>
 
         <Footer />

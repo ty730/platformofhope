@@ -10,7 +10,7 @@ html
   font-family: "Oswald", sans-serif;
   /* font-family: 'Poppins', sans-serif; */
   font-size: 16px;
-  
+
 
 }
 .nav {
@@ -321,9 +321,9 @@ ul {
   flex: 1;
 }
 
-.donate-row, .donate > * {
-  margin-left: 10%;
-  margin-right: 10%;
+.donate-row, .donate-header, .appr-of-funding > * {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
 }
 
 .donate-header > * {
@@ -377,11 +377,6 @@ hr {
 .appr-of-funding {
   margin: 0;
   background-color: #e9e9e9;
-}
-
-.appr-of-funding > * {
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .appr-of-funding h2 {
@@ -480,7 +475,7 @@ hr {
 
 /* Row -bootsrap remove Margin */
 
-.row 
+.row
 {
   margin: 0;
 }

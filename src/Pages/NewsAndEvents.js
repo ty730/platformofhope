@@ -8,7 +8,6 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import img1 from './../images/image-1.jpg';
 import img2 from './../images/image-2.jpg';
-import testImg from './../images/computerlab.jpg';
 
 const localizer = momentLocalizer(moment);
 
@@ -32,7 +31,7 @@ function NewsAndEvents() {
       title: 'All Day Event',
     },
   ];
-  const imageSrcs = [img1, img2, img1, img2, testImg, img1, testImg, img2]
+  const imageSrcs = [img1, img2, img1, img2, img1, img2]
   const slides = [];
   for (let i = 0; i < imageSrcs.length; i++) {
     slides.push(

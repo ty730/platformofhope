@@ -181,13 +181,8 @@ ul {
   }
 }
 
-.column-container {
-  display: inline-flex;
-  gap: 10%;
-}
-
-.column-container > * {
-  flex: 1;
+.column {
+  margin-bottom: 2%;
 }
 
 .column-img,
@@ -198,8 +193,8 @@ ul {
 }
 
 .column-h {
-  margin-bottom: 8%;
-  margin-top: 8%;
+  margin-bottom: 4%;
+  margin-top: 4%;
 }
 
 .donate-img {
@@ -321,7 +316,8 @@ ul {
   flex: 1;
 }
 
-.donate-row, .donate-header, .appr-of-funding > * {
+.donate-row, .donate-header, .appr-of-funding > *,
+.services-main, .column-container {
   margin-left: 10% !important;
   margin-right: 10% !important;
 }
@@ -383,7 +379,7 @@ hr {
   padding-top: 5%;
 }
 
-.funding-container {
+.funding-container, .column-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -399,19 +395,19 @@ hr {
 }
 
 @media screen and (min-width: 900px) {
-  .funding-container > * {
+  .funding-container > *, .column-container > * {
     max-width: 29%;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .funding-container > * {
+  .funding-container > *, .column-container > * {
     max-width: 46%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .funding-container > * {
+  .funding-container > *, .column-container > * {
     max-width: 99%;
   }
 }

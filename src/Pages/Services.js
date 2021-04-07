@@ -24,7 +24,7 @@ function Services() {
         <hr/>
       </div>
       <img className="services-main" src={mainImage} alt="" />
-      <div>
+      <div className="donate-header">
         <h4>What We Do</h4>
         <hr/>
       </div>
@@ -43,8 +43,6 @@ function Services() {
         title= "Hotel Voucher/Shelter Referral"
         p="We offer hotel assistance for homeless families in addition to shelter referrals."
         imgclass="services-img" />
-      </div>
-      <div className="column-container">
         <Column
         src={computerlab}
         title= "Jail Facilitation"

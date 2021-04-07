@@ -24,3 +24,5 @@
 - ~~Draft onto website~~
 - Make Appropriation of funding responsive
 - Make spacing consistent, line height to title, more spacing on top half
+
+Current draft of website at https://ty730.github.io/platformofhope/

@@ -439,13 +439,23 @@ hr {
   }
 }
 
-.swiper-slide {
+.image-slides .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-wrapper {
+.video-slides .swiper-slide > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-slides .swiper-slide {
+  width: auto !important;
+}
+
+.image-slides .swiper-wrapper {
   padding-inline-start: 0;
 }
 

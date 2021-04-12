@@ -8,6 +8,7 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import img1 from './../images/image-1.jpg';
 import img2 from './../images/image-2.jpg';
+import thumb from './../images/ig-vid-thumb.JPG';
 
 const localizer = momentLocalizer(moment);
 
@@ -40,6 +41,18 @@ function NewsAndEvents() {
       </SwiperSlide>
     )
   }
+  const videoSrcs = [thumb, thumb, thumb]
+  const videoSlides = [];
+  for (let j = 0; j < videoSrcs.length; j++) {
+    videoSlides.push(
+      <SwiperSlide key={`slide-${j}`} tag="li">
+        <a href="https://www.instagram.com/p/CD6sXzWHLZX/?utm_source=ig_web_copy_link"
+           target="_blank" rel="noopener noreferrer">
+          <img className="slider-img" src={videoSrcs[j]} alt=""/>
+        </a>
+      </SwiperSlide>
+    )
+  }
   return (
     <div>
       <div className="home-image">
@@ -54,7 +67,7 @@ function NewsAndEvents() {
         style={{ height: 500 }}
       />
       </div>
-      <div>
+      <div className="image-slides">
         <Swiper
           tag="section"
           wrapperTag="ul"
@@ -64,6 +77,19 @@ function NewsAndEvents() {
           slidesPerView={1}
         >
           {slides}
+        </Swiper>
+      </div>
+      <div className="video-slides">
+        <Swiper
+          tag="section"
+          wrapperTag="ul"
+          navigation
+          pagination
+          centeredSlides
+          spaceBetween={0}
+          slidesPerView={"auto"}
+        >
+          {videoSlides}
         </Swiper>
       </div>
     </div>

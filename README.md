@@ -5,24 +5,25 @@
 - Check color scheme (save until later)
 ### News & events:
 - ~~Add calendar~~
-- Make slideshow (swiper js or react js slideshow)
+- ~~Make slideshow (swiper js)~~
+- Create new slideshow for videos (centered auto)
+- Draft on Figma (Christian)
 - Make news and event information a seperate component
 ### Homepage
 - ~~Nav bar and footer~~ (Christian)
 - ~~Icon images with text below them~~ (Christian)
+- Draft from Figma to website (Tyler)
 - Featured events (Christian)
 - Swap poster to left side and make smaller/Draft on Figma (Tyler)
-- Arrow timeline (Tyler)
-### About (Save until later)
+### About
 - Draft on Figma
-- Full timeline with sections
 ### Services
 - ~~Create layout from Figma (try bootstrap)~~
 ### Contact (Save until later)
 - Draft on Figma
 ### Donate
 - ~~Draft onto website~~
-- Make Appropriation of funding responsive
-- Make spacing consistent, line height to title, more spacing on top half
+- ~~Make Appropriation of funding responsive~~
+- ~~Make spacing consistent, line height to title, more spacing on top half~~
 
 Current draft of website at https://ty730.github.io/platformofhope/

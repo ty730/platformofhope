@@ -5,6 +5,7 @@ export const FooterContainer = styled.div`
 width: 100%;
 background: white;
 margin: 0 auto;
+box-shadow: 0px -1px rgba(0,0,0,.5);
 `
 
 export const Container = styled.div`

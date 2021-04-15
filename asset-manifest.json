@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/platformofhope/static/css/main.b13275c9.chunk.css",
-    "main.js": "/platformofhope/static/js/main.974cf005.chunk.js",
-    "main.js.map": "/platformofhope/static/js/main.974cf005.chunk.js.map",
+    "main.js": "/platformofhope/static/js/main.7057a1d5.chunk.js",
+    "main.js.map": "/platformofhope/static/js/main.7057a1d5.chunk.js.map",
     "runtime-main.js": "/platformofhope/static/js/runtime-main.b99f6140.js",
     "runtime-main.js.map": "/platformofhope/static/js/runtime-main.b99f6140.js.map",
     "static/css/2.63e6d389.chunk.css": "/platformofhope/static/css/2.63e6d389.chunk.css",
@@ -40,6 +40,6 @@
     "static/css/2.63e6d389.chunk.css",
     "static/js/2.159d1ecf.chunk.js",
     "static/css/main.b13275c9.chunk.css",
-    "static/js/main.974cf005.chunk.js"
+    "static/js/main.7057a1d5.chunk.js"
   ]
 }

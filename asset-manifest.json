@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/platformofhope/static/css/main.2be66a0b.chunk.css",
-    "main.js": "/platformofhope/static/js/main.071505bb.chunk.js",
-    "main.js.map": "/platformofhope/static/js/main.071505bb.chunk.js.map",
+    "main.css": "/platformofhope/static/css/main.b13275c9.chunk.css",
+    "main.js": "/platformofhope/static/js/main.974cf005.chunk.js",
+    "main.js.map": "/platformofhope/static/js/main.974cf005.chunk.js.map",
     "runtime-main.js": "/platformofhope/static/js/runtime-main.b99f6140.js",
     "runtime-main.js.map": "/platformofhope/static/js/runtime-main.b99f6140.js.map",
     "static/css/2.63e6d389.chunk.css": "/platformofhope/static/css/2.63e6d389.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.1436e674.chunk.js.map": "/platformofhope/static/js/3.1436e674.chunk.js.map",
     "index.html": "/platformofhope/index.html",
     "static/css/2.63e6d389.chunk.css.map": "/platformofhope/static/css/2.63e6d389.chunk.css.map",
-    "static/css/main.2be66a0b.chunk.css.map": "/platformofhope/static/css/main.2be66a0b.chunk.css.map",
+    "static/css/main.b13275c9.chunk.css.map": "/platformofhope/static/css/main.b13275c9.chunk.css.map",
     "static/js/2.159d1ecf.chunk.js.LICENSE.txt": "/platformofhope/static/js/2.159d1ecf.chunk.js.LICENSE.txt",
     "static/media/App.css": "/platformofhope/static/media/home-main.06da3224.png",
     "static/media/computerlab.d5808f27.jpg": "/platformofhope/static/media/computerlab.d5808f27.jpg",
@@ -23,11 +23,13 @@
     "static/media/hands.728178aa.png": "/platformofhope/static/media/hands.728178aa.png",
     "static/media/handsholdinghouse.a83de622.jpg": "/platformofhope/static/media/handsholdinghouse.a83de622.jpg",
     "static/media/hotelroom.96bcd0d4.jpg": "/platformofhope/static/media/hotelroom.96bcd0d4.jpg",
+    "static/media/ig-vid-thumb.e55f81f3.JPG": "/platformofhope/static/media/ig-vid-thumb.e55f81f3.JPG",
     "static/media/image-1.bfb442a6.jpg": "/platformofhope/static/media/image-1.bfb442a6.jpg",
     "static/media/image-2.02aef12b.jpg": "/platformofhope/static/media/image-2.02aef12b.jpg",
     "static/media/instagram.46dad34d.svg": "/platformofhope/static/media/instagram.46dad34d.svg",
     "static/media/makechange.e5f43a27.jpg": "/platformofhope/static/media/makechange.e5f43a27.jpg",
     "static/media/paypal.5e4a345f.png": "/platformofhope/static/media/paypal.5e4a345f.png",
+    "static/media/pohlogo.45a3424f.png": "/platformofhope/static/media/pohlogo.45a3424f.png",
     "static/media/seniordeliverypohflyer.dcd31406.jpg": "/platformofhope/static/media/seniordeliverypohflyer.dcd31406.jpg",
     "static/media/services-main.dfd78c7b.png": "/platformofhope/static/media/services-main.dfd78c7b.png",
     "static/media/twitter.feedd84c.svg": "/platformofhope/static/media/twitter.feedd84c.svg",
@@ -37,7 +39,7 @@
     "static/js/runtime-main.b99f6140.js",
     "static/css/2.63e6d389.chunk.css",
     "static/js/2.159d1ecf.chunk.js",
-    "static/css/main.2be66a0b.chunk.css",
-    "static/js/main.071505bb.chunk.js"
+    "static/css/main.b13275c9.chunk.css",
+    "static/js/main.974cf005.chunk.js"
   ]
 }

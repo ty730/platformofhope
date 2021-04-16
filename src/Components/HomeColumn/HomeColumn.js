@@ -9,7 +9,7 @@ import { Section } from './HomeColumnStyles'
 const HomeColumn = ({paragraph, image,title, alt}) => {
 	return (
 		<>
-				<Column xl={4} lg={4} md={12} sm={12} >
+				<Column xl={4} lg={4} md={12} sm={12} className="mx-auto">
 					<Section>
 						<div className="home-section-container">
 						<img src={image} alt={alt}/>

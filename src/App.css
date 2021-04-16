@@ -54,16 +54,15 @@ h3 {
 }
 
 button {
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 1rem;
   padding: 0.8rem 1rem;
-  background-color: transparent;
   border: none;
 }
 
 button:hover {
-  background-color: black;
-  color: white;
+  background-color: gray;
 }
 
 .logo {
@@ -114,11 +113,50 @@ ul {
   color: #faa919;
 }
 
+.home p {
+  color: black;
+  line-height: 25pt;
+  margin-bottom: 8%;
+}
+
+.home h1 {
+  color: black;
+  font-size: 42pt;
+  line-height: 60pt;
+  letter-spacing: 1.8pt;
+  margin-bottom: 7%;
+  margin-top: 6%;
+  margin-right: 0.5%;
+}
+
+.home h3 {
+  color: #faa919;
+  font-size: 12pt;
+}
+
+.home-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.home-top > div {
+  width: 50%;
+}
+
+.home-top > img {
+  width: 35%;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
 .home-container {
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("./images/home-main.png");
   background-size: cover;
-  min-height: 600px;
-  background-position: center center;
+  min-height: 700px;
+  background-position: 0px 34px;
 }
 
 .home-image {

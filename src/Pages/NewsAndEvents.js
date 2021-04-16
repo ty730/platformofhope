@@ -77,6 +77,7 @@ function NewsAndEvents() {
           slidesPerView={1}
         >
           {slides}
+          
         </Swiper>
       </div>
       <div className="video-slides">
@@ -92,6 +93,8 @@ function NewsAndEvents() {
           {videoSlides}
         </Swiper>
       </div>
+
+      
     </div>
   );
 }

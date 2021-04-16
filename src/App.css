@@ -8,6 +8,7 @@ html
 .App {
   text-align: left;
   font-family: "Oswald", sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Poppins', sans-serif; */
   font-size: 16px;
 
@@ -522,4 +523,10 @@ hr {
 .row
 {
   margin: 0;
+}
+
+.home-section
+{
+  max-width: 1334px;
+  margin: 0 auto;
 }

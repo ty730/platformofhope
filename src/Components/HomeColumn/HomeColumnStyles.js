@@ -6,7 +6,8 @@ display: flex;
 align-items: center;
 justify-content:center;
 text-align: center;
-padding: 3rem;
+margin-top: 3rem;
+max-width: 1134px;
 @media screen and (max-width: 800px)
 {
 	padding: 2rem;
@@ -40,7 +41,7 @@ p
 	flex-direction: column;
 	max-width: 450px;
 	height: auto;
-	padding: 1rem;
+	padding: 2rem;
 }
 .home-section-container:hover 
 {

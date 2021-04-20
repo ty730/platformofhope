@@ -83,6 +83,11 @@ function Home() {
       </div>
     */}
       <div className="home-section">
+        <div className="home-col-title">
+          <h1>Together we can make a Difference</h1>
+          <p>No matter how old you are, where you live, or what you can give, you can help those in need.</p>
+          <div/>
+        </div>
           <Row>
           {
               homeColumn.map(function(items)
@@ -113,13 +118,13 @@ function Home() {
       If yes, please request Free Mobile Delivery below."
         src={seniorDeliveryFlyer}
         button={<button>Request Help</button>} />
-      <h2 className="line-header">Thanks To Our Donors</h2>
+      {/* <h2 className="line-header">Thanks To Our Donors</h2>
       <div className="column-container home-page-top">
         <Column ></Column>
         <Column ></Column>
         <Column ></Column>
         <Column ></Column>
-      </div>
+      </div> */}
     </div>
   );
 }

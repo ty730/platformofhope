@@ -530,3 +530,35 @@ hr {
   max-width: 1334px;
   margin: 0 auto;
 }
+
+.home-col-title
+{
+  text-align: center;
+  margin-top:3rem;
+
+}
+@media screen and (max-width: 700px) 
+{
+  .home-col-title
+  {
+    padding: 1rem;
+  }
+}
+.home-col-title h1, p
+{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.home-col-title h1 
+{
+  font-size: 36px;
+  line-height: 72px;
+  letter-spacing: normal;
+}
+
+.home-col-title p 
+{
+  line-break: normal;
+  margin: 0 auto;
+}

@@ -7,7 +7,7 @@ import {
 	FooterContainer,
 	CompanyInfo,
 	Contact, 
-	QuickLinks, SocialMedia
+	QuickLinks, SocialMedia, Tag
 } from './FooterStyles'
 
 import fb from './../../images/facebook.svg'
@@ -91,6 +91,10 @@ const Footer = () => {
 						</Column>
 				</Row>
 			</Container>
+			<Tag>
+				<span>© 2021 Platform of Hope</span><br/>
+				<span>Platform of Hope is 501(c)(3) approved as of April 2017.</span>
+			</Tag>
 		</FooterContainer>
 	)
 }

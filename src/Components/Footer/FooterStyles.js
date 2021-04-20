@@ -6,6 +6,7 @@ width: 100%;
 background: white;
 margin: 0 auto;
 box-shadow: 0px -1px rgba(0,0,0,.5);
+position: relative;
 `
 
 export const Container = styled.div`
@@ -149,4 +150,18 @@ h4
 	}
 }
 
+`
+
+export const Tag = styled.div`
+
+position: absolute;
+bottom: 1rem;
+right: 1rem;
+font-weight: 300;
+font-size: .8rem;
+font-style: italic;
+span:nth-child(1)
+{
+	font-style: normal;
+}
 `

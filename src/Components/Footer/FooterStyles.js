@@ -153,15 +153,19 @@ h4
 `
 
 export const Tag = styled.div`
-
-position: absolute;
-bottom: 1rem;
-right: 1rem;
+width:270px;
+padding-left: 3.45rem;
 font-weight: 300;
 font-size: .8rem;
 font-style: italic;
+margin-top: 2rem;
+span
+{
+	text-align: center;
+}
+
 span:nth-child(1)
 {
-	font-style: normal;
+
 }
 `

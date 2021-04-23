@@ -57,5 +57,9 @@ svg
 {
 	font-size: 2rem;
 }
+img 
+{
+	height: 142px;
+}
 
 `

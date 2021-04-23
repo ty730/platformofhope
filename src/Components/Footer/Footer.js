@@ -87,14 +87,16 @@ const Footer = () => {
 								<Link><li> <img src={instagram} alt="facebook icon"/> </li></Link>
 								<Link><li> <img src={youtube} alt="facebook icon"/> </li></Link>
 							</ul>
+							<Tag>
+							<span>Platform of Hope is 501(c)(3) approved as of April 2017.</span><br/><br/>
+				<span>© 2021 Platform of Hope</span>
+				
+			</Tag>
 						</SocialMedia>
 						</Column>
 				</Row>
 			</Container>
-			<Tag>
-				<span>© 2021 Platform of Hope</span><br/>
-				<span>Platform of Hope is 501(c)(3) approved as of April 2017.</span>
-			</Tag>
+		
 		</FooterContainer>
 	)
 }

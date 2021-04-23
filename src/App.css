@@ -562,3 +562,81 @@ hr {
   line-break: normal;
   margin: 0 auto;
 }
+
+/* Featured Events */
+.featuredEventsContainer
+{
+  max-width: 100%;
+  background-color: #F3F3F3;
+  height: auto;
+  padding: 2rem 0;
+}
+.featuredEvents
+{
+
+  height: auto;
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+}
+
+
+.upcomingEvents
+{
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media  screen and (max-width: 800px) 
+{
+  .upcomingEvents
+  {
+    justify-content: center;
+  }
+
+  .featuredEvents h4 
+  {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .upcomingEvents img 
+  {
+    margin-bottom: 1rem;
+  }
+  
+}
+
+.upcomingEvents img 
+{
+  height: 318px;
+  width: 348px;
+}
+
+.featuredEvents h4
+{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 42px;
+  padding-left: 1rem;
+}
+
+/* Upcming Events List */
+.upcomingEventsList
+{
+  display: flex;
+  flex-direction: column;
+}
+.upcomingEventsList h4
+{
+  padding-left: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}

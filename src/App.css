@@ -537,7 +537,7 @@ hr {
   margin-top:3rem;
 
 }
-@media screen and (max-width: 700px) 
+@media screen and (max-width: 700px)
 {
   .home-col-title
   {
@@ -550,14 +550,14 @@ hr {
   margin: 0 !important;
 }
 
-.home-col-title h1 
+.home-col-title h1
 {
   font-size: 36px;
   line-height: 72px;
   letter-spacing: normal;
 }
 
-.home-col-title p 
+.home-col-title p
 {
   line-break: normal;
   margin: 0 auto;
@@ -594,27 +594,27 @@ hr {
 }
 
 /* Responsive */
-@media  screen and (max-width: 800px) 
+@media  screen and (max-width: 800px)
 {
   .upcomingEvents
   {
     justify-content: center;
   }
 
-  .featuredEvents h4 
+  .featuredEvents h4
   {
     text-align: center;
     margin: 0 auto;
   }
 
-  .upcomingEvents img 
+  .upcomingEvents img
   {
     margin-bottom: 1rem;
   }
-  
+
 }
 
-.upcomingEvents img 
+.upcomingEvents img
 {
   height: 318px;
   width: 348px;
@@ -639,4 +639,66 @@ hr {
   padding-left: 1rem;
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+.contact-top {
+  height: 400px;
+  background: linear-gradient(to right, #faa919, #009A7B);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-top h1, .contact-top h3 {
+  color: white;
+}
+
+.contact-top h1 {
+  font-size: 64pt;
+  letter-spacing: 10px;
+  margin-bottom: 3%;
+}
+
+.contact-top h3 {
+  font-size: 30pt;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+.contact-container {
+  display: flex;
+  margin: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+}
+
+.contact-container h2, .contact-container p {
+  color: black;
+}
+
+.contact-container p {
+  font-size: 16pt;
+  line-height: 40px;
+}
+
+.contact-container h3 {
+  font-size: 36pt;
+}
+
+.contact-container h2 {
+  font-size: 48pt;
+  letter-spacing: 4px;
+  font-weight: 200;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }

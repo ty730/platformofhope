@@ -655,22 +655,22 @@ hr {
 }
 
 .contact-top h1 {
-  font-size: 64pt;
+  font-size: 62pt;
   letter-spacing: 10px;
   margin-bottom: 3%;
 }
 
 .contact-top h3 {
-  font-size: 30pt;
+  font-size: 26pt;
   letter-spacing: 4px;
   font-weight: 300;
 }
 
 .contact-container {
   display: flex;
-  margin: 8%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 6%;
+  margin-left: 8%;
+  margin-right: 4%;
   justify-content: space-between;
 }
 
@@ -681,24 +681,64 @@ hr {
 .contact-container p {
   font-size: 16pt;
   line-height: 40px;
+  letter-spacing: 3px;
 }
 
 .contact-container h3 {
-  font-size: 36pt;
+  font-size: 32pt;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  letter-spacing: 2px;
 }
 
 .contact-container h2 {
-  font-size: 48pt;
-  letter-spacing: 4px;
+  font-size: 46pt;
+  letter-spacing: 3px;
   font-weight: 200;
 }
 
 .get-in-touch {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  margin-top: 4%;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: lightgray;
+  letter-spacing: 3px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-info {
+  width: 32%;
+}
+
+.contact-info span {
+  color: #faa919;
+}
+
+.contact-submit {
+  width: 200px !important;
+  letter-spacing: 3px;
+  font-size: 14pt;
+  color: white;
+  background-color: #009A7B;
+  border: none !important;
+  border-radius: 0 !important;
 }

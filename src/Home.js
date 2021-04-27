@@ -6,7 +6,7 @@ import holdhands from './images/home-icons/holdhands.png';
 import prayinghands from './images/home-icons/prayingicon.png';
 import { Row } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
-
+import {Events} from './Components/Events'
 import UpcomingEvents from './Components/UpcomingEvents';
 
 /**
@@ -105,9 +105,12 @@ function Home() {
             </div>
             <div className="upcomingEventsList">
               <h4>This Week</h4>
-              <UpcomingEvents></UpcomingEvents>
-              <UpcomingEvents></UpcomingEvents>
-              <UpcomingEvents></UpcomingEvents>
+              {
+            
+              }
+              <UpcomingEvents  { ...Events}></UpcomingEvents>
+              <UpcomingEvents { ...Events}></UpcomingEvents>
+              <UpcomingEvents { ...Events}></UpcomingEvents>
             </div>
 
           </div>

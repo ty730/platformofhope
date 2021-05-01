@@ -101,16 +101,18 @@ function Home() {
             <Col xl={8} lg={8} md={12}>
               <div className="upcomingEvents d-flex align-items-center justify-content-center">
                 <Row>
-                  <Col md={12} lg={6} sm={12} className="d-flex align-items-center justify-content-center pb-md-4 flex-column">
-                  <h4 className="align-self-lg-start pl-lg-5 pb-lg-2">Upcoming Events</h4>
+              
+                  <Col md={12} lg={6} sm={12} offset={3} className="d-flex align-items-center justify-content-center pb-md-4 flex-column">
+               
                     <div className="upcomingEventsImage">
+                    <h4 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h4>
                       <img src="https://images.pexels.com/photos/6646923/pexels-photo-6646923.jpeg?cs=srgb&dl=pexels-rodnae-productions-6646923.jpg&fm=jpg" alt="" />
                     </div>
                   </Col>
                   <Col className="d-flex align-items-center justify-content-center flex-column" md={12} lg={6} sm={12}>
-                  <h4 className="align-self-lg-start">This Week</h4>
+              
                     <div className="upcomingEventsList d-flex align-items-md-center justify-content-lg-center">
-                    
+                    <h4 className="align-self-lg-start">This Week</h4>
                       <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
                       <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
                       <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
@@ -122,15 +124,17 @@ function Home() {
             </Col>
 
 
-            <Col xl={4} lg={4} className="pastEventsCol">
-            <h4 className="text-md-center  text-sm-center text-lg-left">Past Events</h4>
+            <Col xl={4} lg={4} className="pastEventsCol d--flex align-items-center justify-content-center">
+             <h4 className="text-md-center  text-sm-center text-lg-left">Past Events</h4>
               <div className="pastEvents d-flex flex-column justify-content-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
                
 
                 <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
                 <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
                 <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
-              </div>
+                <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
+              </div> 
+      
             </Col>
           </Row>
         </div>

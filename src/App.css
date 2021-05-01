@@ -607,7 +607,9 @@ hr {
 .upcomingEvents img
 {
   height: 318px;
-  width: 348px;
+  width: auto;
+  padding: 0;
+  margin: 0;
 }
 
 /* @media screen and (max-width: 800px) 
@@ -642,15 +644,32 @@ hr {
   font-size: 1.3rem;
 }
 
+.upcomingEvents
+{
+  border-right: 1px solid black;
+}
+
+@media screen and (max-width: 900px) 
+{
+  .upcomingEvents
+  {
+    border-right: none; 
+  }
+
+}
 
 /* Past EVents */
 
 .pastEventsCol
 {
-  border-left: 1px solid black;
   height: 100%;
 }
-
+.pastEventsCol h4
+{
+  padding-left: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
 /* ----------------------------------------------------------------------- */
 .contact-top {
   height: 400px;

@@ -576,25 +576,14 @@ hr {
 
   height: auto;
   max-width: 1440px;
-
   margin: 0 auto;
 
 }
 
 
-.upcomingEvents
-{
-  display: flex;
-  width: 100%;
-  max-width: 800px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  flex-wrap: wrap;
-}
 
 /* Responsive */
-@media  screen and (max-width: 800px)
+@media  screen and (max-width: 900px)
 {
   .upcomingEvents
   {
@@ -604,7 +593,8 @@ hr {
   .featuredEvents h4
   {
     text-align: center;
-    margin: 0 auto;
+    padding: 2rem 0;
+    
   }
 
   .upcomingEvents img
@@ -617,8 +607,20 @@ hr {
 .upcomingEvents img
 {
   height: 318px;
-  width: 348px;
+  width: auto;
+  padding: 0;
+  margin: 0;
 }
+
+/* @media screen and (max-width: 800px) 
+{
+  .upcomingEvents img 
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }  
+} */
 
 .featuredEvents h4
 {
@@ -633,14 +635,42 @@ hr {
 {
   display: flex;
   flex-direction: column;
+  /* padding-left: 2rem; */
 }
 .upcomingEventsList h4
 {
   padding-left: 1rem;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
+.upcomingEvents
+{
+  border-right: 1px solid black;
+}
+
+@media screen and (max-width: 900px) 
+{
+  .upcomingEvents
+  {
+    border-right: none; 
+  }
+
+}
+
+/* Past EVents */
+
+.pastEventsCol
+{
+  height: 100%;
+}
+.pastEventsCol h4
+{
+  padding-left: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+/* ----------------------------------------------------------------------- */
 .contact-top {
   height: 400px;
   background: linear-gradient(to right, #faa919, #009A7B);

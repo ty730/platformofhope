@@ -324,8 +324,8 @@ ul {
 
 .calendar-container {
   margin: 5%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .donate {
@@ -594,7 +594,7 @@ hr {
   {
     text-align: center;
     padding: 2rem 0;
-    
+
   }
 
   .upcomingEvents img
@@ -612,14 +612,14 @@ hr {
   margin: 0;
 }
 
-/* @media screen and (max-width: 800px) 
+/* @media screen and (max-width: 800px)
 {
-  .upcomingEvents img 
+  .upcomingEvents img
   {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-  }  
+  }
 } */
 
 .featuredEvents h4
@@ -649,11 +649,11 @@ hr {
   border-right: 1px solid black;
 }
 
-@media screen and (max-width: 900px) 
+@media screen and (max-width: 900px)
 {
   .upcomingEvents
   {
-    border-right: none; 
+    border-right: none;
   }
 
 }
@@ -771,4 +771,19 @@ hr {
   background-color: #009A7B;
   border: none !important;
   border-radius: 0 !important;
+}
+
+.rbc-toolbar-label {
+  font-size: 26pt;
+  font-weight: 300;
+}
+
+.rbc-header {
+  color: white;
+  padding: 1% !important;
+  border: black !important;
+}
+
+div.rbc-row.rbc-month-header {
+  background: black;
 }

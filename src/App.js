@@ -12,6 +12,7 @@ import NewsAndEvents from './Pages/NewsAndEvents';
 import Contact from './Pages/Contact';
 
 import MobileNavbar from './Components/MobileNav/MobileNavbar'
+import GetHelp from './Pages/GetHelp';
 /**
  * This is the top level App component that defines which paths will direct the user to which pages.
  * These paths are mainly used in Nav, so navigation links go to the right pages.
@@ -43,6 +44,7 @@ function App() {
           <Route path="/services" exact component={Services} />
           <Route path="/newsandevents" exact component={NewsAndEvents} />
           <Route path="/contact" exact component={Contact} />
+          <Route path="/gethelp" exact component={GetHelp} />
           <Route path="/donate" exact component={Donate} />
           <Route path="/testing" exact component={HomeColumn} />
         </Switch>

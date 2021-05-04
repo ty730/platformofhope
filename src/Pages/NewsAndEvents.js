@@ -5,6 +5,7 @@ import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
+//import { Events } from './../Components/Events';
 
 const localizer = momentLocalizer(moment);
 

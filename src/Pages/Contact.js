@@ -10,7 +10,7 @@ function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_ygjc33b', 'template_la6pfnn', e.target, 'user_Ah3XT9jFGq07ifHohQS2w')
+    emailjs.sendForm('service_8fderar', 'template_6hjo9b6', e.target, 'user_OKR16ehhZhBLdFc7CF3bH')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -30,10 +30,10 @@ function Contact() {
           <h2>Get In Touch</h2>
           <p>Please fill out this brief form and we will be in touch with you shortly.</p>
           <form className="contact-form" onSubmit={sendEmail}>
-            <input type="text" placeholder="Name" name="name" />
-            <input type="text" placeholder="Phone Number" name="phone" />
-            <input type="email" placeholder="Email Address" name="email" />
-            <textarea placeholder="Message" name="message" />
+            <input type="text" placeholder="Name" name="name" required/>
+            <input type="text" placeholder="Phone Number" name="phone" required/>
+            <input type="email" placeholder="Email Address" name="email" required/>
+            <textarea placeholder="Message" name="message" required/>
             <input className="contact-submit" type="submit" value="SUBMIT" />
           </form>
         </div>

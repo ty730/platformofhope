@@ -10,6 +10,7 @@
     "bootstrap": "^4.6.0",
     "emailjs-com": "^2.6.4",
     "moment": "^2.29.1",
+    "node-sass": "^6.0.0",
     "react": "^17.0.1",
     "react-big-calendar": "^0.33.2",
     "react-bootstrap": "^1.5.2",

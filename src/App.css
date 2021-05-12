@@ -876,3 +876,12 @@ div.rbc-row.rbc-month-header {
   border: none;
   margin-top: 6%;
 }
+
+/* ABOUT Page */
+
+.about-container
+{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './../App.css';
+import AboutPage from '../Components/About'
 
 /**
  * This is the About component that holds all information for the About page.
@@ -7,9 +8,9 @@ import './../App.css';
 function About() {
   return (
     <div className="About">
-      <div className="home-image">
-        <h1>About Us</h1>
-      </div>
+
+        <AboutPage/>
+
     </div>
   );
 }

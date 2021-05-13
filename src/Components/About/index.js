@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import {AboutImage, AboutHero, AboutStory} from './AboutStyle';
+import {AboutImage, AboutHero, AboutStory, AboutHeader} from './AboutStyle';
 import aboutLogo from './../../images/about/about-logo.png';
 const AboutPage = () => {
 	return (
@@ -34,6 +34,20 @@ const AboutPage = () => {
 					</div>
 				</div>
 			</AboutStory>
+			<hr></hr>
+			<AboutHeader>
+
+				
+		
+				<div className="about-header-container container">
+					<div className="about-header">
+						<h2>The Difference</h2>
+						<p>While other agencies look great on paper, thousands of dollars go toward bonuses to employees each year. Fortunately, while Platform of Hope awaits state and federal funding, every dime is allocated TO the client for stabilization. We rely heavily on donations from family, friends, and the community for services and operating costs.</p>
+					</div>
+				</div>
+
+			</AboutHeader>
+			
 		</Container>
 	)
 }

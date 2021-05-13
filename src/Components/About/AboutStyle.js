@@ -29,13 +29,13 @@ p
 	line-height: 33px;
 	color: white;
 	font-size: 21px;
+}
 `
 
 export const AboutStory = styled.div`
 
 height: auto;
 width: 100%;
-
 .row
 {
 	padding: 1rem;
@@ -87,4 +87,34 @@ width: 100%;
 		left: 0;
 	}
 }
+`
+
+export const AboutHeader = styled.div`
+
+.about-header-container 
+{
+	padding: 3rem;
+	text-align: center;
+	h2 
+	{
+		font-size: 48px;
+		color: black;
+		font-family: 'Scheherazade', serif;
+		font-weight: 700;
+		line-height: 73px;
+	}
+	p
+	{
+		font-family: 'Scheherazade', serif;
+		font-size: 1.2rem;
+		color: black;
+	}
+	.about-header 
+	{
+		width: 849px;
+		margin: 0 auto;
+	}
+}
+display:grid;
+place-items:center;
 `

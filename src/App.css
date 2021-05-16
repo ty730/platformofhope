@@ -808,8 +808,11 @@ div.rbc-row.rbc-month-header {
   background: black;
 }
 
+/* GET HELP Page */
+
 .GetHelp {
   background-color: #f3f3f3;
+  padding-bottom: 5%;
 }
 
 .get-help-top {
@@ -875,6 +878,81 @@ div.rbc-row.rbc-month-header {
   background-color: #009A7B;
   border: none;
   margin-top: 6%;
+}
+
+.outreach-container {
+  margin-left: 14%;
+  margin-right: 14%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid gray;
+  border-radius: 10px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: white;
+}
+
+.outreach-container h2 {
+  color: black;
+  font-size: 34pt;
+}
+
+.outreach-container p {
+  color: black;
+  font-size: 17pt;
+  margin: 1% !important;
+}
+
+.outreach-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.outreach-form p {
+  margin-left: 0 !important;
+  margin-top: 3% !important;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.outreach-form input[type='checkbox'] {
+  width: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.outreach-form input, .outreach-form textarea, .outreach-form select {
+  width: 100%;
+  padding: 16px;
+  margin-top: 4%;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.outreach-form input::placeholder, .outreach-form textarea::placeholder {
+  color: lightgray;
+  letter-spacing: 3px;
+}
+
+.outreach-form textarea {
+  height: 150px;
+}
+
+.outreach-submit {
+  width: 200px !important;
+  letter-spacing: 3px;
+  font-size: 14pt;
+  color: white;
+  background-color: #009A7B;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 /* ABOUT Page */

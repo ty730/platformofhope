@@ -2,16 +2,16 @@ import React from 'react'
 import {NewsTitle, NewsDate, NewsContainer} from './UpcomingEventsStyles';
 
 
-const UpcomingEvents = (props) => {
+const UpcomingEvents = ({title,date}) => {
 	return (
 		<NewsContainer>
 			<NewsTitle>
 				<h3>
-					{ props.title }
+					{title}
 				</h3>
 			</NewsTitle>
 			<NewsDate>
-				<p>{props.date}</p> 
+				<p>{date}</p> 
 			</NewsDate>
 		</NewsContainer>
 	)

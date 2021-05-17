@@ -90,7 +90,7 @@ width: 100%;
 `
 
 export const AboutHeader = styled.div`
-
+max-width: 100%;
 .about-header-container 
 {
 	padding: 3rem;
@@ -111,10 +111,54 @@ export const AboutHeader = styled.div`
 	}
 	.about-header 
 	{
-		width: 849px;
+		max-width: 849px;
 		margin: 0 auto;
 	}
 }
 display:grid;
 place-items:center;
+`
+
+
+export const AboutPhases = styled.div`
+padding: 1rem;
+margin:1rem;
+.about-phases
+{
+	img 
+	{
+		width:100%;
+	}
+}
+
+.phases-container 
+{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-left: 3rem;
+
+	h3 
+	{
+		font-size: 2rem;
+		line-height: 52px;
+		color: #F99F00;
+		font-family: 'Scheherazade', serif;
+	}
+	p 
+	{
+		font-size:1rem;
+		line-height: 33px;
+		color:black;
+	}
+	.phase-3
+	{
+		h3 
+		{
+			font-size:2.3rem;
+			font-weight: 700;
+		}
+		
+	}
+}
 `

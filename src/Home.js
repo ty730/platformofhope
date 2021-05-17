@@ -112,10 +112,17 @@ function Home() {
                   <Col className="d-flex align-items-center justify-content-center flex-column" md={12} lg={6} sm={12}>
               
                     <div className="upcomingEventsList d-flex align-items-md-center justify-content-lg-center">
-                    <h4 className="align-self-lg-start">This Week</h4>
-                      <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
-                      <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
-                      <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
+
+                               
+                    {
+                  Events.map(event=>(
+                  
+                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toString()} ></UpcomingEvents></a>
+                  
+                  ))
+                 
+                 } 
+                 
                     </div>
                   </Col>
                 </Row>
@@ -124,15 +131,19 @@ function Home() {
             </Col>
 
 
-            <Col xl={4} lg={4} className="pastEventsCol d--flex align-items-center justify-content-center">
+            <Col xl={4} lg={4} className="pastEventsCol align-items-sm-center justify-sm-content-center d-flex flex-column align-items-xl-start">
              <h4 className="text-md-center  text-sm-center text-lg-left">Past Events</h4>
               <div className="pastEvents d-flex flex-column justify-content-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
                
+                {
+                  Events.map(event=>(
+                  
+                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toString()} ></UpcomingEvents></a>
+                  
+                  ))
+                 
+                 } 
 
-                <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
-                <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
-                <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
-                <a href="/"> <UpcomingEvents  {...Events}></UpcomingEvents></a>
               </div> 
       
             </Col>

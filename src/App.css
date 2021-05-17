@@ -159,19 +159,6 @@ ul {
   background-position: 0px 34px;
 }
 
-.home-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("https://images.unsplash.com/photo-1564189365442-987dc2d76f7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  background-repeat: no-repeat;
-}
-
 .donate-btn {
   background-color: #009A7B;
   border: solid #009A7B 2px;
@@ -320,6 +307,26 @@ ul {
   display: flex;
   padding-left: 4%;
   padding-right: 4%;
+}
+
+/* NEWS AND EVENTS */
+
+.news-events-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("https://images.unsplash.com/photo-1564189365442-987dc2d76f7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.news-events-image h1 {
+  color: white;
+  font-size: 40pt;
 }
 
 .calendar-container {

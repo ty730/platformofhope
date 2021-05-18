@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import './../App.css';
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
+import Popup from './../Components/Popup';
 //import { Events } from './../Components/Events';
 
 const localizer = momentLocalizer(moment);
@@ -19,9 +17,15 @@ SwiperCore.use([Navigation, Pagination]);
  */
 function NewsAndEvents() {
   const [show, setShow] = useState(false);
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (event) => {
+    setShow(true);
+    setTitle(event.title);
+    setDescription(event.start.toDateString());
+  };
 
   const dummyEvents = [
     {
@@ -45,7 +49,7 @@ function NewsAndEvents() {
       <div className="calendar-container">
         <Calendar
           selectable={true}
-          onSelectEvent={handleShow}
+          onSelectEvent={(event) => handleShow(event)}
           localizer={localizer}
           events={dummyEvents}
           startAccessor="start"
@@ -66,17 +70,7 @@ function NewsAndEvents() {
             }
           }
         />
-        <Modal show = {show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Test Title</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>This is the description</Modal.Body>
-          <Modal.Footer>
-            <Button variant="primary" onClick={handleClose}>
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal>
+        <Popup show={show} handleClose={handleClose} title={title} description={description} />
       </div>
     </div>
   );

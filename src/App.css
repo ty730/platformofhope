@@ -152,11 +152,15 @@ ul {
   margin-bottom: auto;
 }
 
+.home-top button {
+  margin-top: 4%;
+}
+
 .home-container {
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("./images/home-main.png");
   background-size: cover;
   min-height: 700px;
-  background-position: 0px 34px;
+  background-position: center 34px;
 }
 
 .donate-btn {
@@ -885,6 +889,11 @@ div.rbc-row.rbc-month-header {
   background-color: #009A7B;
   border: none;
   margin-top: 6%;
+}
+
+.get-help-card a {
+  margin-top: 3.5%;
+  width: 40%;
 }
 
 .outreach-container {

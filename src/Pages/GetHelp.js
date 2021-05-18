@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import Select from 'react-select';
 import servicesImg from './../images/get-help-services-edited.png';
 import resourceGuideImg from './../images/resource-guide.png';
+import {Link} from "react-router-dom";
 
 /**
  * This is the Get Help component that holds all information for the Get Help page.
@@ -67,7 +68,9 @@ function GetHelp() {
           <img src={servicesImg} alt="Services"/>
           <h2>Services</h2>
           <p>Check out more details on the services we offer</p>
-          <button>GO TO SERVICES</button>
+          <a href="/services">
+            <button>GO TO SERVICES</button>
+          </a>
         </div>
         <div className="get-help-card">
           <img src={resourceGuideImg} alt="Services"/>

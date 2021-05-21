@@ -8,7 +8,9 @@ import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
 import { Events } from './Components/Events'
 import UpcomingEvents from './Components/UpcomingEvents';
+import Phases from './Components/Phases'
 import {Link} from "react-router-dom";
+
 
 
 /**
@@ -109,7 +111,7 @@ function Home() {
 
                     <div className="upcomingEventsImage">
                     <h4 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h4>
-                      <img src="https://images.pexels.com/photos/6646923/pexels-photo-6646923.jpeg?cs=srgb&dl=pexels-rodnae-productions-6646923.jpg&fm=jpg" alt="" />
+                      <img src='https://images.pexels.com/photos/6646923/pexels-photo-6646923.jpeg?cs=srgb&dl=pexels-rodnae-productions-6646923.jpg&fm=jpg' alt="" />
                     </div>
                   </Col>
                   <Col className="d-flex align-items-center justify-content-center flex-column" md={12} lg={6} sm={12}>
@@ -155,6 +157,9 @@ function Home() {
 
       </div>
 
+
+{/* Phases */}
+<Phases/>
     </div>
   );
 }

@@ -8,6 +8,7 @@ import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
 import { Events } from './Components/Events'
 import UpcomingEvents from './Components/UpcomingEvents';
+import Phases from './Components/Phases'
 
 
 /**
@@ -152,6 +153,9 @@ function Home() {
 
       </div>
 
+
+{/* Phases */}
+<Phases/>
     </div>
   );
 }

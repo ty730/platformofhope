@@ -1,27 +1,19 @@
 ## To Do:
 ### Overall:
-- Push to git hub pages
-- Incorporate bootstrap or styled components
-- Check color scheme (save until later)
-### News & events:
-- ~~Add calendar~~
-- ~~Make slideshow (swiper js)~~
-- ~~Draft on Figma (Christian)~~
-- ~~Make news and event information a seperate component~~
+ - Check color scheme (save until later)
+ - Consistent font size and family
+ - Consistent text sizes
 ### Homepage
-- ~~Nav bar and footer~~ (Christian)
-- ~~Icon images with text below them~~ (Christian)
-- ~~Draft from Figma to website (Tyler)~~
-- ~~Featured events (Christian)~~
-### About
-- ~~Draft on Figma~~
+ - Bottom of page Media
+### News & events
+ - Media section
 ### Services
-- ~~Create layout from Figma (try bootstrap)~~
-### Contact (Save until later)
-- ~~Draft on Figma~~
+ - Swap girl scouts
+### Contact
+ - Find and add top image
 ### Donate
-- ~~Draft onto website~~
-- ~~Make Appropriation of funding responsive~~
-- ~~Make spacing consistent, line height to title, more spacing on top half~~
+ - Go fund me
+### Get Help
+ - Add what type of help to form
 
 Current draft of website at https://ty730.github.io/platformofhope/

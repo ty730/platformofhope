@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './../App.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
+import Popup from './../Components/Popup';
 //import { Events } from './../Components/Events';
 
 const localizer = momentLocalizer(moment);
@@ -15,27 +16,40 @@ SwiperCore.use([Navigation, Pagination]);
  * This is the Home component that holds all information for the Home page.
  */
 function NewsAndEvents() {
+  const [show, setShow] = useState(false);
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+
+  const handleClose = () => setShow(false);
+  const handleShow = (event) => {
+    setShow(true);
+    setTitle(event.title);
+    setDescription(event.start.toDateString());
+  };
+
   const dummyEvents = [
     {
       allDay: false,
-      end: new Date('March 10, 2021 11:13:00'),
-      start: new Date('March 09, 2021 11:13:00'),
-      title: 'hi',
+      end: new Date('May 10, 2021 11:13:00'),
+      start: new Date('May 09, 2021 11:13:00'),
+      title: 'Test Event',
     },
     {
       allDay: true,
-      end: new Date('March 09, 2021 11:13:00'),
-      start: new Date('March 09, 2021 11:13:00'),
+      end: new Date('May 09, 2021 11:13:00'),
+      start: new Date('May 09, 2021 11:13:00'),
       title: 'All Day Event',
     },
   ];
   return (
     <div>
-      <div className="home-image">
+      <div className="news-events-image">
         <h1>News & Events</h1>
       </div>
       <div className="calendar-container">
         <Calendar
+          selectable={true}
+          onSelectEvent={(event) => handleShow(event)}
           localizer={localizer}
           events={dummyEvents}
           startAccessor="start"
@@ -56,6 +70,7 @@ function NewsAndEvents() {
             }
           }
         />
+        <Popup show={show} handleClose={handleClose} title={title} description={description} />
       </div>
     </div>
   );

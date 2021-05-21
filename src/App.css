@@ -152,24 +152,15 @@ ul {
   margin-bottom: auto;
 }
 
+.home-top button {
+  margin-top: 4%;
+}
+
 .home-container {
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("./images/home-main.png");
   background-size: cover;
   min-height: 700px;
-  background-position: 0px 34px;
-}
-
-.home-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("https://images.unsplash.com/photo-1564189365442-987dc2d76f7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  background-repeat: no-repeat;
+  background-position: center 34px;
 }
 
 .donate-btn {
@@ -320,6 +311,26 @@ ul {
   display: flex;
   padding-left: 4%;
   padding-right: 4%;
+}
+
+/* NEWS AND EVENTS */
+
+.news-events-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("https://images.unsplash.com/photo-1564189365442-987dc2d76f7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.news-events-image h1 {
+  color: white;
+  font-size: 40pt;
 }
 
 .calendar-container {
@@ -878,6 +889,11 @@ div.rbc-row.rbc-month-header {
   background-color: #009A7B;
   border: none;
   margin-top: 6%;
+}
+
+.get-help-card a {
+  margin-top: 3.5%;
+  width: 40%;
 }
 
 .outreach-container {

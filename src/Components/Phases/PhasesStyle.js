@@ -61,4 +61,12 @@ svg
 		display:none;
 	}
 }
+@media screen and (max-width: 900px)
+	{
+		padding: 2rem;
+		.col-lg-3
+		{
+			margin: 1rem 0;
+		}
+	}
 `

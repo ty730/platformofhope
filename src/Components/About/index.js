@@ -3,6 +3,12 @@ import { Container, Row, Col} from 'react-bootstrap'
 import {AboutImage, AboutHero, AboutStory, AboutHeader, AboutPhases} from './AboutStyle';
 import aboutLogo from './../../images/about/about-logo.png';
 import aboutImage from '../../images/about/about-hero.png';
+import about1 from './../../images/phases/about-1.png';
+import about2 from './../../images/phases/about-2.png';
+import about3 from './../../images/phases/about-3.png';
+
+
+
 const AboutPage = () => {
 	return (
 		<Container fluid className="about-container">
@@ -50,24 +56,39 @@ const AboutPage = () => {
 			<div className="container about-phases">
 					<Row>
 
-						<Col xl={6} className="d-flex align-items-center justify-content-center">
-							<img src={aboutImage} alt="" />
+					<Col xl={6} className="phases-container mt-md-5 mt-xl-0 mt-lg-0 mt-sm-5">
+							<div className="phase-1">
+							<img src={about1}></img>
+							<div className="mt-3">
+								<h3>Phase 1</h3>
+							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>
+							   </div>
+							</div>
+
+
 						</Col>
 						<Col xl={6} className="phases-container mt-md-5 mt-xl-0 mt-lg-0 mt-sm-5">
 							<div className="phase-1 py-md-3 py-xl-0 py-lg-0 py-sm-3 py-xs-3">
-								<h3>Phase 1</h3>
-							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>
-							</div>
-							<div className="phase-2 py-md-3 py-xl-0 py-lg-0 py-sm-3 py-xs-3">
+							<img src={about2}></img>
+							<div className="mt-3">
 								<h3>Phase 2</h3>
-							   <p>In addition to the food pantry and clothes closet enhancement, Phase II introduces a much more aggressive approach to stabilization and will incorporate a small dormitory-style 25-bed shelter for women and children.</p>
+							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>
+							   </div>
 							</div>
-							<div className="phase-3 py-md-3 py-xl-0 py-lg-0 py-sm-3 py-xs-3">
-								<h3>Final Phase</h3>
-							   <p>The final phase of Platform of Hope will introduce numerous services surrounding the shelter such as supportive employment, transportation services, educational assistance, GED/typing classes, Federal/State benefits application assistance, daycare resources, HIV testing, address and mail service, and much more.</p>
-							</div>
-						</Col>
 
+
+						</Col>
+						<Col xl={12} className="phases-container mt-md-5 mt-xl-5 mt-lg-5 mt-sm-5">
+							<div className="phase-1 py-md-3 py-xl-0 py-lg-0 py-sm-3 py-xs-3 final-phase">
+							<img src={about3}></img>
+							<div className="mt-3">
+								<h3>Final Phase</h3>
+							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>
+							   </div>
+							</div>
+
+
+						</Col>
 
 					</Row>
 			</div>

@@ -133,10 +133,10 @@ ul {
   margin-right: 0.5%;
 } */
 
-.home h3 {
+/* .home h3 {
   color: #faa919;
   font-size: 12pt;
-}
+} */
 
 .home-top {
   display: flex;
@@ -715,12 +715,12 @@ hr {
 {
   height: 100%;
 }
-.pastEventsCol h4
+/* .pastEventsCol h4
 {
   padding-left: 1rem;
   font-weight: 500;
   font-size: 1.3rem;
-}
+} */
 /* ----------------------------------------------------------------------- */
 .contact-top {
   height: 500px;

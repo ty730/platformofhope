@@ -125,7 +125,7 @@ function Home() {
                   <Col md={12} lg={6} sm={12} offset={3} className="d-flex align-items-center justify-content-center pb-md-4 flex-column">
 
                     <div className="upcomingEventsImage">
-                    <h4 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h4>
+                    <h3 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h3>
                       <img src='https://images.pexels.com/photos/6646923/pexels-photo-6646923.jpeg?cs=srgb&dl=pexels-rodnae-productions-6646923.jpg&fm=jpg' alt="" />
                     </div>
                   </Col>
@@ -152,7 +152,7 @@ function Home() {
 
 
             <Col xl={4} lg={4} className="pastEventsCol align-items-sm-center justify-sm-content-center d-flex flex-column align-items-xl-start">
-             <h4 className="text-md-center  text-sm-center text-lg-left">Past Events</h4>
+             <h3 className="text-md-center ml-3">Past Events</h3>
               <div className="pastEvents d-flex flex-column justify-content-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
 
                 {

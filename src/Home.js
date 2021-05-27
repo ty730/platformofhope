@@ -137,7 +137,7 @@ function Home() {
                     {
                   Events.map(event=>(
 
-                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toString()} ></UpcomingEvents></a>
+                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
 
                   ))
 
@@ -158,7 +158,7 @@ function Home() {
                 {
                   Events.map(event=>(
 
-                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toString()} ></UpcomingEvents></a>
+                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
 
                   ))
 

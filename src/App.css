@@ -163,6 +163,21 @@ ul {
   background-position: center 34px;
 }
 
+.home-swiper {
+   background-color: #f3f3f3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 3%;
+   padding-bottom: 2%;
+}
+
+.home-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .donate-btn {
   background-color: #009A7B;
   border: solid #009A7B 2px;

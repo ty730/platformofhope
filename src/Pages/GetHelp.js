@@ -4,7 +4,6 @@ import emailjs from 'emailjs-com';
 import Select from 'react-select';
 import servicesImg from './../images/get-help-services-edited.png';
 import resourceGuideImg from './../images/resource-guide.png';
-import {Link} from "react-router-dom";
 
 /**
  * This is the Get Help component that holds all information for the Get Help page.

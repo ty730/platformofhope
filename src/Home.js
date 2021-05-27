@@ -10,8 +10,13 @@ import { Events } from './Components/Events'
 import UpcomingEvents from './Components/UpcomingEvents';
 import Phases from './Components/Phases'
 import {Link} from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import img1 from './images/image-1.jpg';
+import img2 from './images/image-2.jpg';
+import SwiperCore, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
+import 'swiper/swiper-bundle.css';
 
-
+SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 /**
  * This is the Home component that holds all information for the Home page.
@@ -40,6 +45,16 @@ function Home() {
     }
 
   ];
+
+  const imageSrcs = [img1, img2, img1, img2, img1, img2]
+  const slides = [];
+  for (let i = 0; i < imageSrcs.length; i++) {
+    slides.push(
+      <SwiperSlide key={`slide-${i}`} tag="li">
+        <img className="slider-img" src={imageSrcs[i]} alt=""/>
+      </SwiperSlide>
+    )
+  }
 
 
   return (
@@ -156,10 +171,27 @@ function Home() {
         </div>
 
       </div>
+      {/* Phases */}
+      <Phases/>
+      <div className="home-swiper">
+        <Swiper
+          tag="section"
+          wrapperTag="ul"
+          spaceBetween={0}
+          slidesPerView={1}
+          effect="fade"
+          autoplay={{ delay: 3000 }}
+          navigation
+          pagination
+        >
+          {slides}
 
-
-{/* Phases */}
-<Phases/>
+        </Swiper>
+        <div className="learn-more">
+          <h1>Learn more about us</h1>
+          <p>Lorem ipsum ......</p>
+        </div>
+      </div>
     </div>
   );
 }

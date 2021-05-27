@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap'
 import {AboutImage, AboutHero, AboutStory, AboutHeader, AboutPhases} from './AboutStyle';
 import aboutLogo from './../../images/about/about-logo.png';
-import aboutImage from '../../images/about/about-hero.png';
+// import aboutImage from '../../images/about/about-hero.png';
 import about1 from './../../images/phases/about-1.png';
 import about2 from './../../images/phases/about-2.png';
 import about3 from './../../images/phases/about-3.png';
@@ -23,7 +23,7 @@ const AboutPage = () => {
 					<div className="row">
 						<div className="col-3 about-left">
 							<div className="about-logo">
-									<img src={aboutLogo} alt=""/>
+									<img src={aboutLogo} alt="Platform of hope logo"/>
 							</div>
 							<div className="about-header">
 									<h1>Our Story</h1>
@@ -58,7 +58,7 @@ const AboutPage = () => {
 
 					<Col xl={6} className="phases-container mt-md-5 mt-xl-0 mt-lg-0 mt-sm-5">
 							<div className="phase-1">
-							<img src={about1}></img>
+							<img src={about1} alt="an emtpy room"></img>
 							<div className="mt-3">
 								<h3>Phase 1</h3>
 							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>
@@ -69,7 +69,7 @@ const AboutPage = () => {
 						</Col>
 						<Col xl={6} className="phases-container mt-md-5 mt-xl-0 mt-lg-0 mt-sm-5">
 							<div className="phase-1 py-md-3 py-xl-0 py-lg-0 py-sm-3 py-xs-3">
-							<img src={about2}></img>
+							<img src={about2} alt="bed spaces"></img>
 							<div className="mt-3">
 								<h3>Phase 2</h3>
 							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>
@@ -80,7 +80,7 @@ const AboutPage = () => {
 						</Col>
 						<Col xl={12} className="phases-container mt-md-5 mt-xl-5 mt-lg-5 mt-sm-5">
 							<div className="phase-1 py-md-3 py-xl-0 py-lg-0 py-sm-3 py-xs-3 final-phase">
-							<img src={about3}></img>
+							<img src={about3} alt="housing for final phase"></img>
 							<div className="mt-3">
 								<h3>Final Phase</h3>
 							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>

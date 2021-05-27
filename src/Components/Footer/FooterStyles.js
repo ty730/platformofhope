@@ -2,23 +2,33 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
 
-width: 100%;
-background: white;
-margin: 0 auto;
-box-shadow: 0px -1px rgba(0,0,0,.5);
-position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 1rem;
+	position: relative;
+		@media screen and (max-width: 900px)
+		{
+			padding: 0 5rem;
+			font-size: 16px !important;
+		}
+		.logo-container 
+		{
+		
+			padding:1rem;
+		}
+	
 `
 
 export const Container = styled.div`
-
-	max-width: 1440px;
+		border-top: .4px solid rgba(0,0,0,.1);
+	box-shadow: inset;
 	margin: 0 auto;
 	height: auto;
-	padding: 2rem 1rem 2rem 1rem;
+	padding: 1rem 1rem 2rem 1rem;
+
 	.logo-container 
 	{
-		 display: grid;
-		padding: 1rem;
+		display: grid;
 		.footer-info
 		{
 			padding: 0;
@@ -27,11 +37,11 @@ export const Container = styled.div`
 		{
 			justify-content:center;
 			width: 100%;
-
+			
 					.footer-info 
 				{
 					display:flex;
-					width: 100%;
+					width: fit-content;
 					margin: 0;
 					padding: 0;
 					.email 
@@ -94,7 +104,7 @@ justify-content: center;
 		{
 			justify-content: center;
 			margin-top: 1rem;
-			margin-left: 3.2rem;
+			margin-left: 1.3rem;
 		}
 margin-top:1rem;
 h4
@@ -131,6 +141,7 @@ h4
 	color: #009A7B;
 	font-weight: 600;
 	width: 170px;
+	text-align: center;
 	@media screen and (max-width: 750px)
 		{
 
@@ -154,18 +165,9 @@ h4
 
 export const Tag = styled.div`
 width:270px;
-padding-left: 3.45rem;
 font-weight: 300;
 font-size: .8rem;
 font-style: italic;
 margin-top: 2rem;
-span
-{
-	text-align: center;
-}
-
-span:nth-child(1)
-{
-
-}
+text-align: center;
 `

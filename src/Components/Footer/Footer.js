@@ -17,8 +17,9 @@ import youtube from './../../images/youtube.svg'
 import { Link } from 'react-router-dom';
 const Footer = () => {
 	return (
+		<Container>
 		<FooterContainer>
-			<Container>
+	
 				<Row>
 					{/* Logo and Info */}
 					<Column lg={4} md={6} sm={12}>
@@ -95,9 +96,10 @@ const Footer = () => {
 						</SocialMedia>
 						</Column>
 				</Row>
-			</Container>
+		
 		
 		</FooterContainer>
+		</Container>
 	)
 }
 

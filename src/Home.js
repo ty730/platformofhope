@@ -61,7 +61,7 @@ function Home() {
     <div className="home">
       <div className="home-top">
         <div>
-          <h3>Non-Profit Organization</h3>
+          <h3 className="sub-heading">Non-Profit Organization</h3>
           <h1>Helping One Family At A Time.</h1>
           <p>
             Platform of Hope is an initiative designed to feed, house, clothe, and

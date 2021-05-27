@@ -133,10 +133,12 @@ ul {
   margin-right: 0.5%;
 } */
 
-/* .home h3 {
+.sub-heading  {
   color: #faa919;
-  font-size: 12pt;
-} */
+  font-size:1.3rem;
+  line-height: 33px;
+  margin-bottom: 0;
+}
 
 .home-top {
   display: flex;

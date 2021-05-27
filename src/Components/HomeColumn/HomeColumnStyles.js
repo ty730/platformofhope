@@ -14,10 +14,11 @@ max-width: 1134px;
 }
 h1
 {
-	font-size: 2rem;
-	color: #424242;
-	line-height: 88px;
-	font-weight: 500;
+	font-family: 'Scheherazade', serif;
+
+line-height: 3.75rem;
+font-size: 3.4375rem;
+font-weight: normal;
 }
 p 
 {

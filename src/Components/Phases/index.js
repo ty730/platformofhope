@@ -11,13 +11,13 @@ const Phases = () => {
 			<PhasesContainer>
 					<Container fluid>
 			<div className="home-phases-header">
-					<h2>The Difference</h2>
+					<h1>The Difference</h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore veritatis cum autem exercitationem adipisci?</p>
 			</div>
 			<div className="home-phases-box">
 				<Row className="d-flex justify-content-center align-items-center p-3 my-4">
 					<Col lg="3">
-						<h3>Phase 1</h3>
+						<h2>Phase 1</h2>
 						<div className="home-phase-1">
 						<img src={phase1} alt="" />
 							<h4 className="phase-title">Food Pantry and Clothes Closet</h4>
@@ -27,7 +27,7 @@ const Phases = () => {
 						<FaArrowRight/>
 						</Col>
 					<Col lg="3">
-					<h3>Phase 2</h3>
+					<h2>Phase 2</h2>
 						<div className="home-phase-1">
 						<img src={phase2} alt="" />
 						<h4 className="phase-title">Food Pantry and Clothes Closet</h4>
@@ -36,7 +36,7 @@ const Phases = () => {
 					<Col lg="1" className="arrow">		<FaArrowRight/>
 					</Col>
 					<Col lg="3">
-					<h3>Phase 3</h3>
+					<h2>Phase 3</h2>
 						<div className="home-phase-1">
 						<img src={phase3} alt="" />
 						<h4 className="phase-title">Food Pantry and Clothes Closet</h4>

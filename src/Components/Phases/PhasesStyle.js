@@ -15,13 +15,13 @@ h3
 {
 	margin-bottom: 5rem;
 	text-align:center;
-	h2 
+	/* h2 
 	{
 		font-size: 72px;
 		color:black;
 		line-height: 72px;
 		font-family: 'Scheherazade', serif;
-	}
+	} */
 	p 
 	{
 		line-height: 33px;

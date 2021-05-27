@@ -5,15 +5,6 @@ html
   overflow-y: scroll;
   background: #f3f3f3;
 }
-.App {
-  text-align: left;
-  font-family: "Oswald", sans-serif;
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Poppins', sans-serif; */
-  font-size: 16px;
-
-
-}
 .nav {
   display: flex;
   justify-content: space-around;
@@ -36,21 +27,34 @@ footer {
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Scheherazade', serif;
   font-weight: bold;
-  font-size: 2.5rem;
-  color: #faa919;
+  font-size: 4.3rem;
+  color: #424242;
+  line-height: 4.5rem;
 }
 
 h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
-  line-height: 120%;
-  color: #009A7B;
+  font-family: 'Scheherazade', serif;
+
+  line-height: 3.75rem;
+  font-size: 3.4375rem;
+  color: #424242;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-family: 'Scheherazade', serif;
+  font-size: 2rem;
+  line-height: 3.75rem;
+  color: #424242;
+}
+
+p 
+{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing:1px;
 }
 
 button {
@@ -119,15 +123,15 @@ ul {
   margin-bottom: 8%;
 }
 
-.home h1 {
+/* .home h1 {
   color: black;
-  font-size: 42pt;
+  font-size: 4.5;
   line-height: 60pt;
   letter-spacing: 1.8pt;
   margin-bottom: 7%;
   margin-top: 6%;
   margin-right: 0.5%;
-}
+} */
 
 .home h3 {
   color: #faa919;
@@ -598,8 +602,11 @@ hr {
 
 .home-col-title h1
 {
-  font-size: 36px;
-  line-height: 72px;
+  font-family: 'Scheherazade', serif;
+  font-weight: bold;
+  font-size: 4.3rem;
+  color: #424242;
+  line-height: 4.5rem;
   letter-spacing: normal;
 }
 

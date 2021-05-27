@@ -9,8 +9,6 @@
  - Media section
 ### Services
  - Swap girl scouts
-### Contact
- - Find and add top image
 ### Donate
  - Go fund me
 ### Get Help

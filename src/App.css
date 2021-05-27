@@ -49,7 +49,7 @@ h3 {
   color: #424242;
 }
 
-p 
+p
 {
   font-family: 'Oswald', sans-serif;
   font-size: 1rem;
@@ -58,15 +58,15 @@ p
 }
 
 button {
-  background-color: black;
-  color: white;
-  font-size: 1rem;
-  padding: 0.8rem 1rem;
-  border: none;
+  background-color: #009A7B !important;
+  color: white !important;
+  font-size: 1rem !important;
+  padding: 0.4rem 1rem !important;
+  border: none !important;
 }
 
 button:hover {
-  background-color: gray;
+  background-color: #faa919 !important;
 }
 
 .logo {
@@ -183,20 +183,8 @@ ul {
 }
 
 .donate-btn {
-  background-color: #009A7B;
-  border: solid #009A7B 2px;
-  color: #faa919;;
-  padding: 0.2rem 1.4rem;
-  text-decoration: none;
-  letter-spacing: 1.2px;
-  font-weight: bold;
   text-transform: uppercase;
-}
-
-.donate-btn:hover {
-  background-color: transparent;
-  color: #009A7B;
-  text-decoration: none;
+  margin-top: 3%;
 }
 
 .section {
@@ -347,9 +335,8 @@ ul {
   background-repeat: no-repeat;
 }
 
-.news-events-image h1 {
+.news-events-image h1, .news-events-image h3 {
   color: white;
-  font-size: 40pt;
 }
 
 .calendar-container {
@@ -391,12 +378,21 @@ ul {
   margin-right: 10% !important;
 }
 
-.donate-header > * {
-  margin-bottom: 2%;
+.donate-header > h2 {
+  margin-top: 4%;
 }
 
-.donate-header > h2 {
-  margin-top: 5%;
+.donate-header h2 {
+  color: #009A7B;
+}
+
+.donate-header h3 {
+  font-weight: 700;
+  color: #424242;
+}
+
+.donate-row > * > h3 {
+  color: #009A7B;
 }
 
 hr {
@@ -460,12 +456,13 @@ hr {
 }
 
 .funding-container > * {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 @media screen and (min-width: 1200px) {
   .get-help-top {
-    background-position: center -180px;
+    background-position: center;
   }
 }
 
@@ -477,7 +474,7 @@ hr {
 
 @media screen and (max-width: 1200px) {
   .get-help-top {
-    background-position: center -110px;
+    background-position: center;
   }
 }
 
@@ -487,7 +484,7 @@ hr {
   }
 
   .get-help-top {
-    background-position: center -20px;
+    background-position: center;
   }
 }
 
@@ -497,7 +494,7 @@ hr {
   }
 
   .get-help-top {
-    background-position: center -10px;
+    background-position: center;
   }
 }
 
@@ -725,8 +722,10 @@ hr {
 }
 /* ----------------------------------------------------------------------- */
 .contact-top {
-  height: 400px;
-  background: linear-gradient(to right, #faa919, #009A7B);
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/holding-hand.jpg');
+  background-size: cover;
+  background-position: center -300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -737,18 +736,6 @@ hr {
   color: white;
 }
 
-.contact-top h1 {
-  font-size: 62pt;
-  letter-spacing: 10px;
-  margin-bottom: 3%;
-}
-
-.contact-top h3 {
-  font-size: 26pt;
-  letter-spacing: 4px;
-  font-weight: 300;
-}
-
 .contact-container {
   display: flex;
   margin: 6%;
@@ -757,27 +744,12 @@ hr {
   justify-content: space-between;
 }
 
-.contact-container h2, .contact-container p {
-  color: black;
+.contact-container h3 {
+  margin-top: 8%;
 }
 
 .contact-container p {
-  font-size: 16pt;
-  line-height: 40px;
-  letter-spacing: 3px;
-}
-
-.contact-container h3 {
-  font-size: 32pt;
-  margin-top: 8%;
-  margin-bottom: 3%;
-  letter-spacing: 2px;
-}
-
-.contact-container h2 {
-  font-size: 46pt;
-  letter-spacing: 3px;
-  font-weight: 200;
+  color: black;
 }
 
 .get-in-touch {
@@ -816,6 +788,11 @@ hr {
   color: #faa919;
 }
 
+.contact-info h2 {
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
 .contact-submit {
   width: 200px !important;
   letter-spacing: 3px;
@@ -838,7 +815,20 @@ hr {
 }
 
 div.rbc-row.rbc-month-header {
-  background: black;
+  background: #1d1d1d;
+}
+
+.rbc-toolbar button {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #ccc !important;
+}
+
+.modal-header button {
+  background: transparent !important;
+}
+.modal-header button > span {
+  color: black !important;
 }
 
 /* GET HELP Page */
@@ -855,12 +845,11 @@ div.rbc-row.rbc-month-header {
   justify-content: center;
   align-items: center;
   color: white;
-  background-attachment: fixed;
   background-size: cover;
-  height: 420px;
+  height: 500px;
 }
 
-.get-help-top h1 {
+.get-help-top h1, .get-help-top h3 {
   color: white;
 }
 

@@ -22,39 +22,45 @@ function Donate() {
       </div>
       <Row className="donate-row">
         <Col md>
-          <div className="monetary-donate">
+          <div className="monetary-donate mt-3">
             <h3>Monetary Donation</h3>
             <p>Platform of Hope greatly appreciates support of any kind.
               The quickest, most efficient way to give is through monetary donations.
               You may choose from PayPal, GoFundMe, Givelify, Venmo, Zelle, Cash App,
               or through traditional check or money order by mail. We accept
               contributions from anyone in Atlanta, Georgia or around the world.</p>
-            <div className="donate-links">
-              <a href="https://www.venmo.com/platformofhope" target="_blank" rel="noopener noreferrer">
+            <div className="donate-links py-2">
+              <a href="https://www.venmo.com/platformofhope" target="_blank" rel="noopener noreferrer" className="my-2">
                 <img src={venmo} alt=""/>
-                <p>@platformofhope</p>
+                <p className="ml-1">@platformofhope</p>
               </a>
-              <a href="https://cash.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://cash.app/" target="_blank" rel="noopener noreferrer" className="my-2">
                 <img src={cashapp} alt=""/>
-                <p>$platformofhope</p>
+                <p className="ml-1">$platformofhope</p>
               </a>
-              <a href="https://www.givelify.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.givelify.com/" target="_blank" rel="noopener noreferrer" className="my-2">
                 <img src={givelify} alt=""/>
-                <p>Givelify</p>
+                <p className="ml-1">Givelify</p>
               </a>
-              <a href="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer" className="my-2">
                 <img src={paypal} alt=""/>
                 <p>PayPal</p>
+              </a>
+              <a href="https://gofund.me/bdcb1c33" target="_blank" rel="noopener noreferrer" className="my-2">
+                <img src={paypal} alt=""/>
+                <p>GoFundMe</p>
               </a>
             </div>
           </div>
         </Col>
         <Col md={{ offset: 1 }}>
-          <div>
+          <div className="mt-3">
             <h3>In-Kind Donations</h3>
             <p>Platform of Hope greatly appreciates easy-open non-perishables,
               coats, blankets, toiletries, backpacks, and any other item easy for
               homeless families to transport.</p>
+          </div>
+          <div className="mt-3">
             <h3>Be A Volunteer</h3>
             <p>Platform of Hope is founded on volunteer service, and it is volunteerism
               that continues to be a life-giving force that will allow us to provide
@@ -63,9 +69,9 @@ function Donate() {
           </div>
         </Col>
       </Row>
-      <Row className="donate-row">
+      <Row className="donate-row mt-3">
         <Col md>
-          <h2>Be An Affiliate</h2>
+          <h3>Be An Affiliate</h3>
           <hr/>
           <div className="btm-pd">
             <h3>Business Partnerships</h3>

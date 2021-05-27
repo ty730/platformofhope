@@ -41,6 +41,7 @@ function NewsAndEvents() {
     <div>
       <div className="news-events-image">
         <h1>News & Events</h1>
+        <h3>Stay updated with our latest events</h3>
       </div>
       <div className="calendar-container">
         <h2>Calendar</h2>

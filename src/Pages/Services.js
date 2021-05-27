@@ -25,7 +25,7 @@ function Services() {
       </div>
       <img className="services-main" src={mainImage} alt="" />
       <div className="donate-header">
-        <h4>What We Do</h4>
+        <h3>What We Do</h3>
         <hr/>
       </div>
       <div className="column-container">

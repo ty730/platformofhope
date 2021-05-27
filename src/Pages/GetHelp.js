@@ -68,13 +68,13 @@ function GetHelp() {
           <h2>Services</h2>
           <p>Check out more details on the services we offer</p>
           <a href="/services">
-            <button>GO TO SERVICES</button>
+            <button>TO SERVICES</button>
           </a>
         </div>
         <div className="get-help-card">
           <img src={resourceGuideImg} alt="Services"/>
           <h2>Resource Guide</h2>
-          <p>Find other resouces in the Atlanta Area that may be able to help</p>
+          <p>Find other resouces in the Atlanta Area</p>
           <button>DOWNLOAD</button>
         </div>
       </div>

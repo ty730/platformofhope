@@ -6,6 +6,7 @@ import holdhands from './images/home-icons/holdhands.png';
 import prayinghands from './images/home-icons/prayingicon.png';
 import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
+import {FaLongArrowAltRight} from 'react-icons/fa';
 import { Events } from './Components/Events'
 import UpcomingEvents from './Components/UpcomingEvents';
 import Phases from './Components/Phases'
@@ -180,7 +181,7 @@ function Home() {
           spaceBetween={0}
           slidesPerView={1}
           effect="fade"
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 5000 }}
           navigation
           pagination
         >
@@ -188,8 +189,12 @@ function Home() {
 
         </Swiper>
         <div className="learn-more">
+          <img src={logo} alt="" />
           <h1>Learn more about us</h1>
-          <p>Lorem ipsum ......</p>
+          <p>Check out our full image and video gallery</p>
+          <a href="/newsAndEvents">
+            <FaLongArrowAltRight />
+          </a>
         </div>
       </div>
     </div>

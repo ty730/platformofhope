@@ -183,6 +183,22 @@ ul {
   margin-bottom: 10%;
 }
 
+.learn-more svg {
+  font-size: 4.2rem;
+  margin-top: 1%;
+  color: black;
+}
+
+.learn-more svg:hover {
+  color: gray;
+}
+
+.learn-more img {
+  height: auto;
+  width: 90px;
+  margin-bottom: 3%;
+}
+
 .home-swiper .swiper-slide {
   display: flex;
   justify-content: center;

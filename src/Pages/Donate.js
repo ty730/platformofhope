@@ -4,6 +4,7 @@ import cashapp from './../images/cashapp.png';
 import paypal from './../images/paypal.png';
 import givelify from './../images/givelify.png';
 import venmo from './../images/venmo.png';
+import gofundme from './../images/gofundme.png';
 import makeChange from './../images/makechange.jpg';
 import { Row, Col } from 'react-bootstrap';
 
@@ -44,11 +45,11 @@ function Donate() {
               </a>
               <a href="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer" className="my-2">
                 <img src={paypal} alt=""/>
-                <p>PayPal</p>
+                <p className="ml-1">PayPal</p>
               </a>
               <a href="https://gofund.me/bdcb1c33" target="_blank" rel="noopener noreferrer" className="my-2">
-                <img src={paypal} alt=""/>
-                <p>GoFundMe</p>
+                <img src={gofundme} alt=""/>
+                <p className="ml-1">GoFundMe</p>
               </a>
             </div>
           </div>

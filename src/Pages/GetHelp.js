@@ -67,7 +67,7 @@ function GetHelp() {
           <img src={servicesImg} alt="Services"/>
           <h2>Services</h2>
           <p>Check out more details on the services we offer</p>
-          <a href="/services">
+          <a href="/services" className="get-help-services-btn">
             <button>TO SERVICES</button>
           </a>
         </div>
@@ -116,6 +116,7 @@ function GetHelp() {
             placeholder={'Are you a veteran?'}
             styles={selectStyles}
           />
+          <textarea placeholder="Description of your and/or your family's needs" name="helptype"/>
           <input className="outreach-submit" type="submit" value="SUBMIT" />
         </form>
       </div>

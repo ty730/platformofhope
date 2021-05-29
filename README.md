@@ -8,10 +8,10 @@
 ### News & events
  - Media section
 ### Services
- - Swap girl scouts
+ - ~~Swap girl scouts~~
 ### Donate
- - Go fund me
+ - ~~Go fund me~~
 ### Get Help
- - Add what type of help to form
+ - ~~Add what type of help to form~~
 
 Current draft of website at https://ty730.github.io/platformofhope/

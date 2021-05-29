@@ -62,7 +62,7 @@ transition: 0.3s ease-in-out;
 text-decoration:none;
 width:max-content;
 margin: 0 auto;
-width: 150px;
+/* width: 150px; */
 height: 80px;
 &:hover 
 {

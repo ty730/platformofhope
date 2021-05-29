@@ -133,9 +133,11 @@ ul {
   margin-right: 0.5%;
 } */
 
-.home h3 {
+.sub-heading  {
   color: #faa919;
-  font-size: 12pt;
+  font-size:1.3rem;
+  line-height: 33px;
+  margin-bottom: 0;
 }
 
 .home-top {
@@ -658,7 +660,7 @@ hr {
 .upcomingEvents img
 {
   height: 318px;
-  width: auto;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -706,7 +708,11 @@ hr {
   {
     border-right: none;
   }
-
+  .pastEventsCol
+  {
+    margin-top: 1rem;
+    padding: 1.2rem;
+  }
 }
 
 /* Past EVents */
@@ -715,12 +721,12 @@ hr {
 {
   height: 100%;
 }
-.pastEventsCol h4
+/* .pastEventsCol h4
 {
   padding-left: 1rem;
   font-weight: 500;
   font-size: 1.3rem;
-}
+} */
 /* ----------------------------------------------------------------------- */
 .contact-top {
   height: 500px;

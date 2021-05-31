@@ -362,10 +362,32 @@ ul {
   color: white;
 }
 
-.calendar-container {
-  margin: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+.calendar-container, .media-container {
+  padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.media-container {
+  background-color: #424242;
+}
+
+.media-container h2, .media-container p {
+  color: white;
+}
+
+.media-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-container hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .donate {

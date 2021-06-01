@@ -124,9 +124,6 @@ function NewsAndEvents() {
           watchSlidesVisibility
           watchSlidesProgress
           slidesPerView={4}
-          freeMode={true}
-          slideToClickedSlide
-          centeredSlides
         >
           {slides}
         </Swiper>

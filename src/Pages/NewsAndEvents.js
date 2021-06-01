@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import './../App.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { Calendar, momentLocalizer } from 'react-big-calendar'
@@ -8,12 +8,12 @@ import Popup from './../Components/Popup';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import img1 from './../images/image-1.jpg';
 import img2 from './../images/image-2.jpg';
-import SwiperCore, { Navigation, Pagination, EffectFade, Autoplay, Thumbs } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 const localizer = momentLocalizer(moment);
 
-SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay, Thumbs]);
+SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
 
 /**
  * This is the Home component that holds all information for the Home page.
@@ -45,21 +45,10 @@ function NewsAndEvents() {
     },
   ];
 
-  const gallerySwiperRef = useRef(null);
-  const thumbnailSwiperRef = useRef(null);
-
-  useEffect(() => {
-    const gallerySwiper =  gallerySwiperRef?.current?.swiper;
-    const thumbnailSwiper = thumbnailSwiperRef?.current?.swiper;
-    if (gallerySwiper?.controller && thumbnailSwiper?.controller
-    ) {
-      gallerySwiper.controller.control = thumbnailSwiper;
-      thumbnailSwiper.controller.control = gallerySwiper;
-    }
-  }, []);
-
-  // store thumbs swiper instance
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  // Swiper instance
+  const [swiper, updateSwiper] = useState(null);
+  // Swiper thumbsinstance
+  const [thumbsSwiper, updateThumbsSwiper] = useState(null);
 
   const imageSrcs = [img1, img2, img1, img2, img1, img2]
   const slides = [];
@@ -70,6 +59,14 @@ function NewsAndEvents() {
       </SwiperSlide>
     )
   }
+
+  // Bind swiper and thumbs swiper
+  useEffect(() => {
+    if (swiper && thumbsSwiper) {
+      swiper.controller.control = thumbsSwiper;
+      thumbsSwiper.controller.control = swiper;
+    }
+  }, [swiper, thumbsSwiper]);
 
   return (
     <div>
@@ -115,15 +112,16 @@ function NewsAndEvents() {
           slidesPerView={1}
           navigation
           pagination
-          thumbs={{ swiper: thumbsSwiper }}
+          onSwiper={updateSwiper} // Get swiper instance callback
         >
           {slides}
         </Swiper>
         <Swiper
-          onSwiper={setThumbsSwiper}
-          watchSlidesVisibility
-          watchSlidesProgress
+          id="thumbs"
+          onSwiper={updateThumbsSwiper} // Get swiper instance callback
           slidesPerView={4}
+          slideToClickedSlide
+          centeredSlides
         >
           {slides}
         </Swiper>

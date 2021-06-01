@@ -380,6 +380,15 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.4;
+}
+
+.media-container #thumbs {
+  height: 200px;
+}
+
+.media-container .swiper-slide-active {
+  opacity: 1.0;
 }
 
 .media-container hr {

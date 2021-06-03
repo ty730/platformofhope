@@ -11,6 +11,7 @@ import img2 from './../images/image-2.jpg';
 import videoThumb from './../images/inmates-graduate-thumb.JPG';
 import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
 import 'swiper/swiper-bundle.css';
+import testVideo from './../images/test.mp4';
 
 const localizer = momentLocalizer(moment);
 
@@ -143,6 +144,7 @@ function NewsAndEvents() {
         >
           {thumbs}
         </Swiper>
+        <video controls><source src={testVideo}></source></video>
       </div>
     </div>
   );

@@ -46,8 +46,7 @@ function Services() {
         <Column
         src={computerlab}
         title= "Jail Facilitation"
-        p="We facilitate basic computer apps and job readiness in area
-        jails then partners with employers for second-chance employment."
+        p="We facilitate basic computer applications and job readiness in area jails then partner with employers for second-chance employment."
         imgclass="services-img" />
         <Column
         src={jobWorkshops}

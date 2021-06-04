@@ -23,24 +23,25 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
  * This is the Home component that holds all information for the Home page.
  */
 function Home() {
-
+ const limitEvents = Events.slice(0,3);
+ const pastEvents = Events.slice(6,9);
   const homeColumn = [
     {
       imageLink: handsheart,
-      title: "Lorem Ipsum",
+      title: "Volunteer",
       paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
       alt: "hands with heart"
 
     },
     {
       imageLink: holdhands,
-      title: "Lorem Ipsum",
+      title: "Get Help",
       paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
       alt: "holding hands",
     },
     {
       imageLink: prayinghands,
-      title: "Lorem Ipsum",
+      title: "Donate",
       paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
       alt: "praying hands"
     }
@@ -65,12 +66,7 @@ function Home() {
           <h3 className="sub-heading">Non-Profit Organization</h3>
           <h1>Helping One Family At A Time.</h1>
           <p>
-            Platform of Hope is an initiative designed to feed, house, clothe, and
-            employ homeless families while empowering and transforming lives of the
-            economically disadvantaged. We are successfully providing support and
-            restoring lives of homeless families in Atlanta, Georgia and surrounding
-            counties. This includes facilitating with local jail prisons or
-            correctional facilities and partnering them to employers for reemployment.
+          Platform of Hope is an initiative designed to feed, house, clothe, and employ homeless families while empowering and transforming lives of the economically underserved. We successfully provide support and restore lives of homeless families in Atlanta, Georgia and surrounding counties. Platform of Hope facilitates in local correctional facilities then partners released offenders with employers for reemployment.
           </p>
           <Link to="/about">
             <button>Learn More</button>
@@ -136,7 +132,7 @@ function Home() {
 
 
                     {
-                  Events.map(event=>(
+                  limitEvents.map(event=>(
 
                    <a href="/"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
 
@@ -157,7 +153,7 @@ function Home() {
               <div className="pastEvents d-flex flex-column justify-content-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
 
                 {
-                  Events.map(event=>(
+                  pastEvents.map(event=>(
 
                    <a href="/"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
 
@@ -172,8 +168,11 @@ function Home() {
         </div>
 
       </div>
+
+
       {/* Phases */}
       <Phases/>
+      
       <div className="home-swiper">
         <Swiper
           tag="section"
@@ -186,7 +185,7 @@ function Home() {
           pagination
         >
           {slides}
-
+                 
         </Swiper>
         <div className="learn-more">
           <img src={logo} alt="" />
@@ -197,7 +196,10 @@ function Home() {
           </a>
         </div>
       </div>
+      
     </div>
+
+    
   );
 }
 

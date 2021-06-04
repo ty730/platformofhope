@@ -12,7 +12,7 @@ const Phases = () => {
 					<Container fluid>
 			<div className="home-phases-header">
 					<h1>The Difference</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore veritatis cum autem exercitationem adipisci?</p>
+					<p>Through service, Platform of Hope makes the difference by ensuring all families are treated with dignity and respect.</p>
 			</div>
 			<div className="home-phases-box">
 				<Row className="d-flex justify-content-center align-items-center p-3 my-4">

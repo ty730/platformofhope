@@ -42,7 +42,7 @@ const Footer = () => {
 						<CompanyInfo>
 							<div className="mailing-address">
 								<h4>Mailing Address: </h4>
-								<p>P.O. Box 48918</p>
+								<p>P.O. Box 48198</p>
 								<p>Atlanta, GA 30362</p>
 							</div>
 						</CompanyInfo>

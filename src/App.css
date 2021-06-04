@@ -163,11 +163,18 @@ ul {
 }
 
 .home-container {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("./images/home-main.png");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("./images/home-main.JPG");
   background-size: cover;
   min-height: 700px;
   background-position: center 34px;
 }
+
+/* .home-container .shadow-test
+{
+
+    filter: drop-shadow( 15px 10px 2px rgba(0, 0, 0, 0.2));
+
+} */
 
 .home-swiper {
    background-color: #f3f3f3;

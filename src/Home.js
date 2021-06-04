@@ -76,7 +76,7 @@ function Home() {
       </div>
 
       <div className="home-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" >
           <path fill="#ffffff" fill-opacity="1" d="M0,288L21.8,256C43.6,224,87,160,131,117.3C174.5,75,
                                                 218,53,262,90.7C305.5,128,349,224,393,240C436.4,256,
                                                 480,192,524,160C567.3,128,611,128,655,149.3C698.2,171,

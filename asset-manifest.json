@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/platformofhope/static/css/main.e9ecbb71.chunk.css",
-    "main.js": "/platformofhope/static/js/main.a0e1487b.chunk.js",
-    "main.js.map": "/platformofhope/static/js/main.a0e1487b.chunk.js.map",
+    "main.js": "/platformofhope/static/js/main.0cbd9f63.chunk.js",
+    "main.js.map": "/platformofhope/static/js/main.0cbd9f63.chunk.js.map",
     "runtime-main.js": "/platformofhope/static/js/runtime-main.6d641319.js",
     "runtime-main.js.map": "/platformofhope/static/js/runtime-main.6d641319.js.map",
     "static/css/2.2a920072.chunk.css": "/platformofhope/static/css/2.2a920072.chunk.css",
-    "static/js/2.22ee2c8d.chunk.js": "/platformofhope/static/js/2.22ee2c8d.chunk.js",
-    "static/js/2.22ee2c8d.chunk.js.map": "/platformofhope/static/js/2.22ee2c8d.chunk.js.map",
+    "static/js/2.a87f003a.chunk.js": "/platformofhope/static/js/2.a87f003a.chunk.js",
+    "static/js/2.a87f003a.chunk.js.map": "/platformofhope/static/js/2.a87f003a.chunk.js.map",
     "static/js/3.960b8195.chunk.js": "/platformofhope/static/js/3.960b8195.chunk.js",
     "static/js/3.960b8195.chunk.js.map": "/platformofhope/static/js/3.960b8195.chunk.js.map",
     "index.html": "/platformofhope/index.html",
     "static/css/2.2a920072.chunk.css.map": "/platformofhope/static/css/2.2a920072.chunk.css.map",
     "static/css/main.e9ecbb71.chunk.css.map": "/platformofhope/static/css/main.e9ecbb71.chunk.css.map",
-    "static/js/2.22ee2c8d.chunk.js.LICENSE.txt": "/platformofhope/static/js/2.22ee2c8d.chunk.js.LICENSE.txt",
+    "static/js/2.a87f003a.chunk.js.LICENSE.txt": "/platformofhope/static/js/2.a87f003a.chunk.js.LICENSE.txt",
     "static/media/2018-grady-healthy-living-resource-guide.e9247540.pdf": "/platformofhope/static/media/2018-grady-healthy-living-resource-guide.e9247540.pdf",
     "static/media/about-1.d47e52ec.png": "/platformofhope/static/media/about-1.d47e52ec.png",
     "static/media/about-2.d3dc513c.png": "/platformofhope/static/media/about-2.d3dc513c.png",
@@ -48,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.6d641319.js",
     "static/css/2.2a920072.chunk.css",
-    "static/js/2.22ee2c8d.chunk.js",
+    "static/js/2.a87f003a.chunk.js",
     "static/css/main.e9ecbb71.chunk.css",
-    "static/js/main.a0e1487b.chunk.js"
+    "static/js/main.0cbd9f63.chunk.js"
   ]
 }

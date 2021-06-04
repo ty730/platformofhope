@@ -30,7 +30,7 @@ const Phases = () => {
 					<h2>Phase 2</h2>
 						<div className="home-phase-1">
 						<img src={phase2} alt="" />
-						<h4 className="phase-title">Food Pantry and Clothes Closet</h4>
+						<h4 className="phase-title">Shelter for Women and Children</h4>
 						</div>
 					</Col>
 					<Col lg="1" className="arrow">		<FaArrowRight/>
@@ -39,7 +39,7 @@ const Phases = () => {
 					<h2>Phase 3</h2>
 						<div className="home-phase-1">
 						<img src={phase3} alt="" />
-						<h4 className="phase-title">Food Pantry and Clothes Closet</h4>
+						<h4 className="phase-title">Education, employment, and housing combined</h4>
 						</div>
 					</Col>
 				</Row>

@@ -72,7 +72,7 @@ const AboutPage = () => {
 							<img src={about2} alt="bed spaces"></img>
 							<div className="mt-3">
 								<h3>Phase 2</h3>
-							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>
+							   <p>In addition to the food pantry and clothes closet enhancement, Phase II introduces a much more aggressive approach to stabilization and will incorporate a small dormitory-style 25-bed shelter for women and children.</p>
 							   </div>
 							</div>
 
@@ -83,7 +83,7 @@ const AboutPage = () => {
 							<img src={about3} alt="housing for final phase"></img>
 							<div className="mt-3">
 								<h3>Final Phase</h3>
-							   <p>Due to the lack of current funding, services from Platform of Hope are being introduced in phases. During the first phase services consist of a food pantry and coat/cap/blanket closet. Based on funding, clients also receive assistance with prescriptions and transportation to/from work or organization.</p>
+							   <p>The final phase of Platform of Hope will introduce numerous services surrounding the shelter such as supportive employment, transportation services, educational assistance, GED/typing classes, Federal/State benefits application assistance, daycare resources, HIV testing, address and mail service, and much more.</p>
 							   </div>
 							</div>
 

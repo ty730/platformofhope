@@ -29,20 +29,20 @@ function Home() {
     {
       imageLink: handsheart,
       title: "Volunteer",
-      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      paragraph: "Platform of Hope strives to offer a host of services to enhance and transform lives of homeless families and individuals in Atlanta, Georgia and surrounding counties.",
       alt: "hands with heart"
 
     },
     {
       imageLink: holdhands,
       title: "Get Help",
-      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      paragraph: "Platform of Hope is currently accepting applications for Dekalb County students. Applicants in Atlanta, Georgia are also welcome to apply. Bear in mind that disbursements are based on funding and family need.",
       alt: "holding hands",
     },
     {
       imageLink: prayinghands,
       title: "Donate",
-      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      paragraph: "Platform of Hope greatly appreciates support of any kind. The quickest, most efficient way to give is through monetary donations.",
       alt: "praying hands"
     }
 

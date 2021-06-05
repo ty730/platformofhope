@@ -6,20 +6,20 @@ import holdhands from './images/home-icons/holdhands.png';
 import prayinghands from './images/home-icons/prayingicon.png';
 import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
-import {FaLongArrowAltRight} from 'react-icons/fa';
 import { Events } from './Components/Events'
 import UpcomingEvents from './Components/UpcomingEvents';
 import Phases from './Components/Phases'
 import {Link} from "react-router-dom";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 import img1 from './images/image-1.jpg';
 import img2 from './images/image-2.jpg';
 import SwiperCore, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
-
+import homeVideo from './images/test.mp4';
+import {FaArrowRight} from 'react-icons/fa'
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
-/**
+/**C:\Users\Cj\Desktop\poh\src\images\guidestar-bronze.png
  * This is the Home component that holds all information for the Home page.
  */
 function Home() {
@@ -173,28 +173,32 @@ function Home() {
       {/* Phases */}
       <Phases/>
       
-      <div className="home-swiper">
-        <Swiper
-          tag="section"
-          wrapperTag="ul"
-          spaceBetween={0}
-          slidesPerView={1}
-          effect="fade"
-          autoplay={{ delay: 5000 }}
-          navigation
-          pagination
-        >
-          {slides}
-                 
-        </Swiper>
-        <div className="learn-more">
-          <img src={logo} alt="" />
-          <h1>Learn more about us</h1>
-          <p>Check out our full image and video gallery</p>
-          <a href="/newsAndEvents">
-            <FaLongArrowAltRight />
-          </a>
-        </div>
+
+      <div className="home-video container-fluid">
+                 <video
+                 autoPlay
+                 loop
+                 muted
+                 style = {{ 
+                   width: "100%",
+                   padding: "0",
+                   margin: "0",
+                  }}
+                 >
+                   <source src={homeVideo} type="video/mp4"/>
+                 </video>
+                 <div className="home-overlay">
+                   <div className="home-text">
+                   <h1>Learn more about us</h1>
+                   <p>Check out our full image and video gallery 
+
+                   <a href="/newsandevents"><span className="pl-1"><FaArrowRight></FaArrowRight></span></a>
+                   </p>
+                   
+
+                   </div>
+                
+                 </div>
       </div>
       
     </div>

@@ -6,7 +6,7 @@ import {
 	Container,
 	FooterContainer,
 	CompanyInfo,
-	Contact, 
+	Contact,
 	QuickLinks, SocialMedia, Tag
 } from './FooterStyles'
 
@@ -15,48 +15,50 @@ import twitter from './../../images/twitter.svg'
 import instagram from './../../images/instagram.svg'
 import youtube from './../../images/youtube.svg'
 import { Link } from 'react-router-dom';
+import guideStar from './../../images/guidestar-bronze.png';
+
 const Footer = () => {
 	return (
 		<Container>
-		<FooterContainer>
-	
+			<FooterContainer>
+
 				<Row>
 					{/* Logo and Info */}
 					<Column lg={4} md={6} sm={12}>
 						<div className="logo-container">
-						<LogoContainer>
-							<ImageContainer>
-								<Link to="/">
-									<img src={logo} alt="platform of hope logo" />
-								</Link>
-							</ImageContainer>
-							<LogoName>
-								<Link to="/">
-									<h4>PLATFORM OF HOPE</h4>
-									<p>One Family at A time</p>
-								</Link>
-							</LogoName>
+							<LogoContainer>
+								<ImageContainer>
+									<Link to="/">
+										<img src={logo} alt="platform of hope logo" />
+									</Link>
+								</ImageContainer>
+								<LogoName>
+									<Link to="/">
+										<h4>PLATFORM OF HOPE</h4>
+										<p>One Family at A time</p>
+									</Link>
+								</LogoName>
 
-						</LogoContainer>
-						<div className="footer-info">
-						<CompanyInfo>
-							<div className="mailing-address">
-								<h4>Mailing Address: </h4>
-								<p>P.O. Box 48198</p>
-								<p>Atlanta, GA 30362</p>
+							</LogoContainer>
+							<div className="footer-info">
+								<CompanyInfo>
+									<div className="mailing-address">
+										<h4>Mailing Address: </h4>
+										<p>P.O. Box 48198</p>
+										<p>Atlanta, GA 30362</p>
+									</div>
+								</CompanyInfo>
+								<Contact>
+									<div className="phone">
+										<h4>Phone: </h4>
+										<span>770-767-0200</span>
+									</div>
+									<div className="email">
+										<h4>Email: </h4>
+										<span>info@platformofhope.org</span>
+									</div>
+								</Contact>
 							</div>
-						</CompanyInfo>
-						<Contact>
-							<div className="phone">
-								<h4>Phone: </h4>
-								<span>770-767-0200</span>
-							</div>
-							<div className="email">
-								<h4>Email: </h4>
-								<span>info@platformofhope.org</span>
-							</div>
-						</Contact>
-						</div>
 						</div>
 					</Column>
 
@@ -83,22 +85,23 @@ const Footer = () => {
 						<SocialMedia>
 							<h4>Follow Us On: </h4>
 							<ul className="social-links">
-								<Link><li> <img src={fb} alt="facebook icon"/> </li></Link>
-								<Link><li> <img src={twitter} alt="facebook icon"/> </li></Link>
-								<Link><li> <img src={instagram} alt="facebook icon"/> </li></Link>
-								<Link><li> <img src={youtube} alt="facebook icon"/> </li></Link>
+								<Link><li> <img src={fb} alt="facebook icon" /> </li></Link>
+								<Link><li> <img src={twitter} alt="facebook icon" /> </li></Link>
+								<Link><li> <img src={instagram} alt="facebook icon" /> </li></Link>
+								<Link><li> <img src={youtube} alt="facebook icon" /> </li></Link>
 							</ul>
+							<img src={guideStar} alt="501(c)(3) image"  className="bronze-star"/>
 							<Tag>
-							<span>Platform of Hope is 501(c)(3) approved as of April 2017.</span><br/><br/>
-				<span>© 2021 Platform of Hope</span>
-				
-			</Tag>
+						
+								<span>Platform of Hope is 501(c)(3) approved as of April 2017.</span><br /><br />
+
+							</Tag>
 						</SocialMedia>
-						</Column>
+					</Column>
 				</Row>
-		
-		
-		</FooterContainer>
+
+
+			</FooterContainer>
 		</Container>
 	)
 }

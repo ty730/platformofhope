@@ -161,6 +161,13 @@ h4
 	}
 }
 
+.bronze-star 
+{
+	height: 100px;
+	width: 100px;
+	margin-top: 1rem;
+}
+
 `
 
 export const Tag = styled.div`

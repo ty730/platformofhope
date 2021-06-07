@@ -4,10 +4,10 @@ import Column from '../Components/Column';
 import computerlab from './../images/computerlab.jpg';
 import foodpantry from './../images/foodpantry.jpg';
 import rentassistance from './../images/rentassistance.png';
-import girlscouts from './../images/girlscouts.jpg';
 import hotelroom from './../images/hotelroom.jpg';
-import hands from './../images/hands.png';
 import mainImage from './../images/services-main.png';
+import jobWorkshops from './../images/job-workshops.png';
+import missionWork from './../images/mission-work.png';
 
 /**
  * This is the Home component that holds all information for the Home page.
@@ -25,7 +25,7 @@ function Services() {
       </div>
       <img className="services-main" src={mainImage} alt="" />
       <div className="donate-header">
-        <h4>What We Do</h4>
+        <h3>What We Do</h3>
         <hr/>
       </div>
       <div className="column-container">
@@ -46,15 +46,14 @@ function Services() {
         <Column
         src={computerlab}
         title= "Jail Facilitation"
-        p="We facilitate basic computer apps and job readiness in area
-        jails then partners with employers for second-chance employment."
+        p="We facilitate basic computer applications and job readiness in area jails then partner with employers for second-chance employment."
         imgclass="services-img" />
         <Column
-        src={girlscouts}
-        title= "Girl Scouts"
-        p="The first Platform of Hope Girl Scout troop will be formed very soon."
+        src={jobWorkshops}
+        title= "Job Workshops"
+        p="We provide resume prep, application submission, job portal registration and free notary services to homeless clients."
         imgclass="services-img" />
-        <Column src={hands}
+        <Column src={missionWork}
         title= "Mission Work"
         p="We serve yearly on mission trips to impact throughout the world."
         imgclass="services-img" />

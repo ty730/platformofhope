@@ -36,10 +36,10 @@ function App() {
         <Nav handleClick={handleClick} />
         <MobileNavbar isOpen={isOpen} handleClick={handleClick} />
         <Switch>
-          <Route exact path="/">
-              <Redirect to="/platformofhope" />
+          <Route exact path="/platformofhope">
+              <Redirect to="/" />
           </Route>
-          <Route path="/platformofhope" exact component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/services" exact component={Services} />
           <Route path="/newsandevents" exact component={NewsAndEvents} />

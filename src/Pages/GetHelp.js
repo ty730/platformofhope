@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import Select from 'react-select';
 import servicesImg from './../images/get-help-services-edited.png';
 import resourceGuideImg from './../images/resource-guide.png';
-import {Link} from "react-router-dom";
+import resourceGuidePdf from './../files/2018-grady-healthy-living-resource-guide.pdf';
 
 /**
  * This is the Get Help component that holds all information for the Get Help page.
@@ -68,15 +68,17 @@ function GetHelp() {
           <img src={servicesImg} alt="Services"/>
           <h2>Services</h2>
           <p>Check out more details on the services we offer</p>
-          <a href="/services">
-            <button>GO TO SERVICES</button>
+          <a href="/services" className="get-help-services-btn">
+            <button>TO SERVICES</button>
           </a>
         </div>
         <div className="get-help-card">
           <img src={resourceGuideImg} alt="Services"/>
           <h2>Resource Guide</h2>
-          <p>Find other resouces in the Atlanta Area that may be able to help</p>
-          <button>DOWNLOAD</button>
+          <p>Find other resouces in the Atlanta Area</p>
+          <a href={resourceGuidePdf} target="_blank" rel="noopener noreferrer" download className="get-help-services-btn">
+            <button>DOWNLOAD</button>
+          </a>
         </div>
       </div>
       <div className="outreach-container">
@@ -117,6 +119,7 @@ function GetHelp() {
             placeholder={'Are you a veteran?'}
             styles={selectStyles}
           />
+          <textarea placeholder="Description of your and/or your family's needs" name="helptype"/>
           <input className="outreach-submit" type="submit" value="SUBMIT" />
         </form>
       </div>

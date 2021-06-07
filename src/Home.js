@@ -10,51 +10,63 @@ import { Events } from './Components/Events'
 import UpcomingEvents from './Components/UpcomingEvents';
 import Phases from './Components/Phases'
 import {Link} from "react-router-dom";
+import { SwiperSlide } from 'swiper/react';
+import img1 from './images/image-1.jpg';
+import img2 from './images/image-2.jpg';
+import SwiperCore, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
+import 'swiper/swiper-bundle.css';
+import homeVideo from './images/test.mp4';
+import {FaArrowRight} from 'react-icons/fa'
+SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
-
-
-/**
+/**C:\Users\Cj\Desktop\poh\src\images\guidestar-bronze.png
  * This is the Home component that holds all information for the Home page.
  */
 function Home() {
-
+ const limitEvents = Events.slice(0,3);
+ const pastEvents = Events.slice(6,9);
   const homeColumn = [
     {
       imageLink: handsheart,
-      title: "Lorem Ipsum",
-      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      title: "Volunteer",
+      paragraph: "Platform of Hope strives to offer a host of services to enhance and transform lives of homeless families and individuals in Atlanta, Georgia and surrounding counties.",
       alt: "hands with heart"
 
     },
     {
       imageLink: holdhands,
-      title: "Lorem Ipsum",
-      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      title: "Get Help",
+      paragraph: "Platform of Hope is currently accepting applications for Dekalb County students. Applicants in Atlanta, Georgia are also welcome to apply. Bear in mind that disbursements are based on funding and family need.",
       alt: "holding hands",
     },
     {
       imageLink: prayinghands,
-      title: "Lorem Ipsum",
-      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque magnam similique nam aspernatur magni, omnis laboriosam. Sint vero quam fuga pariatur sit, accusamus nihil.",
+      title: "Donate",
+      paragraph: "Platform of Hope greatly appreciates support of any kind. The quickest, most efficient way to give is through monetary donations.",
       alt: "praying hands"
     }
 
   ];
+
+  const imageSrcs = [img1, img2, img1, img2, img1, img2]
+  const slides = [];
+  for (let i = 0; i < imageSrcs.length; i++) {
+    slides.push(
+      <SwiperSlide key={`slide-${i}`} tag="li">
+        <img className="slider-img" src={imageSrcs[i]} alt=""/>
+      </SwiperSlide>
+    )
+  }
 
 
   return (
     <div className="home">
       <div className="home-top">
         <div>
-          <h3>Non-Profit Organization</h3>
+          <h3 className="sub-heading">Non-Profit Organization</h3>
           <h1>Helping One Family At A Time.</h1>
           <p>
-            Platform of Hope is an initiative designed to feed, house, clothe, and
-            employ homeless families while empowering and transforming lives of the
-            economically disadvantaged. We are successfully providing support and
-            restoring lives of homeless families in Atlanta, Georgia and surrounding
-            counties. This includes facilitating with local jail prisons or
-            correctional facilities and partnering them to employers for reemployment.
+          Platform of Hope is an initiative designed to feed, house, clothe, and employ homeless families while empowering and transforming lives of the economically underserved. We successfully provide support and restore lives of homeless families in Atlanta, Georgia and surrounding counties. Platform of Hope facilitates in local correctional facilities then partners released offenders with employers for reemployment.
           </p>
           <Link to="/about">
             <button>Learn More</button>
@@ -64,7 +76,7 @@ function Home() {
       </div>
 
       <div className="home-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" >
           <path fill="#ffffff" fill-opacity="1" d="M0,288L21.8,256C43.6,224,87,160,131,117.3C174.5,75,
                                                 218,53,262,90.7C305.5,128,349,224,393,240C436.4,256,
                                                 480,192,524,160C567.3,128,611,128,655,149.3C698.2,171,
@@ -110,7 +122,7 @@ function Home() {
                   <Col md={12} lg={6} sm={12} offset={3} className="d-flex align-items-center justify-content-center pb-md-4 flex-column">
 
                     <div className="upcomingEventsImage">
-                    <h4 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h4>
+                    <h3 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h3>
                       <img src='https://images.pexels.com/photos/6646923/pexels-photo-6646923.jpeg?cs=srgb&dl=pexels-rodnae-productions-6646923.jpg&fm=jpg' alt="" />
                     </div>
                   </Col>
@@ -120,9 +132,9 @@ function Home() {
 
 
                     {
-                  Events.map(event=>(
+                  limitEvents.map(event=>(
 
-                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toString()} ></UpcomingEvents></a>
+                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
 
                   ))
 
@@ -137,13 +149,13 @@ function Home() {
 
 
             <Col xl={4} lg={4} className="pastEventsCol align-items-sm-center justify-sm-content-center d-flex flex-column align-items-xl-start">
-             <h4 className="text-md-center  text-sm-center text-lg-left">Past Events</h4>
+             <h3 className="text-md-center ml-3">Past Events</h3>
               <div className="pastEvents d-flex flex-column justify-content-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
 
                 {
-                  Events.map(event=>(
+                  pastEvents.map(event=>(
 
-                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toString()} ></UpcomingEvents></a>
+                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
 
                   ))
 
@@ -158,9 +170,40 @@ function Home() {
       </div>
 
 
-{/* Phases */}
-<Phases/>
+      {/* Phases */}
+      <Phases/>
+      
+
+      <div className="home-video container-fluid">
+                 <video
+                 autoPlay
+                 loop
+                 muted
+                 style = {{ 
+                   width: "100%",
+                   padding: "0",
+                   margin: "0",
+                  }}
+                 >
+                   <source src={homeVideo} type="video/mp4"/>
+                 </video>
+                 <div className="home-overlay">
+                   <div className="home-text">
+                   <h1>Learn more about us</h1>
+                   <p>Check out our full image and video gallery 
+
+                   <a href="/newsandevents"><span className="pl-1"><FaArrowRight></FaArrowRight></span></a>
+                   </p>
+                   
+
+                   </div>
+                
+                 </div>
+      </div>
+      
     </div>
+
+    
   );
 }
 

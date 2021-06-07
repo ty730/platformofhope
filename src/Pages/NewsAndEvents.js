@@ -25,12 +25,14 @@ function NewsAndEvents() {
   const [show, setShow] = useState(false);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [location, setLocation] = useState("");
 
   const handleClose = () => setShow(false);
   const handleShow = (event) => {
     setShow(true);
     setTitle(event.title);
     setDescription(event.start.toDateString());
+    setLocation(event.location);
   };
 
   // Swiper instance
@@ -93,7 +95,7 @@ function NewsAndEvents() {
             }
           }
         />
-        <Popup show={show} handleClose={handleClose} title={title} description={description} />
+        <Popup show={show} handleClose={handleClose} title={title} description={description} location={location} />
       </div>
       <div className="media-container">
         <h2>Media</h2>

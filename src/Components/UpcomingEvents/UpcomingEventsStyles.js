@@ -16,13 +16,15 @@ height: 100px;
 export const NewsTitle = styled.div`
 h3 
 {
-	font-size: 1.2rem;
+	font-size:1.7rem;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 	max-width:350px; // some width
-	font-weight: 400;
 	color: #424242;
+	line-height: 33px;
+	font-weight: 700;
+	margin-bottom: 0;
 
 }
 

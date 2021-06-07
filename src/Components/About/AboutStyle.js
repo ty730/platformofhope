@@ -83,7 +83,7 @@ width: 100%;
 		padding-left: 1rem;
 		color: #009A7B;
 		position: absolute;
-		bottom: 1.3rem;
+		bottom: -2rem;
 		left: 0;
 	}
 }
@@ -95,19 +95,20 @@ max-width: 100%;
 {
 	padding: 3rem;
 	text-align: center;
-	h2 
+	/* h2 
 	{
 		font-size: 48px;
 		color: black;
 		font-family: 'Scheherazade', serif;
 		font-weight: 700;
 		line-height: 73px;
-	}
+	} */
 	p
 	{
-		font-family: 'Scheherazade', serif;
-		font-size: 1.2rem;
+	
+		font-size: 1rem;
 		color: black;
+		line-height: 28px;
 	}
 	.about-header 
 	{
@@ -160,5 +161,15 @@ margin:1rem;
 		}
 		
 	}
+}
+.about-phases img 
+{
+	width: 100%;
+	height: 322px;
+}
+.about-phases .final-phase img
+{
+
+	height: 470px;
 }
 `

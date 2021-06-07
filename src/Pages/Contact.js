@@ -22,12 +22,12 @@ function Contact() {
   return (
     <div className="Contact">
       <div className="contact-top">
-        <h1>CONTACT US</h1>
+        <h1>Contact Us</h1>
         <h3>If you would like to make a difference let us know!</h3>
       </div>
       <div className="contact-container">
         <div className="get-in-touch">
-          <h2>Get In Touch</h2>
+          <h1>Get In Touch</h1>
           <p>Please fill out this brief form and we will be in touch with you shortly.</p>
           <form className="contact-form" onSubmit={sendEmail}>
             <input type="text" placeholder="Name" name="name" required/>
@@ -38,14 +38,14 @@ function Contact() {
           </form>
         </div>
         <div className="contact-info">
-          <h3>Connect with us</h3>
+          <h2>Connect with us</h2>
           <p>For support or any questions</p>
           <p>Email us at <span>info@platformofhope.org</span></p>
           <p>Or call <span>(770) 767-0200</span></p>
-          <h3>Mailing Address</h3>
+          <h2>Mailing Address</h2>
           <p>P.O. Box 48198</p>
           <p>Atlanta, GA 30362</p>
-          <h3>Areas Served</h3>
+          <h2>Areas Served</h2>
           <p>Atlanta, Georgia, Surrounding Counties, and Mississipi Delta</p>
         </div>
       </div>

@@ -68,7 +68,7 @@ function NewsAndEvents() {
     <div>
       <div className="news-events-image">
         <h1>News & Events</h1>
-        <h3>Stay updated with our latest events</h3>
+        <h3>Stay updated with our latest events.</h3>
       </div>
       <div className="calendar-container">
         <h2>Calendar</h2>
@@ -99,7 +99,7 @@ function NewsAndEvents() {
       </div>
       <div className="media-container">
         <h2>Media</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Explore videos and images of our past events.</p>
         <hr/>
         <div>
           <h2>Videos</h2>

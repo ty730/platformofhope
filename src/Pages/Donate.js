@@ -43,7 +43,7 @@ function Donate() {
                 <img src={givelify} alt=""/>
                 <p className="ml-1">Givelify</p>
               </a>
-              <a href="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer" className="my-2">
+              <a href="https://www.paypal.com/fundraiser/charity/2805275" target="_blank" rel="noopener noreferrer" className="my-2">
                 <img src={paypal} alt=""/>
                 <p className="ml-1">PayPal</p>
               </a>
@@ -77,12 +77,16 @@ function Donate() {
           <div className="btm-pd">
             <h3>Business Partnerships</h3>
             <p>Platform of Hope offers flexible opportunities for businesses to benefit throughout giving.</p>
-            <button className="donate-btn">Contact Us</button>
+            <a href="/contact" rel="noopener noreferrer">
+              <button className="donate-btn">Contact Us</button>
+            </a>
           </div>
           <div>
             <h3>Civic/Group Partnerships</h3>
             <p>Platform of Hope offers community awareness and strong networking.</p>
-            <button className="donate-btn">Contact Us</button>
+            <a href="/contact" rel="noopener noreferrer">
+              <button className="donate-btn">Contact Us</button>
+            </a>
           </div>
         </Col>
         <Col md={{ offset: 1 }}>

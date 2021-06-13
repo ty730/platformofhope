@@ -63,7 +63,6 @@ function Home() {
     <div className="home">
       <div className="home-top">
         <div>
-          <h3 className="sub-heading">Non-Profit Organization</h3>
           <h1>Helping One Family At A Time.</h1>
           <p>
           Platform of Hope is an initiative designed to feed, house, clothe, and employ homeless families while empowering and transforming lives of the economically underserved. We successfully provide support and restore lives of homeless families in Atlanta, Georgia and surrounding counties. Platform of Hope facilitates in local correctional facilities then partners released offenders with employers for reemployment.
@@ -134,7 +133,7 @@ function Home() {
                     {
                   limitEvents.map(event=>(
 
-                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
+                   <a href="/newsandevents"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
 
                   ))
 
@@ -155,7 +154,7 @@ function Home() {
                 {
                   pastEvents.map(event=>(
 
-                   <a href="/"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
+                   <a href="/newsandevents"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
 
                   ))
 
@@ -172,14 +171,14 @@ function Home() {
 
       {/* Phases */}
       <Phases/>
-      
+
 
       <div className="home-video container-fluid">
                  <video
                  autoPlay
                  loop
                  muted
-                 style = {{ 
+                 style = {{
                    width: "100%",
                    padding: "0",
                    margin: "0",
@@ -190,20 +189,20 @@ function Home() {
                  <div className="home-overlay">
                    <div className="home-text">
                    <h1>Learn more about us</h1>
-                   <p>Check out our full image and video gallery 
+                   <p>Check out our full image and video gallery
 
                    <a href="/newsandevents"><span className="pl-1"><FaArrowRight></FaArrowRight></span></a>
                    </p>
-                   
+
 
                    </div>
-                
+
                  </div>
       </div>
-      
+
     </div>
 
-    
+
   );
 }
 

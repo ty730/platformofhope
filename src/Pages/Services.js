@@ -17,9 +17,9 @@ function Services() {
     <div className="donate">
       <div className="donate-header">
         <h2>Services</h2>
-        <p>Platform of Hope strives to offer a host of services to enhance and
-          transform lives of homeless families and individuals in Atlanta,
-          Georgia and surrounding counties.
+        <p>
+          Platform of Hope provides a host of services to enhance and transform
+          lives of homeless families and individuals in Atlanta, Georgia and surrounding counties.
         </p>
         <hr/>
       </div>
@@ -31,8 +31,8 @@ function Services() {
       <div className="column-container">
         <Column
         src={foodpantry}
-        title= "Food Pantry/Coat Closet"
-        p="We receive, buys, and distributes food, coats, and blankets to needy families."
+        title= "Food Pantry/Clothes Closet"
+        p="Distributes non-perishables, personal essentials, coats and blankets to underserved families."
         imgclass="services-img" />
         <Column
         src={rentassistance}
@@ -45,8 +45,8 @@ function Services() {
         imgclass="services-img" />
         <Column
         src={computerlab}
-        title= "Jail Facilitation"
-        p="We facilitate basic computer applications and job readiness in area jails then partner with employers for second-chance employment."
+        title= "Re-Entry Services"
+        p="We facilitate basic computer applications and job readiness in area jails then connect released offenders with community partners for re-employment/second-chance."
         imgclass="services-img" />
         <Column
         src={jobWorkshops}
@@ -55,7 +55,7 @@ function Services() {
         imgclass="services-img" />
         <Column src={missionWork}
         title= "Mission Work"
-        p="We serve yearly on mission trips to impact throughout the world."
+        p="Platform of Hope serves and volunteers throughout the world to transform lives of families."
         imgclass="services-img" />
       </div>
 

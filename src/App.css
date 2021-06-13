@@ -826,6 +826,7 @@ hr {
 .contact-form {
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
 }
 
 .contact-form input, .contact-form textarea {
@@ -843,6 +844,7 @@ hr {
 
 .contact-form textarea {
   height: 150px;
+  margin-bottom: 2%;
 }
 
 .contact-info {

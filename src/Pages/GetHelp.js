@@ -14,7 +14,7 @@ function GetHelp() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_8fderar', 'template_6hjo9b6', e.target, 'user_OKR16ehhZhBLdFc7CF3bH')
+    emailjs.sendForm('service_8fderar', 'template_dhc5ntj', e.target, 'user_OKR16ehhZhBLdFc7CF3bH')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -89,11 +89,7 @@ function GetHelp() {
           <input type="email" placeholder="Email Address" name="email" required/>
           <input type="text" placeholder="Phone Number" name="phone" required/>
           <input type="text" placeholder="Address" name="address"/>
-          <Select
-            options={numbersOptions}
-            placeholder={'Number of people in household'}
-            styles={selectStyles}
-          />
+          <input type="number" placeholder="Number of people in household" name="housesize" min="1" required/>
           <input type="number" placeholder="Household income" name="income" min="0" required/>
           <p>Which benefits do you recieve?</p>
           <div className="checkbox">
@@ -115,11 +111,12 @@ function GetHelp() {
           <textarea placeholder="Grade(s) and School(s) of child(ren)" name="childschool"/>
           <input type="text" placeholder="How were you referred?" name="referal"/>
           <Select
+            name={'veteran'}
             options={yesNoOptions}
             placeholder={'Are you a veteran?'}
             styles={selectStyles}
           />
-          <textarea placeholder="Description of your and/or your family's needs" name="helptype"/>
+          <textarea placeholder="Description of your and/or your family's needs" name="helptype" required/>
           <input className="outreach-submit" type="submit" value="SUBMIT" />
         </form>
       </div>

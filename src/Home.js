@@ -19,9 +19,7 @@ import homeVideo from './images/test.mp4';
 import {FaArrowRight} from 'react-icons/fa'
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
-/**C:\Users\Cj\Desktop\poh\src\images\guidestar-bronze.png
- * This is the Home component that holds all information for the Home page.
- */
+
 function Home() {
  const limitEvents = Events.slice(0,3);
  const pastEvents = Events.slice(6,9);
@@ -29,21 +27,24 @@ function Home() {
     {
       imageLink: handsheart,
       title: "Volunteer",
-      paragraph: "Platform of Hope strives to offer a host of services to enhance and transform lives of homeless families and individuals in Atlanta, Georgia and surrounding counties.",
-      alt: "hands with heart"
+      paragraph: "Volunteering changes lives. You may volunteer by working events, making calls to potential donors, sorting donated goods and other tasks.",
+      alt: "hands with heart",
+      link: "/contact"
 
     },
     {
       imageLink: holdhands,
       title: "Get Help",
-      paragraph: "Platform of Hope is currently accepting applications for Dekalb County students. Applicants in Atlanta, Georgia are also welcome to apply. Bear in mind that disbursements are based on funding and family need.",
+      paragraph: "Platform of Hope distributes material essentials, non-perishables while providing financial assistance. Applications are accepted when funding is available.",
       alt: "holding hands",
+      link: "/gethelp"
     },
     {
       imageLink: prayinghands,
       title: "Donate",
       paragraph: "Platform of Hope greatly appreciates support of any kind. The quickest, most efficient way to give is through monetary donations.",
-      alt: "praying hands"
+      alt: "praying hands",
+      link: "/donate"
     }
 
   ];
@@ -101,7 +102,10 @@ function Home() {
               return <HomeColumn
                 title={items.title}
                 paragraph={items.paragraph}
-                image={items.imageLink} alt={items.alt}
+                image={items.imageLink} 
+                alt={items.alt}
+                link={items.link}
+
               />
             })
           }

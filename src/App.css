@@ -246,6 +246,8 @@ ul {
     max-width: 100%;
     margin: 0;
   }
+
+
 }
 
 .column {
@@ -260,7 +262,6 @@ ul {
 }
 
 .column-h {
-  margin-bottom: 4%;
   margin-top: 4%;
 }
 
@@ -427,6 +428,25 @@ ul {
   margin-bottom: 3%;
 }
 
+@media screen and (max-width: 400px) {
+  .small-videos video, .small-videos iframe {
+    height: auto;
+    width: 99%;
+  }
+
+  .calendar-container {
+    padding: 1% !important;
+  }
+
+  .calendar-container > h2 {
+    text-align: center;
+  }
+
+  .rbc-btn-group > button {
+    font-size: 12pt !important;
+  }
+}
+
 .donate {
   text-align: left;
   line-height: 25pt;
@@ -542,21 +562,9 @@ hr {
   margin-top: 2%;
 }
 
-@media screen and (min-width: 1200px) {
-  .get-help-top {
-    background-position: center;
-  }
-}
-
 @media screen and (min-width: 900px) {
   .funding-container > *, .column-container > * {
     max-width: 29%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .get-help-top {
-    background-position: center;
   }
 }
 
@@ -564,19 +572,11 @@ hr {
   .funding-container > *, .column-container > * {
     max-width: 46%;
   }
-
-  .get-help-top {
-    background-position: center;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .funding-container > *, .column-container > * {
     max-width: 99%;
-  }
-
-  .get-help-top {
-    background-position: center;
   }
 }
 
@@ -650,6 +650,21 @@ hr {
   .home-col-title
   {
     padding: 1rem;
+  }
+
+  .home-top {
+    flex-direction: column-reverse;
+  }
+
+  .home-top > * {
+    width: 100% !important;
+  }
+
+  .home-top > img {
+    width: 80% !important;
+    height: 80% !important;
+    margin-right: auto;
+    margin-bottom: 5%;
   }
 }
 .home-col-title h1, p
@@ -787,14 +802,21 @@ hr {
 } */
 /* ----------------------------------------------------------------------- */
 .contact-top {
-  height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/holding-hand.jpg');
-  background-size: cover;
-  background-position: center -300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+@media screen and (min-width: 1400px) {
+  .contact-top {
+    background-position: center -270px;
+  }
 }
 
 .contact-top h1, .contact-top h3 {
@@ -807,6 +829,31 @@ hr {
   margin-left: 8%;
   margin-right: 4%;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 620px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-container > * {
+    width: 100% !important;
+  }
+
+  .contact-container h2 {
+    line-height: 3rem;
+    margin-top: 30px !important;
+  }
+
+  .contact-top h3, .news-events-image h1, .news-events-image h3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  .contact-top h3, .news-events-image h3 {
+    line-height: 2.4rem;
+  }
 }
 
 .contact-container h3 {
@@ -912,8 +959,21 @@ div.rbc-row.rbc-month-header {
   justify-content: center;
   align-items: center;
   color: white;
+  background-position: center;
   background-size: cover;
   height: 500px;
+}
+
+@media screen and (max-width: 700px) {
+  .get-help-top > * {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  .get-help-top h3 {
+    line-height: 2.4rem !important;
+  }
 }
 
 .get-help-top h1, .get-help-top h3 {
@@ -926,6 +986,32 @@ div.rbc-row.rbc-month-header {
   margin: 6%;
   margin-left: 8%;
   margin-right: 8%;
+}
+
+@media screen and (max-width: 900px) {
+  .get-help-container {
+    flex-direction: column;
+    margin-left: 14%;
+    margin-right: 14%;
+  }
+
+  .get-help-card:first-child {
+    margin-bottom: 8% !important;
+  }
+
+  .get-help-container img {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .get-help-container, .outreach-container {
+    margin: 3% !important;
+  }
+
+  .get-help-card {
+    margin-bottom: 8% !important;
+  }
 }
 
 .get-help-container img {
@@ -946,7 +1032,8 @@ div.rbc-row.rbc-month-header {
 
 .get-help-card h2, .get-help-card p {
   color: black;
-  margin: 4%;
+  margin-top: 6%;
+  line-height: 2rem;
 }
 
 .get-help-card h2 {
@@ -1118,3 +1205,15 @@ div.rbc-row.rbc-month-header {
      padding: 1rem !important;
    }
  }
+ @media screen and (max-width: 432px)
+{
+
+  .home-overlay h1
+  {
+    line-height: 2.5rem !important;
+  }
+  .home-overlay p
+  {
+    line-height: 1rem !important;
+  }
+}

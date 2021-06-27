@@ -47,7 +47,7 @@ function Donate() {
                 <img src={givelify} alt=""/>
                 <p className="ml-1">Givelify</p>
               </a>
-              <a href="https://www.paypal.com/fundraiser/charity/2805275" target="_blank" rel="noopener noreferrer" className="my-2">
+              <a href="https://www.paypal.com/paypalme/PlatformofHope" target="_blank" rel="noopener noreferrer" className="my-2">
                 <img src={paypal} alt=""/>
                 <p className="ml-1">PayPal</p>
               </a>

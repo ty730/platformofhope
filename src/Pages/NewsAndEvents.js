@@ -13,7 +13,7 @@ import 'swiper/swiper-bundle.css';
 import testVideo from './../images/test.mp4';
 import video2020 from './../images/2020video.mp4';
 import coatVideo from './../images/coatdrive.mp4';
-
+import {Helmet} from 'react-helmet'
 const localizer = momentLocalizer(moment);
 
 SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
@@ -66,6 +66,9 @@ function NewsAndEvents() {
 
   return (
     <div>
+      <Helmet>
+      <title>Donate - Platform of Hope in Atlanta, Georgia</title>
+      </Helmet>
       <div className="news-events-image">
         <h1>News & Events</h1>
         <h3>Stay updated with our latest events.</h3>

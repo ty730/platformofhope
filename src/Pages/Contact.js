@@ -1,6 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import './../App.css';
+import { Helmet } from 'react-helmet';
 
 /**
  * This is the Contact component that holds all information for the Contact page.
@@ -21,6 +22,10 @@ function Contact() {
 
   return (
     <div className="Contact">
+      <Helmet>
+      <title>Contact - Platform of Hope in Atlanta, Georgia</title>
+      </Helmet>
+
       <div className="contact-top">
         <h1>Contact Us</h1>
         <h3>If you would like to make a difference let us know!</h3>

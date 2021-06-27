@@ -8,6 +8,7 @@ import hotelroom from './../images/hotelroom.jpg';
 import mainImage from './../images/services-main.png';
 import jobWorkshops from './../images/job-workshops.png';
 import missionWork from './../images/mission-work.png';
+import { Helmet } from 'react-helmet';
 
 /**
  * This is the Home component that holds all information for the Home page.
@@ -15,6 +16,9 @@ import missionWork from './../images/mission-work.png';
 function Services() {
   return (
     <div className="donate">
+      <Helmet>
+      <title>Services - Platform of Hope in Atlanta, Georgia</title>
+      </Helmet>
       <div className="donate-header">
         <h2>Services</h2>
         <p>

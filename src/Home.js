@@ -17,6 +17,7 @@ import SwiperCore, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper
 import 'swiper/swiper-bundle.css';
 import homeVideo from './images/test.mp4';
 import {FaArrowRight} from 'react-icons/fa'
+import { Helmet } from 'react-helmet';
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 
@@ -62,6 +63,9 @@ function Home() {
 
   return (
     <div className="home">
+      <Helmet>
+      <title>Platform of Hope</title>
+      </Helmet>
       <div className="home-top">
         <div>
           <h1>Helping One Family At A Time.</h1>

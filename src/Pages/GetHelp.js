@@ -5,6 +5,7 @@ import Select from 'react-select';
 import servicesImg from './../images/get-help-services-edited.png';
 import resourceGuideImg from './../images/resource-guide.png';
 import resourceGuidePdf from './../files/2018-grady-healthy-living-resource-guide.pdf';
+import { Helmet } from 'react-helmet';
 
 /**
  * This is the Get Help component that holds all information for the Get Help page.
@@ -59,6 +60,9 @@ function GetHelp() {
 
   return (
     <div className="GetHelp">
+      <Helmet>
+      <title>Get Help - Platform of Hope in Atlanta, Georgia</title>
+      </Helmet>
       <div className="get-help-top">
         <h1>We are here to help</h1>
         <h3>Reach out to us or submit the form below to recieve help</h3>

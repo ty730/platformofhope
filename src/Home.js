@@ -10,15 +10,9 @@ import { Events } from './Components/Events'
 import UpcomingEvents from './Components/UpcomingEvents';
 import Phases from './Components/Phases'
 import {Link} from "react-router-dom";
-import { SwiperSlide } from 'swiper/react';
-import img1 from './images/image-1.jpg';
-import img2 from './images/image-2.jpg';
-import SwiperCore, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
-import 'swiper/swiper-bundle.css';
 import homeVideo from './images/test.mp4';
 import {FaArrowRight} from 'react-icons/fa'
 import { Helmet } from 'react-helmet';
-SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 
 function Home() {
@@ -49,17 +43,6 @@ function Home() {
     }
 
   ];
-
-  const imageSrcs = [img1, img2, img1, img2, img1, img2]
-  const slides = [];
-  for (let i = 0; i < imageSrcs.length; i++) {
-    slides.push(
-      <SwiperSlide key={`slide-${i}`} tag="li">
-        <img className="slider-img" src={imageSrcs[i]} alt=""/>
-      </SwiperSlide>
-    )
-  }
-
 
   return (
     <div className="home">
@@ -106,7 +89,7 @@ function Home() {
               return <HomeColumn
                 title={items.title}
                 paragraph={items.paragraph}
-                image={items.imageLink} 
+                image={items.imageLink}
                 alt={items.alt}
                 link={items.link}
 

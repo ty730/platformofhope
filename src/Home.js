@@ -16,8 +16,7 @@ import { Helmet } from 'react-helmet';
 
 
 function Home() {
- const limitEvents = Events.slice(0,3);
- const pastEvents = Events.slice(6,9);
+ 
   const homeColumn = [
     {
       imageLink: handsheart,
@@ -43,6 +42,8 @@ function Home() {
     }
 
   ];
+
+  
 
   return (
     <div className="home">
@@ -120,15 +121,13 @@ function Home() {
 
                     <div className="upcomingEventsList d-flex align-items-md-center justify-content-lg-center">
 
-
                     {
-                  limitEvents.map(event=>(
-
-                   <a href="/newsandevents"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
-
-                  ))
-
+                  Events.filter(event => event.start >= Date.now() ).slice(0,4).map(event =>
+                    
+                    <a href="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString()} ></UpcomingEvents></a>
+                    )
                  }
+
 
                     </div>
                   </Col>
@@ -143,12 +142,10 @@ function Home() {
               <div className="pastEvents d-flex flex-column justify-content-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
 
                 {
-                  pastEvents.map(event=>(
-
-                   <a href="/newsandevents"> <UpcomingEvents title={event.title} date={event.end.toLocaleString()} ></UpcomingEvents></a>
-
-                  ))
-
+                  Events.filter(event => event.start < Date.now() ).slice(0,4).map(event =>
+                    
+                    <a href="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString()} ></UpcomingEvents></a>
+                    )
                  }
 
               </div>

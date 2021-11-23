@@ -114,7 +114,7 @@ function Home() {
                     {
                   Events.filter(event => event.start >= Date.now() ).slice(0,4).map(event =>
                     
-                    <a href="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString()} ></UpcomingEvents></a>
+                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString()} ></UpcomingEvents></Link>
                     )
                  }
 
@@ -134,7 +134,7 @@ function Home() {
                 {
                   Events.filter(event => event.start < Date.now() ).slice(0,4).map(event =>
                     
-                    <a href="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString()} ></UpcomingEvents></a>
+                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString()} ></UpcomingEvents></Link>
                     )
                  }
 
@@ -169,7 +169,7 @@ function Home() {
                    <h1>Learn more about us</h1>
                    <p>Check out our full image and video gallery
 
-                   <a href="/newsandevents"><span className="pl-1"><FaArrowRight></FaArrowRight></span></a>
+                   <Link to="/newsandevents"><span className="pl-1"><FaArrowRight></FaArrowRight></span></Link>
                    </p>
 
 

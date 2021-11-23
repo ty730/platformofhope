@@ -6,6 +6,7 @@ import servicesImg from './../images/get-help-services-edited.png';
 import resourceGuideImg from './../images/resource-guide.png';
 import resourceGuidePdf from './../files/2018-grady-healthy-living-resource-guide.pdf';
 import { Helmet } from 'react-helmet';
+import {Link} from "react-router-dom";
 
 /**
  * This is the Get Help component that holds all information for the Get Help page.
@@ -72,9 +73,9 @@ function GetHelp() {
           <img src={servicesImg} alt="Services"/>
           <h2>Services</h2>
           <p>Check out more details on the services we offer</p>
-          <a href="/services" className="get-help-services-btn">
+          <Link to="/services" className="get-help-services-btn">
             <button>TO SERVICES</button>
-          </a>
+          </Link>
         </div>
         <div className="get-help-card">
           <img src={resourceGuideImg} alt="Services"/>

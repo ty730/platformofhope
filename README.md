@@ -1,17 +1,5 @@
-## To Do:
-### Overall:
- - Check color scheme (save until later)
- - Consistent font size and family
- - Consistent text sizes
-### Homepage
- - Bottom of page Media
-### News & events
- - Media section
-### Services
- - ~~Swap girl scouts~~
-### Donate
- - ~~Go fund me~~
-### Get Help
- - ~~Add what type of help to form~~
+# Platform of Hope
+## This is the repo for the Platform of Hope website hosted at platformofhope.com
 
-Current draft of website at https://ty730.github.io/platformofhope/
+<img src="./src/images/pohlogo.png" alt="drawing" width="100" height="100" />
+

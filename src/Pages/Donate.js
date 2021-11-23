@@ -7,7 +7,8 @@ import venmo from './../images/venmo.png';
 import gofundme from './../images/gofundme.png';
 import zelle from './../images/zelle.png';
 import { Row, Col, ListGroup } from 'react-bootstrap';
-import {Helmet} from 'react-helmet'
+import {Helmet} from 'react-helmet';
+import {Link} from "react-router-dom";
 
 /**
  * This is the Donate component that holds all information for the Donate page.
@@ -79,16 +80,16 @@ function Donate() {
           <div className="btm-pd">
             <h3>Business Partnerships</h3>
             <p>Platform of Hope offers flexible opportunities for businesses to benefit throughout giving.</p>
-            <a href="/contact" rel="noopener noreferrer">
+            <Link to="/contact" rel="noopener noreferrer">
               <button className="donate-btn">Contact Us</button>
-            </a>
+            </Link>
           </div>
           <div>
             <h3>Civic/Group Partnerships</h3>
             <p>Platform of Hope offers community awareness and strong networking.</p>
-            <a href="/contact" rel="noopener noreferrer">
+            <Link to="/contact" rel="noopener noreferrer">
               <button className="donate-btn">Contact Us</button>
-            </a>
+            </Link>
           </div>
         </Col>
         <Col md={{ offset: 1 }}>

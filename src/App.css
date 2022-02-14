@@ -146,6 +146,7 @@ ul {
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 2%;
 }
 
 .home-top > div {
@@ -166,7 +167,23 @@ ul {
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("./images/newpohextended.jpg");
   background-size: cover;
   min-height: 700px;
-  background-position: center 51px;
+  background-position: center 42px;
+}
+
+@media screen and (max-width: 600px) {
+  .home-svg {
+    transform: translate(0px, -1px);
+  }
+  .home-container {
+    background-position: center -10px;
+    min-height: 550px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-container {
+    background-position: center 20px;
+  }
 }
 
 /* .home-container .shadow-test

@@ -114,7 +114,7 @@ function Home() {
                     {
                   Events.filter(event => event.start >= Date.now() ).slice(0,4).map(event =>
                     
-                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString()} ></UpcomingEvents></Link>
+                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})} ></UpcomingEvents></Link>
                     )
                  }
 
@@ -134,7 +134,7 @@ function Home() {
                 {
                   Events.filter(event => event.start < Date.now() ).slice(0,4).map(event =>
                     
-                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString()} ></UpcomingEvents></Link>
+                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})} ></UpcomingEvents></Link>
                     )
                  }
 

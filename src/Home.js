@@ -4,6 +4,7 @@ import HomeColumn from './Components/HomeColumn/HomeColumn';
 import handsheart from './images/home-icons/handsheart.png'
 import holdhands from './images/home-icons/holdhands.png';
 import prayinghands from './images/home-icons/prayingicon.png';
+import flyer from './images/coatdrive2022.jpg';
 import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
 import { Events } from './Components/Events'
@@ -103,8 +104,8 @@ function Home() {
                   <Col md={12} lg={6} sm={12} offset={3} className="d-flex align-items-center justify-content-center pb-md-4 flex-column">
 
                     <div className="upcomingEventsImage">
-                    <h3 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h3>
-                      <img src='https://images.pexels.com/photos/6646923/pexels-photo-6646923.jpeg?cs=srgb&dl=pexels-rodnae-productions-6646923.jpg&fm=jpg' alt="" />
+                      <h3 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h3>
+                      <img src={flyer} alt="Coat Drive 2022" />
                     </div>
                   </Col>
                   <Col className="d-flex align-items-center justify-content-center flex-column" md={12} lg={6} sm={12}>

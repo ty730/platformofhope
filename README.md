@@ -29,3 +29,13 @@
 
     a. Click Sites -> platformofhope.com -> Deploys (Check if new changes are being deployed)
 
+<!--
+Here are some general steps to update the page, let me know if anyone has questions about these since they can be complicated to follow.
+1. On GitHub, fork and clone this repository that stores the code for the website: https://github.com/ty730/platformofhope
+2. Then edit the source code as needed. Edit src/Components/Events/index.js in order to add new events to the calendar and home page.
+3. Commit and push the changes made back to GitHub
+4. Login to Netlify (https://app.netlify.com/login/email)
+5. Click Sites -> platformofhope.com -> Site Settings -> Build & Deploy -> Manage repository -> Link to a different repository
+6. Then select your repository that you made the changes to and you should be able to deploy the updated version!
+Note: if whoever is making updates is having trouble with Netlify they can also make a pull request to my repository and it should automatically update the website. Since my repository is set up for automatic deployment to Netlify currently.
+ -->

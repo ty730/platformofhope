@@ -6,6 +6,7 @@ import givelify from './../images/givelify.png';
 import venmo from './../images/venmo.png';
 import gofundme from './../images/gofundme.png';
 import zelle from './../images/zelle.png';
+import linktree from './../images/linktree.jpeg';
 import { Row, Col, ListGroup } from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import {Link} from "react-router-dom";
@@ -60,6 +61,10 @@ function Donate() {
                 <img src={zelle} alt=""/>
                 <p className="ml-1">doris@platformofhope.org</p>
               </span>
+              <a href="https://linktr.ee/platformofhopeinc" target="_blank" rel="noopener noreferrer" className="my-2">
+                <img src={linktree} alt=""/>
+                <p className="ml-1">Linktree</p>
+              </a>
             </div>
           </div>
         </Col>

@@ -448,6 +448,18 @@ ul {
   margin-right: 2%;
 }
 
+.fb-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fb-video iframe {
+  border:none;
+  overflow:hidden;
+}
+
 @media screen and (max-width: 400px) {
   .small-videos video, .small-videos iframe {
     height: auto;

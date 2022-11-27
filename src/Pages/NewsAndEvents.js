@@ -20,9 +20,16 @@ import img11 from './../images/gallery/poh-image11.jpg';
 import img12 from './../images/gallery/poh-image12.jpg';
 import img13 from './../images/gallery/poh-image13.jpg';
 import img14 from './../images/gallery/poh-image14.jpg';
-import img15 from './../images/newpohimage.jpg';
-import img16 from './../images/newpohimage2.jpg';
-import img17 from './../images/newpohimage3.jpg';
+import img15 from './../images/gallery/poh-image15.jpg';
+import img16 from './../images/gallery/poh-image16.jpg';
+import img17 from './../images/gallery/poh-image17.jpg';
+import img18 from './../images/gallery/poh-image18.jpg';
+import img19 from './../images/gallery/poh-image19.jpg';
+import img20 from './../images/gallery/poh-image20.jpg';
+import img21 from './../images/gallery/poh-image21.jpg';
+import img22 from './../images/newpohimage.jpg';
+import img23 from './../images/newpohimage2.jpg';
+import img24 from './../images/newpohimage3.jpg';
 import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import testVideo from './../images/test.mp4';
@@ -55,7 +62,7 @@ function NewsAndEvents() {
   // Swiper thumbsinstance
   const [thumbsSwiper, updateThumbsSwiper] = useState(null);
 
-  const imageSrcs = [img15, img16, img17, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
+  const imageSrcs = [img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
   const slides = [];
   const thumbs = [];
   for (let i = 0; i < imageSrcs.length; i++) {
@@ -122,6 +129,10 @@ function NewsAndEvents() {
         <div>
           <h2>Videos</h2>
           <video className="large-video" controls><source src={testVideo}></source></video>
+          <div className="fb-video">
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fm.facebook.com%2Fstory.php%3Fstory_fbid%3D430812349251437%26id%3D507839702%26sfnsn%3Dmo%26mibextid%3DYsHG2a&width=500&show_text=false&height=889&appId"
+            width="500" height="889" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+          </div>
           <div className="small-videos">
             <video controls><source src={coatVideo}></source></video>
             <iframe classname="slider-img" width="560" height="315" src="https://www.youtube.com/embed/wkZeEiLNLLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

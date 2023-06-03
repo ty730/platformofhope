@@ -27,9 +27,13 @@ import img18 from './../images/gallery/poh-image18.jpg';
 import img19 from './../images/gallery/poh-image19.jpg';
 import img20 from './../images/gallery/poh-image20.jpg';
 import img21 from './../images/gallery/poh-image21.jpg';
-import img22 from './../images/newpohimage.jpg';
-import img23 from './../images/newpohimage2.jpg';
-import img24 from './../images/newpohimage3.jpg';
+import img22 from './../images/gallery/poh-image22.jpg';
+import img23 from './../images/gallery/poh-image23.jpg';
+import img24 from './../images/gallery/poh-image24.jpg';
+import img25 from './../images/gallery/poh-image25.jpg';
+import img26 from './../images/newpohimage.jpg';
+import img27 from './../images/newpohimage2.jpg';
+import img28 from './../images/newpohimage3.jpg';
 import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import testVideo from './../images/test.mp4';
@@ -62,7 +66,7 @@ function NewsAndEvents() {
   // Swiper thumbsinstance
   const [thumbsSwiper, updateThumbsSwiper] = useState(null);
 
-  const imageSrcs = [img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
+  const imageSrcs = [img22, img23, img24, img25, img15, img16, img17, img18, img19, img20, img21, img26, img27, img28, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
   const slides = [];
   const thumbs = [];
   for (let i = 0; i < imageSrcs.length; i++) {

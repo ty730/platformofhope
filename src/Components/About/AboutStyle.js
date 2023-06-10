@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import aboutImage from '../../images/about/about-home.png';
-import aboutProfile from '../../images/about/doris-profile.jpg';
+import aboutProfile from '../../images/about/doris-smith.jpg';
 
 export const AboutImage = styled.div`
 

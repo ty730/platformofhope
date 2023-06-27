@@ -141,10 +141,11 @@ function Donate() {
           </div>
           <div>
             <h3>25%</h3>
-            <h4>COVID-19 Response Unit</h4>
-            <p>This fund supports weekly distribution and DELIVERY of food, medicine and
-            supplies/necessities to immobilized senior citizens within four low-income apartment
-            housing communities.</p>
+            <h4>Suds of Hope</h4>
+            <p>Platform of Hope-Suds of Hope offers safe, accessible showers at no cost to individuals experiencing homelessness.
+
+Mobile units are staffed with volunteers. Each visitor is allowed up to 5 minutes for a continuous hot watered shower, new bath and face towel plus individual liquid soap and shampoo.
+Upon departure, individuals are given a POH Snack and Essentials Pack with hygiene products, water and non-perishables.</p>
           </div>
           <div>
             <h3>10%</h3>

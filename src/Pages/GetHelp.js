@@ -80,9 +80,10 @@ function GetHelp() {
         <div className="get-help-card">
           <img src={resourceGuideImg} alt="Services"/>
           <h2>Resource Guide</h2>
-          <p>Find other resouces in the Atlanta Area</p>
-          <a href={resourceGuidePdf} target="_blank" rel="noopener noreferrer" download className="get-help-services-btn">
-            <button>DOWNLOAD</button>
+          <p>Access the United Way 211 searchable database</p>
+          <p>of services in Atlanta, Georgia here</p>
+          <a href={"http://211online.unitedwayatlanta.org/"} target="_blank" rel="noopener noreferrer" className="get-help-services-btn">
+            <button>TO DATABASE</button>
           </a>
         </div>
       </div>

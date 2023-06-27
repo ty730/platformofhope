@@ -1253,3 +1253,15 @@ div.rbc-row.rbc-month-header {
     line-height: 1rem !important;
   }
 }
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6% 20% 6% 20%;
+}
+
+.partners-container img {
+  min-height: 100px;
+  height: 200px;
+}

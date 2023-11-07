@@ -240,9 +240,16 @@ export const Events =
 	},
 	{
 		allDay: true,
-		start: new Date('December 9, 2023 12:00'),
-		end: new Date('December 9, 2023'),
+		start: new Date('December 8, 2023 12:00'),
+		end: new Date('December 10, 2023 12:00'),
 		title: 'Christmas and Holiday Gift Giveaway',
+		location: '',
+	},
+	{
+		allDay: true,
+		start: new Date('November 6, 2023 12:00'),
+		end: new Date('December 3, 2023 12:00'),
+		title: 'Holiday Gift Collection',
 		location: '',
 	},
 ];

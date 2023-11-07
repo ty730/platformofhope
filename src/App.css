@@ -507,9 +507,14 @@ ul {
 }
 
 .donate-row, .donate-header, .appr-of-funding > *,
-.services-main, .column-container {
+.services-main {
   margin-left: 10% !important;
   margin-right: 10% !important;
+}
+
+.column-container {
+  margin-left: 8% !important;
+  margin-right: 8% !important;
 }
 
 .donate-header > h2 {
@@ -585,8 +590,15 @@ hr {
 .funding-container, .column-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-bottom: 1%;
+}
+
+.funding-container {
+  justify-content: space-between;
+}
+
+.column-container {
+  justify-content: space-around;
 }
 
 .funding-container h4 {

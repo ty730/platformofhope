@@ -4,7 +4,7 @@ import HomeColumn from './Components/HomeColumn/HomeColumn';
 import handsheart from './images/home-icons/handsheart.png'
 import holdhands from './images/home-icons/holdhands.png';
 import prayinghands from './images/home-icons/prayingicon.png';
-import flyer from './images/coatdrive2022.jpg';
+import flyer from './images/toydrive.png';
 import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
 import { Events } from './Components/Events'
@@ -105,7 +105,7 @@ function Home() {
 
                     <div className="upcomingEventsImage">
                       <h3 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h3>
-                      <img src={flyer} alt="Coat Drive 2022" />
+                      <img src={flyer} alt="Toy Drive 2023" />
                     </div>
                   </Col>
                   <Col className="d-flex align-items-center justify-content-center flex-column" md={12} lg={6} sm={12}>

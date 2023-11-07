@@ -9,6 +9,7 @@ import mainImage from './../images/services-main.png';
 import jobWorkshops from './../images/job-workshops.png';
 import missionWork from './../images/mission-work.png';
 import sudsofhope from './../images/sudsofhope.jpg';
+import resourceguide from './../images/resourceguide2023.png';
 import { Helmet } from 'react-helmet';
 
 /**
@@ -66,6 +67,11 @@ function Services() {
         title= "Suds of Hope"
         p="Platform of Hope-Suds of Hope offers safe, accessible showers at no cost to individuals experiencing homelessness."
         imgclass="services-img" />
+        <Column src={resourceguide}
+        title= "Resource Guide"
+        p="Greater Atlanta's Critical Needs Guide. "
+        imgclass="services-img" 
+        hasLink={true} />
       </div>
 
     </div>

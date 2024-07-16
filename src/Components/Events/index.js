@@ -298,7 +298,7 @@ export const Events =
 	{
 		allDay: true,
 		start: new Date('September 26, 2024 12:00'),
-		end: new Date('September 28, 2024'),
+		end: new Date('September 28, 2024 12:00'),
 		title: 'Fall Coat Collection Drive',
 		location: '',
 	},
@@ -312,7 +312,7 @@ export const Events =
 	{
 		allDay: true,
 		start: new Date('November 15, 2024 12:00'),
-		end: new Date('December 13, 2024'),
+		end: new Date('December 13, 2024 12:00'),
 		title: 'Gift Collection',
 		location: '',
 	},

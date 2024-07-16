@@ -294,4 +294,26 @@ export const Events =
 		title: 'Christmas Gift Giveaway',
 		location: '',
 	},
+
+	{
+		allDay: true,
+		start: new Date('September 26, 2024 12:00'),
+		end: new Date('September 28, 2024'),
+		title: 'Fall Coat Collection Drive',
+		location: '',
+	},
+	{
+		allDay: true,
+		start: new Date('October 31, 2024 12:00'),
+		end: new Date('October 31, 2024'),
+		title: 'Halloween Food Distribution',
+		location: '',
+	},
+	{
+		allDay: true,
+		start: new Date('November 15, 2024 12:00'),
+		end: new Date('December 13, 2024'),
+		title: 'Gift Collection',
+		location: '',
+	},
 ];

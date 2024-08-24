@@ -135,7 +135,9 @@ function Home() {
               <div className="pastEvents d-flex flex-column justify-content-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
 
                 {
-                  Events.filter(event => event.start < Date.now() ).slice(0,4).map(event =>
+                  Events.filter(event => event.start < Date.now() ).sort((a, b) => {
+                    return b.start - a.start;
+                  }).slice(0,4).map(event =>
                     
                     <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})} ></UpcomingEvents></Link>
                     )

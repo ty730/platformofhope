@@ -282,21 +282,6 @@ export const Events =
 	},
 	{
 		allDay: true,
-		start: new Date('November 23, 2024 10:00 AM'),
-		end: new Date('November 23, 2024'),
-		title: 'Turkey Giveaway',
-		location: '',
-	},
-	{
-		allDay: true,
-		start: new Date('December 14, 2024 12:00'),
-		end: new Date('December 14, 2024'),
-		title: 'Christmas Gift Giveaway',
-		location: '',
-	},
-
-	{
-		allDay: true,
 		start: new Date('September 26, 2024 12:00'),
 		end: new Date('September 28, 2024 12:00'),
 		title: 'Fall Coat Collection Drive',
@@ -315,5 +300,26 @@ export const Events =
 		end: new Date('December 13, 2024 12:00'),
 		title: 'Gift Collection',
 		location: '',
+	},
+	{
+		allDay: true,
+		start: new Date('November 23, 2024 10:00 AM'),
+		end: new Date('November 23, 2024'),
+		title: 'Turkey Giveaway',
+		location: '',
+	},
+	{
+		allDay: true,
+		start: new Date('December 14, 2024 12:00'),
+		end: new Date('December 14, 2024'),
+		title: 'Christmas Gift Giveaway',
+		location: '',
+	},
+	{
+		allDay: true,
+		start: new Date('October 10, 2024 12:00'),
+		end: new Date('October 10, 2024'),
+		title: 'Hurt Park - Backpack Distribution',
+		location: 'Hurt Park',
 	},
 ];

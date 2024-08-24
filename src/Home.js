@@ -4,7 +4,7 @@ import HomeColumn from './Components/HomeColumn/HomeColumn';
 import handsheart from './images/home-icons/handsheart.png'
 import holdhands from './images/home-icons/holdhands.png';
 import prayinghands from './images/home-icons/prayingicon.png';
-import flyer from './images/toydrive.png';
+import flyer from './images/world_homeless_day.png';
 import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
 import { Events } from './Components/Events'
@@ -105,7 +105,7 @@ function Home() {
 
                     <div className="upcomingEventsImage">
                       <h3 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h3>
-                      <img src={flyer} alt="Toy Drive 2023" />
+                      <img src={flyer} alt="World Homeless Day" />
                     </div>
                   </Col>
                   <Col className="d-flex align-items-center justify-content-center flex-column" md={12} lg={6} sm={12}>
@@ -113,7 +113,9 @@ function Home() {
                     <div className="upcomingEventsList d-flex align-items-md-center justify-content-lg-center">
 
                     {
-                  Events.filter(event => event.start >= Date.now() ).slice(0,4).map(event =>
+                  Events.filter(event => event.start >= Date.now() ).sort((a, b) => {
+                    return a.start - b.start;
+                  }).slice(0,4).map(event =>
                     
                     <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})} ></UpcomingEvents></Link>
                     )

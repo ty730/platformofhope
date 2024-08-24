@@ -13,7 +13,7 @@
 
     c. npm install
 
-    d. d. npm start (this will open a preview of the website)
+    d. npm start (this will open a preview of the website)
 
 2. Then edit the source code as needed. Edit src/Components/Events/index.js in order to add new events to the calendar and home page.
 

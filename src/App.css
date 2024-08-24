@@ -776,6 +776,10 @@ hr {
     margin-bottom: 1rem;
   }
 
+  .upcomingEventsImage {
+    margin-bottom: 5rem !important;
+  }
+
 }
 
 .upcomingEvents img

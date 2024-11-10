@@ -103,17 +103,24 @@ function Home() {
 
                   <Col md={12} lg={6} sm={12} offset={3} className="d-flex align-items-center justify-content-center pb-md-4 flex-column">
 
-                    <div className="upcomingEventsImage">
-                      <h3 className="align-self-lg-start pb-lg-2 pl-0">Upcoming Events</h3>
-                      <img src={flyer} alt="World Homeless Day" />
+                    <div className="upcomingEventsImage d-flex flex-column">
+                      <iframe width="353"
+                        height="456"
+                        src=
+                        "https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/d47b57e66f949410e4ae3c024554b7ef/1"
+                        title="GeeksforGeeks" >
+                      </iframe>
+                      <a href="https://linktr.ee/platformofhopeinc" target="_blank" rel="noopener noreferrer" className="my-2">
+                        <button className="donate-btn">DONATE TODAY</button>
+                      </a>
                     </div>
                   </Col>
-                  <Col className="d-flex align-items-center justify-content-center flex-column" md={12} lg={6} sm={12}>
-
-                    <div className="upcomingEventsList d-flex align-items-md-center justify-content-lg-center">
+                  <Col  xl={4} lg={6} md={12} sm={12} className="pastEventsCol align-items-sm-center justify-sm-content-center d-flex flex-column align-items-xl-start">
+                    <h3 className="text-md-center ml-3">Upcoming Events</h3>
+                    <div className="upcomingEventsList d-flex flex-column justify-content-center align-items-sm-start align-items-md-start align-items-lg-start align-items-xl-start">
 
                     {
-                  Events.filter(event => event.start >= Date.now() ).sort((a, b) => {
+                  Events.filter(event => event.end >= Date.now() ).sort((a, b) => {
                     return a.start - b.start;
                   }).slice(0,4).map(event =>
                     
@@ -135,7 +142,7 @@ function Home() {
               <div className="pastEvents d-flex flex-column justify-content-center align-items-sm-center align-items-md-center align-items-lg-start align-items-xl-start">
 
                 {
-                  Events.filter(event => event.start < Date.now() ).sort((a, b) => {
+                  Events.filter(event => event.end < Date.now() ).sort((a, b) => {
                     return b.start - a.start;
                   }).slice(0,4).map(event =>
                     

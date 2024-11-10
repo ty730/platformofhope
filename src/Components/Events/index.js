@@ -296,8 +296,8 @@ export const Events =
 	},
 	{
 		allDay: true,
-		start: new Date('November 15, 2024 12:00'),
-		end: new Date('December 13, 2024 12:00'),
+		start: new Date('November 1, 2024 12:00'),
+		end: new Date('December 14, 2024 12:00'),
 		title: 'Gift Collection',
 		location: '',
 	},
@@ -310,9 +310,9 @@ export const Events =
 	},
 	{
 		allDay: true,
-		start: new Date('December 14, 2024 12:00'),
-		end: new Date('December 14, 2024'),
-		title: 'Christmas Gift Giveaway',
+		start: new Date('December 21, 2024 11:00 AM'),
+		end: new Date('December 21, 2024 1:00 PM'),
+		title: 'Gift Distribution',
 		location: '',
 	},
 	{

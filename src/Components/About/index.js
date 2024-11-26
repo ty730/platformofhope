@@ -21,7 +21,7 @@ const AboutPage = () => {
 			<AboutStory>
 				<div className="mini-container">
 					<h2 className="about-img-title">Our Story</h2>
-					<div className="about-us-text">
+					<div className="row mt-md-2 mt-lg-2 mt-sm-2 mt-2">
 						<div className="mt-md-3 mt-lg-3 mt-sm-5 mt-5 lr-container">
 							<div className="about-img">
 								<div className="about-image-container headshot-1">

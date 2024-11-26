@@ -10,6 +10,7 @@ import jobWorkshops from './../images/job-workshops.png';
 import missionWork from './../images/mission-work.png';
 import sudsofhope from './../images/sudsofhope.jpg';
 import resourceguide from './../images/resourceguide2023.png';
+import mentalHealth from './../images/mentalhealth.jpg';
 import { Helmet } from 'react-helmet';
 
 /**
@@ -44,6 +45,10 @@ function Services() {
         src={rentassistance}
         title= "Rent/Utility Assistance"
         p="We provide financial assistance to families facing eviction."
+        imgclass="services-img" />
+        <Column src={mentalHealth}
+        title= "Mental Health"
+        p="Beginning in 2025 POH Services will offer counseling and mental health assessments with Licensed Therapists."
         imgclass="services-img" />
         <Column src={hotelroom}
         title= "Hotel Voucher/Shelter Referral"

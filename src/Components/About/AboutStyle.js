@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import aboutImage from '../../images/about/about-home.png';
 import aboutProfile from '../../images/about/doris-photo2.jpg';
+import aboutProfile2 from '../../images/about/erica-geralds-headshot-cruise.jpg';
 
 export const AboutImage = styled.div`
 
@@ -54,8 +55,6 @@ p {
 }
 .container 
 {
-
-
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
@@ -65,9 +64,47 @@ p {
 height: 250px;
 width: 250px;
 border-radius: 125px;
-background-image: url(${aboutProfile});
 background-size: cover;
-
+}
+.headshot-1
+{
+background-image: url(${aboutProfile});
+}
+.headshot-2
+{
+background-image: url(${aboutProfile2});
+}
+.about-us-text
+{
+display: flex;
+flex-direction: row;
+}
+.about-img
+{
+margin-bottom: 25px;
+width: 250px;
+margin-left: auto;
+margin-right: auto;
+}
+.about-img > p
+{
+width: 100%;
+}
+.about-img-title
+{
+text-align: center;
+}
+.mini-container
+{
+margin: 1%;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+.lr-container
+{
+padding-left: 25px;
+padding-right: 25px;
+flex: 1 1 0;
 }
 .about-quote 
 {

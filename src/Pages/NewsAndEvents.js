@@ -133,10 +133,6 @@ function NewsAndEvents() {
         <div>
           <h2>Videos</h2>
           <video className="large-video" controls><source src={testVideo}></source></video>
-          <div className="fb-video">
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fm.facebook.com%2Fstory.php%3Fstory_fbid%3D430812349251437%26id%3D507839702%26sfnsn%3Dmo%26mibextid%3DYsHG2a&width=500&show_text=false&height=889&appId"
-            width="500" height="889" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-          </div>
           <div className="small-videos">
             <video controls><source src={coatVideo}></source></video>
             <iframe classname="slider-img" width="560" height="315" src="https://www.youtube.com/embed/wkZeEiLNLLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

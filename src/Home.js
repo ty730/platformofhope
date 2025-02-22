@@ -4,7 +4,7 @@ import HomeColumn from './Components/HomeColumn/HomeColumn';
 import handsheart from './images/home-icons/handsheart.png'
 import holdhands from './images/home-icons/holdhands.png';
 import prayinghands from './images/home-icons/prayingicon.png';
-import flyer from './images/world_homeless_day.png';
+import flyer from './images/womens-history-month.jpg';
 import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
 import { Events } from './Components/Events'
@@ -100,6 +100,11 @@ function Home() {
             <Col xl={8} lg={8} md={12}>
               <div className="upcomingEvents d-flex align-items-center justify-content-center">
                 <Row>
+                  <Col md={12} lg={6} sm={12} offset={3} className="d-flex align-items-center justify-content-center pb-md-4 flex-column">
+                    <div className="upcomingEventsImage d-flex flex-column">
+                      <img src={flyer} alt="Womens History Month" />
+                    </div>
+                  </Col>
                   <Col  xl={4} lg={6} md={12} sm={12} className="pastEventsCol align-items-sm-center justify-sm-content-center d-flex flex-column align-items-xl-start">
                     <h3 className="text-md-center ml-3 upcomingTitle">Upcoming Events</h3>
                     <div className="upcomingEventsList d-flex flex-column justify-content-center align-items-sm-start align-items-md-start align-items-lg-start align-items-xl-start">
@@ -109,7 +114,7 @@ function Home() {
                     return a.start - b.start;
                   }).slice(0,4).map(event =>
                     
-                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})} ></UpcomingEvents></Link>
+                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start} ></UpcomingEvents></Link>
                     )
                  }
 
@@ -131,7 +136,7 @@ function Home() {
                     return b.start - a.start;
                   }).slice(0,4).map(event =>
                     
-                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start.toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})} ></UpcomingEvents></Link>
+                    <Link to="/newsandevents"> <UpcomingEvents title={event.title} date={event.start} ></UpcomingEvents></Link>
                     )
                  }
 

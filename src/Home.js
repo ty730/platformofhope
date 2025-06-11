@@ -4,7 +4,7 @@ import HomeColumn from './Components/HomeColumn/HomeColumn';
 import handsheart from './images/home-icons/handsheart.png'
 import holdhands from './images/home-icons/holdhands.png';
 import prayinghands from './images/home-icons/prayingicon.png';
-import flyer from './images/womens-history-month.jpg';
+import flyer from './images/back-to-school.jpg';
 import { Row, Col } from 'react-bootstrap'
 import logo from './images/pohlogo.png';
 import { Events } from './Components/Events'
@@ -102,7 +102,9 @@ function Home() {
                 <Row>
                   <Col md={12} lg={6} sm={12} offset={3} className="d-flex align-items-center justify-content-center pb-md-4 flex-column">
                     <div className="upcomingEventsImage d-flex flex-column">
-                      <img src={flyer} alt="Womens History Month" />
+                      <Link to="/donate">
+                        <img src={flyer} alt="Annual School Supply Drive" />
+                      </Link>
                     </div>
                   </Col>
                   <Col  xl={4} lg={6} md={12} sm={12} className="pastEventsCol align-items-sm-center justify-sm-content-center d-flex flex-column align-items-xl-start">

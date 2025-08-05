@@ -44,6 +44,13 @@ const localizer = momentLocalizer(moment);
 
 SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
 
+// TODO: Add https://youtu.be/wsR5hJw8VnY?list=TLGGnC79tyGZesMwNTA4MjAyNQ
+
+/* 
+TODO: add
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wsR5hJw8VnY?si=1DsS2CAhXFJMUT91" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*/
+
 /**
  * This is the Home component that holds all information for the Home page.
  */

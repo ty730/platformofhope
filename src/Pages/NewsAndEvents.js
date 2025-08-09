@@ -34,6 +34,22 @@ import img25 from './../images/gallery/poh-image25.jpg';
 import img26 from './../images/newpohimage.jpg';
 import img27 from './../images/newpohimage2.jpg';
 import img28 from './../images/newpohimage3.jpg';
+import img100 from './../images/gallery/poh-image100.jpg';
+import img101 from './../images/gallery/poh-image101.jpg';
+import img102 from './../images/gallery/poh-image102.jpg';
+import img103 from './../images/gallery/poh-image103.jpg';
+import img104 from './../images/gallery/poh-image104.jpg';
+import img105 from './../images/gallery/poh-image105.jpg';
+import img106 from './../images/gallery/poh-image106.jpg';
+import img107 from './../images/gallery/poh-image107.jpg';
+import img108 from './../images/gallery/poh-image108.jpg';
+import img109 from './../images/gallery/poh-image109.jpg';
+import img110 from './../images/gallery/poh-image110.jpg';
+import coatDrive from './../images/event-flyers/coat-drive.jpg';
+import oktoberFest from './../images/event-flyers/autumnoktoberfest.jpg';
+import congratsGrads from './../images/event-flyers/congrats-graduates.jpg';
+import corporateBusinessConference from './../images/event-flyers/corporate-business-conference.jpg';
+import groceryDelivery from './../images/event-flyers/grocery-delivery.jpg';
 import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import testVideo from './../images/test.mp4';
@@ -43,13 +59,6 @@ import {Helmet} from 'react-helmet'
 const localizer = momentLocalizer(moment);
 
 SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
-
-// TODO: Add https://youtu.be/wsR5hJw8VnY?list=TLGGnC79tyGZesMwNTA4MjAyNQ
-
-/* 
-TODO: add
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wsR5hJw8VnY?si=1DsS2CAhXFJMUT91" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-*/
 
 /**
  * This is the Home component that holds all information for the Home page.
@@ -68,12 +77,14 @@ function NewsAndEvents() {
     setLocation(event.location);
   };
 
+  const eventFlyers = [oktoberFest, coatDrive, congratsGrads, corporateBusinessConference, groceryDelivery]
+
   // Swiper instance
   const [swiper, updateSwiper] = useState(null);
   // Swiper thumbsinstance
   const [thumbsSwiper, updateThumbsSwiper] = useState(null);
 
-  const imageSrcs = [img22, img23, img24, img25, img15, img16, img17, img18, img19, img20, img21, img26, img27, img28, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
+  const imageSrcs = [img100, img101, img102, img103, img104, img105, img106, img107, img108, img109, img110, img22, img23, img24, img25, img15, img16, img17, img18, img19, img20, img21, img26, img27, img28, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
   const slides = [];
   const thumbs = [];
   for (let i = 0; i < imageSrcs.length; i++) {
@@ -141,6 +152,7 @@ function NewsAndEvents() {
           <h2>Videos</h2>
           <video className="large-video" controls><source src={testVideo}></source></video>
           <div className="small-videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wsR5hJw8VnY?si=aMX6eB48ABvuwPdy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <video controls><source src={coatVideo}></source></video>
             <iframe classname="slider-img" width="560" height="315" src="https://www.youtube.com/embed/wkZeEiLNLLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <video controls><source src={video2020}></source></video>
@@ -169,6 +181,14 @@ function NewsAndEvents() {
           >
             {thumbs}
           </Swiper>
+        </div>
+        <div>
+          <h2>Explore videos and images of our past events</h2>
+          <div className="event-flyers">
+            {eventFlyers.map(image => {
+              return(<img src={image} alt="" />);
+            })}
+          </div>
         </div>
       </div>
     </div>

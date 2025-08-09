@@ -413,4 +413,11 @@ export const Events =
 		title: 'Gifts of Hope Distribution',
 		location: '',
 	},
+	{
+		allDay: true,
+		start: new Date('December 13, 2025 12:00'),
+		end: new Date('December 13, 2025'),
+		title: 'Packing Party',
+		location: '',
+	},
 ];

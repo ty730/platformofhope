@@ -65,8 +65,8 @@ function Services() {
         p="We provide resume prep, application submission, job portal registration, free notary services to homeless clients, and free access to laptops."
         imgclass="services-img" />
         <Column src={missionWork}
-        title= "Mission Work"
-        p="Platform of Hope serves and volunteers throughout the world to transform lives of families."
+        title= "Global Impact"
+        p="Platform of Hope is expanding its reach beyond the U.S. to impact underserved children in Nairobi, Kenya. Through partnerships with two group homes caring for boys and girls ages 2 months to 16 years—a total of 75 parentless children—POH has partnered to provide essential learning and play materials, including backpacks, notebooks, pencils, pens, coloring and activity books, crayons, colored pencils, and soccer balls. Our commitment includes sending semi-annual bulk shipments to ensure children have necessary tools to learn, grow, and dream."
         imgclass="services-img" />
         <Column src={sudsofhope}
         title= "Suds of Hope"

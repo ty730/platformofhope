@@ -566,6 +566,26 @@ hr {
   margin-right: 5%;
 }
 
+.donate-links a {
+  justify-content: center;
+  align-items: center;
+}
+
+.donate-links h3 {
+  margin: 0;
+  line-height: 0;
+}
+
+.donate-links a:hover {
+  text-decoration-color: #faa919;
+}
+
+.amazon-logo {
+  border-radius: 15%; /* Makes the image circular */
+  border: 1px solid rgb(82, 82, 82); /* Optional: Add a border */
+  margin-left: 10px;
+}
+
 .affiliate-container {
   display: flex;
   margin-bottom: 1%;

@@ -7,6 +7,7 @@ import venmo from './../images/venmo.png';
 import gofundme from './../images/gofundme.png';
 import zelle from './../images/zelle.png';
 import linktree from './../images/linktree.jpeg';
+import amazon from './../images/icons/amazon-icon.png'
 import { Row, Col, ListGroup } from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import {Link} from "react-router-dom";
@@ -75,6 +76,12 @@ function Donate() {
               that continues to be a life-giving force that will allow us to provide
               top-quality assistance! Please call or email us, so we can discuss
               on how you can volunteer.</p>
+          </div>
+          <div className="donate-links mt-3">
+            <a href="https://a.co/h3gtXv3" target="_blank" rel="noopener noreferrer" className="my-2">
+              <h3>Amazon Wish List</h3>
+              <img className='amazon-logo' src={amazon} alt="Amazon Wish List"/>
+            </a>
           </div>
         </Col>
       </Row>

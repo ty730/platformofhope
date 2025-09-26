@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Home from './Home';
 import Nav from './Components/Navbar/Navbar';
@@ -7,27 +7,38 @@ import About from './Pages/About';
 import Services from './Pages/Services';
 import Partners from './Pages/Partners';
 import Donate from './Pages/Donate';
-import  HomeColumn from './Components/HomeColumn/HomeColumn'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import NewsAndEvents from './Pages/NewsAndEvents';
 import Contact from './Pages/Contact';
-
 import MobileNavbar from './Components/MobileNav/MobileNavbar'
 import GetHelp from './Pages/GetHelp';
 import ScrollToTop  from './Components/ScrollToTop';
-
-
+import Store from './Pages/Store';
+import Order from './Pages/Order';
+import emailjs from 'emailjs-com';
 
 function App() {
+
+  useEffect(() => {
+    emailjs.init({
+      publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+      // Do not allow headless browsers
+      blockHeadless: true,
+      limitRate: {
+        // Set the limit rate for the application
+        id: 'app',
+        // Allow 1 request per 10s
+        throttle: 10000,
+      },
+    });
+  }, []);
 
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    console.log("Hello")
     setIsOpen(!isOpen);
   }
   return (
-
     <div className="App">
       <Router>
         <Nav handleClick={handleClick} />
@@ -45,14 +56,12 @@ function App() {
           <Route path="/gethelp" exact component={GetHelp} />
           <Route path="/partners" exact component={Partners} />
           <Route path="/donate" exact component={Donate} />
-          <Route path="/testing" exact component={HomeColumn} />
+          <Route path="/store" exact component={Store} />
+          <Route path="/order" exact component={Order} />
         </Switch>
-
         <Footer />
       </Router>
-
     </div>
-
   );
 }
 

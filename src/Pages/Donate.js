@@ -1,6 +1,6 @@
 import React from 'react';
 import './../App.css';
-import cashapp from './../images/cashapp.png';
+import cashapp from './../images/icons/cashapp-icon.png';
 import paypal from './../images/paypal.png';
 import givelify from './../images/givelify.png';
 import venmo from './../images/venmo.png';
@@ -42,7 +42,7 @@ function Donate() {
                 <img src={venmo} alt=""/>
                 <p className="ml-1">@platformofhope</p>
               </a>
-              <a href="https://cash.app/" target="_blank" rel="noopener noreferrer" className="my-2">
+              <a href="https://cash.app/$PlatformofHope" target="_blank" rel="noopener noreferrer" className="my-2">
                 <img src={cashapp} alt=""/>
                 <p className="ml-1">$platformofhope</p>
               </a>

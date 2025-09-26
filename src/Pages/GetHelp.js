@@ -2,13 +2,10 @@ import React from 'react';
 import './../App.css';
 import emailjs from 'emailjs-com';
 import Select from 'react-select';
-import servicesImg from './../images/get-help-services-edited.png';
 import guideImg from './../images/atlantasguide.png';
 import resourceGuideImg from './../images/resource-guide.png';
-import resourceGuidePdf from './../files/2018-grady-healthy-living-resource-guide.pdf';
 import guidePdf from './../files/Critical-Needs-Guide-2023.pdf';
 import { Helmet } from 'react-helmet';
-import {Link} from "react-router-dom";
 
 /**
  * This is the Get Help component that holds all information for the Get Help page.
@@ -26,19 +23,6 @@ function GetHelp() {
       });
     e.target.reset();
   }
-
-  const numbersOptions = [
-    { value: '1', label: '1' },
-    { value: '2', label: '2' },
-    { value: '3', label: '3' },
-    { value: '4', label: '4' },
-    { value: '5', label: '5' },
-    { value: '6', label: '6' },
-    { value: '7', label: '7' },
-    { value: '8', label: '8' },
-    { value: '9', label: '9' },
-    { value: '10', label: '10' },
-  ];
 
   const yesNoOptions = [
     { value: 'yes', label: 'yes' },

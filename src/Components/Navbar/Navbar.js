@@ -57,6 +57,7 @@ const NavBar = ({handleClick}) => {
                         </NavLink>
                         <Link to="/gethelp" ><NavButton className="secondary">GET HELP</NavButton></Link>
                         <Link to="/donate" ><NavButton className="primary">DONATE</NavButton></Link>
+                        {/*<Link to="/store" ><NavButton className="primary">STORE</NavButton></Link>*/}
                     </NavLinks>
 
                 </NavContainer>

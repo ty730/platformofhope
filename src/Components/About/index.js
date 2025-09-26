@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap'
 import {AboutImage, AboutHero, AboutStory, AboutHeader, AboutPhases} from './AboutStyle';
-import aboutLogo from './../../images/about/about-logo.png';
 
 import about1 from './../../images/phases/about-1.png';
 import about2 from './../../images/phases/about-2.png';

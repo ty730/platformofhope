@@ -90,7 +90,7 @@ const Footer = () => {
 								<Link><li> <img src={instagram} alt="facebook icon" /> </li></Link>
 								<Link><li> <img src={youtube} alt="facebook icon" /> </li></Link>
 							</ul>
-							<img src={guideStar} alt="501(c)(3) image"  className="bronze-star"/>
+							<img src={guideStar} alt="501(c)(3)"  className="bronze-star"/>
 							<Tag>
 						
 								<span>Platform of Hope is 501(c)(3) approved as of April 2017.</span><br /><br />

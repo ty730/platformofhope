@@ -30,6 +30,7 @@ const MobileNavbar = ({isOpen, handleClick}) => {
 				<NavBtnWrapper>
 				<Link to="/gethelp">	<ButtonLink>GET HELP</ButtonLink></Link>
 				<Link to="/donate">	<ButtonLink>DONATE</ButtonLink></Link>
+				{/*<Link to="/store">	<ButtonLink>STORE</ButtonLink></Link>*/}
 				</NavBtnWrapper>
 			</NavWrapper>
 

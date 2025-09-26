@@ -4,7 +4,7 @@ import {NewsTitle, NewsDate, NewsContainer} from './UpcomingEventsStyles';
 
 const UpcomingEvents = ({title,date}) => {
 	function formatDate(date) {
-		if (date.getHours() == 0) {
+		if (date.getHours() === 0) {
 			return date.toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric'});
 		} else {
 			return date.toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'});

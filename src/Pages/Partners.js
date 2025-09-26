@@ -1,8 +1,6 @@
 import React from 'react';
 import './../App.css';
-import { Row, Col, ListGroup } from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
-import {Link} from "react-router-dom";
 import construction from './../images/construction.jpg';
 
 /**

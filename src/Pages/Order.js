@@ -8,14 +8,14 @@ import paypal from './../images/icons/paypal-icon.png';
 import cashapp from './../images/icons/cashapp-icon.png';
 import towel from './../images/store/poh-towel.jpg'
 import StateSelector from '../Components/Order/StateSelector';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 function Order() {
 
     function onSubmitForm(e) {
         e.preventDefault();
-        if (process.env.REACT_APP_ENV === 'production') {
-            emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target)
+        if (process.env.REACT_APP_ENV === 'test') { // TODO: change to 'production' when ready
+            emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_ORDER_TEMPLATE_ID, e.target)
                 .then((result) => {
                     console.log(result.text);
                 }, (error) => {

@@ -15,7 +15,7 @@ import GetHelp from './Pages/GetHelp';
 import ScrollToTop  from './Components/ScrollToTop';
 import Store from './Pages/Store';
 import Order from './Pages/Order';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 function App() {
 

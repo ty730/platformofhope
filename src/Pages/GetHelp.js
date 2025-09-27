@@ -1,6 +1,6 @@
 import React from 'react';
 import './../App.css';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Select from 'react-select';
 import guideImg from './../images/atlantasguide.png';
 import resourceGuideImg from './../images/resource-guide.png';

@@ -2,8 +2,8 @@ import React from 'react';
 import './../App.css';
 import emailjs from '@emailjs/browser';
 import Select from 'react-select';
-import guideImg from './../images/atlantasguide.png';
-import resourceGuideImg from './../images/resource-guide.png';
+import guideImg from './../images/help/atlantasguide.png';
+import resourceGuideImg from './../images/help/resource-guide.png';
 import guidePdf from './../files/Critical-Needs-Guide-2023.pdf';
 import { Helmet } from 'react-helmet';
 

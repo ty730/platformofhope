@@ -10,10 +10,10 @@ import {
 	QuickLinks, SocialMedia, Tag
 } from './FooterStyles'
 
-import fb from './../../images/facebook.svg'
-import twitter from './../../images/twitter.svg'
-import instagram from './../../images/instagram.svg'
-import youtube from './../../images/youtube.svg'
+import fb from './../../images/svgs/facebook.svg'
+import twitter from './../../images/svgs/twitter.svg'
+import instagram from './../../images/svgs/instagram.svg'
+import youtube from './../../images/svgs/youtube.svg'
 import { Link } from 'react-router-dom';
 import guideStar from './../../images/guidestar-silver.png';
 const Footer = () => {

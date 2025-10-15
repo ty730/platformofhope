@@ -1,7 +1,4 @@
 import React from 'react';
-// import HoldHands from './../../images/home-icons/holdhands.png';
-// import HandsHeart from './../../images/home-icons/handsheart.png';
-// import PrayingHeart from './../../images/home-icons/prayingicon.png';
 import {BsArrowRight} from 'react-icons/bs';
 import { Col as Column } from 'react-bootstrap';
 import { Section } from './HomeColumnStyles';

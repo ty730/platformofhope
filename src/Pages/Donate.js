@@ -1,12 +1,12 @@
 import React from 'react';
 import './../App.css';
 import cashapp from './../images/icons/cashapp-icon.png';
-import paypal from './../images/paypal.png';
-import givelify from './../images/givelify.png';
-import venmo from './../images/venmo.png';
-import gofundme from './../images/gofundme.png';
-import zelle from './../images/zelle.png';
-import linktree from './../images/linktree.jpeg';
+import paypal from './../images/icons/paypal.png';
+import givelify from './../images/icons/givelify.png';
+import venmo from './../images/icons/venmo.png';
+import gofundme from './../images/icons/gofundme.png';
+import zelle from './../images/icons/zelle.png';
+import linktree from './../images/icons/linktree.jpeg';
 import amazon from './../images/icons/amazon-icon.png'
 import { Row, Col, ListGroup } from 'react-bootstrap';
 import {Helmet} from 'react-helmet';

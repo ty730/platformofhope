@@ -1,16 +1,16 @@
 import React from 'react';
 import './../App.css';
 import Column from '../Components/Column';
-import computerlab from './../images/computerlab.jpg';
-import foodpantry from './../images/foodpantry.jpg';
-import rentassistance from './../images/rentassistance.png';
-import hotelroom from './../images/hotelroom.jpg';
-import mainImage from './../images/services-main.png';
-import jobWorkshops from './../images/job-workshops.png';
-import missionWork from './../images/mission-work.png';
-import sudsofhope from './../images/sudsofhope.jpg';
-import resourceguide from './../images/resourceguide2023.png';
-import mentalHealth from './../images/mentalhealth.jpg';
+import computerlab from './../images/services/computerlab.jpg';
+import foodpantry from './../images/services/foodpantry.jpg';
+import rentassistance from './../images/services/rentassistance.png';
+import hotelroom from './../images/services/hotelroom.jpg';
+import mainImage from './../images/services/services-main.png';
+import jobWorkshops from './../images/services/job-workshops.png';
+import missionWork from './../images/services/mission-work.png';
+import sudsofhope from './../images/services/sudsofhope.jpg';
+import resourceguide from './../images/services/resourceguide2023.png';
+import mentalHealth from './../images/services/mentalhealth.jpg';
 import { Helmet } from 'react-helmet';
 
 /**

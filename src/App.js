@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Home from './Home';
+import Home from './Pages/Home';
 import Nav from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import About from './Pages/About';
 import Services from './Pages/Services';
 import Partners from './Pages/Partners';
 import Donate from './Pages/Donate';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import NewsAndEvents from './Pages/NewsAndEvents';
 import Contact from './Pages/Contact';
 import MobileNavbar from './Components/MobileNav/MobileNavbar'
 import GetHelp from './Pages/GetHelp';
-import ScrollToTop  from './Components/ScrollToTop';
 import Store from './Pages/Store';
 import Order from './Pages/Order';
 import emailjs from '@emailjs/browser';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
 
@@ -43,22 +43,19 @@ function App() {
       <Router>
         <Nav handleClick={handleClick} />
         <MobileNavbar isOpen={isOpen} handleClick={handleClick} />
-        <ScrollToTop/>
-        <Switch>
-          <Route exact path="/platformofhope">
-              <Redirect to="/" />
-          </Route>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/services" exact component={Services} />
-          <Route path="/newsandevents" exact component={NewsAndEvents} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/gethelp" exact component={GetHelp} />
-          <Route path="/partners" exact component={Partners} />
-          <Route path="/donate" exact component={Donate} />
-          <Route path="/store" exact component={Store} />
-          <Route path="/order" exact component={Order} />
-        </Switch>
+        <ScrollToTop />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/about" exact element={<About />} />
+            <Route path="/services" exact element={<Services />} />
+            <Route path="/newsandevents" exact element={<NewsAndEvents />} />
+            <Route path="/contact" exact element={<Contact />} />
+            <Route path="/gethelp" exact element={<GetHelp />} />
+            <Route path="/partners" exact element={<Partners />} />
+            <Route path="/donate" exact element={<Donate />} />
+            <Route path="/store" exact element={<Store />} />
+            <Route path="/order" exact element={<Order />} />
+          </Routes>
         <Footer />
       </Router>
     </div>

@@ -6,11 +6,15 @@ import zelle from './../images/icons/zelle-icon.png';
 import venmo from './../images/icons/venmo-icon.png';
 import paypal from './../images/icons/paypal-icon.png';
 import cashapp from './../images/icons/cashapp-icon.png';
-import towel from './../images/store/poh-towel.jpg'
 import StateSelector from '../Components/Order/StateSelector';
 import emailjs from '@emailjs/browser';
+import { useSearchParams } from "react-router-dom";
+import { PRODUCTS } from '../data/store/products.const';
 
 function Order() {
+    const [searchParams] = useSearchParams();
+    const productId = searchParams.get("productId");
+    const { cost: productCost, img: productImg, name: productName } = PRODUCTS[productId]
 
     function onSubmitForm(e) {
         e.preventDefault();
@@ -21,6 +25,7 @@ function Order() {
                 }, (error) => {
                     console.log(error.text);
                 });
+            console.log('Email sent')
         } else {
             console.log('No email sent in local environment');
             console.log(Object.fromEntries(new FormData(e.target).entries()));
@@ -34,9 +39,9 @@ function Order() {
             <title>Order Merchandise - Platform of Hope in Atlanta, Georgia</title>
         </Helmet>
         <div className="order-header">
-            <h2>Merchandise Order (Under Construction)</h2>
-            <h4>Before ordering pay by visiting one of our links to buy the Towel and pay $25</h4>
-            <p>Before shipping the merchandise to you we will verify that you donated via your chosen method and username.</p>
+            <h2>Merchandise Order - {productName}</h2>
+            <h4>Before ordering pay by visiting one of our links to buy the {productName} and pay {productCost}</h4>
+            <p>Before shipping the {productName} to you we will verify that you donated via your chosen method and username.</p>
         </div>
         <div className="order-content-container">
             <div className="payment-container">
@@ -155,16 +160,16 @@ function Order() {
             <div className="order-summary">
                 <h3>Order Summary</h3>
                 <div className='order-details'>
-                    <img src={towel} alt="" />
+                    <img src={productImg} alt="" />
                     <div>
-                        <h4>Platform of Hope Towel</h4>
-                        <h4>$25</h4>
+                        <h4>Platform of Hope {productName}</h4>
+                        <h4>{productCost}</h4>
                     </div>
                 </div>
                 <hr />
                 <div>
                     <h3>Total</h3>
-                    <h3>$25.00 USD</h3>
+                    <h3>{productCost}.00 USD</h3>
                 </div>
                 <p className='order-text'>Before placing your order make sure you have paid via your choice of payment </p>
                 <button type='submit' form='order-form' className='order-button'>PLACE ORDER</button>

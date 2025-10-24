@@ -510,7 +510,7 @@ ul {
   flex: 1;
 }
 
-.donate-row, .donate-header, .store-header, .order-header, .appr-of-funding > *,
+.donate-row, .donate-header, .store-header, .international-header, .order-header, .appr-of-funding > *,
 .services-main {
   margin-left: 10% !important;
   margin-right: 10% !important;
@@ -521,11 +521,11 @@ ul {
   margin-right: 8% !important;
 }
 
-.donate-header > h2, .store-header > h2, .order-header > h2 {
+.donate-header > h2, .store-header > h2, .order-header > h2, .international-header > h2 {
   margin-top: 4%;
 }
 
-.donate-header h2, .store-header h2, .order-header h2 {
+.donate-header h2, .store-header h2, .order-header h2, .international-header h2 {
   color: #009A7B;
 }
 

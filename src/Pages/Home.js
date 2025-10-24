@@ -7,11 +7,11 @@ import prayinghands from '../images/home-icons/prayingicon.png';
 import flyer from '../images/event-flyers/gifts-of-hope2025.jpg';
 import { Row, Col } from 'react-bootstrap'
 import logo from '../images/pohlogo.png';
-import { Events } from '../Components/Events'
+import { Events } from '../data/events/events'
 import UpcomingEvents from '../Components/UpcomingEvents';
 import Phases from '../Components/Phases'
 import {Link} from "react-router-dom";
-import homeVideo from '../images/test.mp4';
+import homeVideo from '../videos/test.mp4';
 import {FaArrowRight} from 'react-icons/fa'
 import { Helmet } from 'react-helmet';
 

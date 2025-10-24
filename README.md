@@ -15,7 +15,7 @@
 
     d. npm start (this will open a preview of the website)
 
-2. Then edit the source code as needed. Edit src/Components/Events/index.js in order to add new events to the calendar and home page.
+2. Then edit the source code as needed. Edit src/data/events/events.js in order to add new events to the calendar and home page.
 
 3. Run these commands to change the source code and have the changes get put onto the website:
 

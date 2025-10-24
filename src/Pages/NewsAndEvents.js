@@ -4,7 +4,7 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment';
 import Popup from './../Components/Popup';
-import { Events } from './../Components/Events';
+import { Events } from '../data/events/events';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import img1 from './../images/gallery/image-1.jpg';
 import img2 from './../images/gallery/image-2.jpg';
@@ -52,9 +52,9 @@ import corporateBusinessConference from './../images/event-flyers/corporate-busi
 import groceryDelivery from './../images/event-flyers/grocery-delivery.jpg';
 import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
 import 'swiper/swiper-bundle.css';
-import testVideo from './../images/test.mp4';
-import video2020 from './../images/2020video.mp4';
-import coatVideo from './../images/coatdrive.mp4';
+import testVideo from './../videos/test.mp4';
+import video2020 from './../videos/2020video.mp4';
+import coatVideo from './../videos/coatdrive.mp4';
 import {Helmet} from 'react-helmet'
 const localizer = momentLocalizer(moment);
 

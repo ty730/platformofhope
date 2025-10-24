@@ -16,6 +16,7 @@ import Store from './Pages/Store';
 import Order from './Pages/Order';
 import emailjs from '@emailjs/browser';
 import ScrollToTop from './Components/ScrollToTop';
+import International from './Pages/International';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
             <Route path="/donate" exact element={<Donate />} />
             <Route path="/store" exact element={<Store />} />
             <Route path="/order" exact element={<Order />} />
+            <Route path="/international" exact element={<International />} />
           </Routes>
         <Footer />
       </Router>

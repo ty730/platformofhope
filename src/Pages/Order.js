@@ -10,10 +10,16 @@ import StateSelector from '../Components/Order/StateSelector';
 import emailjs from '@emailjs/browser';
 import { useSearchParams } from "react-router-dom";
 import { PRODUCTS } from '../data/store/products.const';
+import { Row, Col } from 'react-bootstrap';
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Order() {
+    const navigate = useNavigate()
     const [searchParams] = useSearchParams();
     const productId = searchParams.get("productId");
+    if (!productId) {
+        return <Navigate to="/store" replace />;
+    }
     const { cost: productCost, img: productImg, name: productName } = PRODUCTS[productId]
 
     function onSubmitForm(e) {
@@ -31,6 +37,12 @@ function Order() {
             console.log(Object.fromEntries(new FormData(e.target).entries()));
         }
         e.target.reset();
+
+        const searchString = new URLSearchParams({ productId: productId }).toString()
+        navigate({
+            pathname: '/orderConfirmation',
+            search: `?${searchString}`
+        });
     }
 
   return (
@@ -43,8 +55,8 @@ function Order() {
             <h4>Before ordering pay by visiting one of our links to buy the {productName} and pay {productCost}</h4>
             <p>Before shipping the {productName} to you we will verify that you donated via your chosen method and username.</p>
         </div>
-        <div className="order-content-container">
-            <div className="payment-container">
+        <Row className="order-content-container">
+            <Col className="payment-container">
                 <div className="buy-buttons">
                     <a href="https://www.venmo.com/platformofhope" target="_blank" rel="noopener noreferrer" className="my-2">
                         <button className='venmo'>
@@ -156,8 +168,8 @@ function Order() {
                         </div>
                     </div>
                 </form>
-            </div>
-            <div className="order-summary">
+            </Col>
+            <Col xl={4} lg={4} className="order-summary">
                 <h3>Order Summary</h3>
                 <div className='order-details'>
                     <img src={productImg} alt="" />
@@ -173,8 +185,8 @@ function Order() {
                 </div>
                 <p className='order-text'>Before placing your order make sure you have paid via your choice of payment </p>
                 <button type='submit' form='order-form' className='order-button'>PLACE ORDER</button>
-            </div>
-        </div>
+            </Col>
+        </Row>
     </div>
   );
 }

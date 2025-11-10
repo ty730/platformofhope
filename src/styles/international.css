@@ -1,0 +1,126 @@
+.international-header {
+    margin-bottom: 10px;
+}
+
+.international h3, .international h4, .international-header p, .international-button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.international p {
+    color: #161616;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.international h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.international h4 {
+    font-size: 14px;
+}
+
+.international img {
+    width: 100% !important;
+    margin-bottom: 25px;
+}
+
+.international-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 25px;
+    gap: 5%;
+}
+
+.international-content-container .col {
+    padding: 0;
+}
+
+.donate-links img {
+    width: 30px !important;
+    margin: 0;
+}
+
+.donate-links a, .donate-links span {
+    display: flex;
+    margin-right: 5%;
+}
+
+.donate-links a {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+}
+
+.donate-links h3 {
+    margin: 0;
+    line-height: 0;
+}
+
+.donate-links a:hover {
+    text-decoration-color: #faa919;
+}
+
+.amazon-logo {
+    border-radius: 15%; /* Makes the image circular */
+    border: 1px solid rgb(82, 82, 82); /* Optional: Add a border */
+    margin-left: 10px;
+}
+
+.buy-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.buy-buttons img {
+    max-height: 25px;
+    margin: 0
+}
+
+.buy-buttons button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #FAF5FF !important;
+}
+
+.buy-buttons button.venmo {
+    background-color: #DBEAFE !important;
+}
+
+.buy-buttons button.linktree {
+    background-color: #DCFCE7 !important;
+}
+
+.buy-buttons button.linktree:hover {
+    background-color: #E8FDEE !important;
+}
+
+.buy-buttons p {
+    color: black;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    margin-left: 10px !important;
+    font-weight: 500;
+}
+
+.buy-buttons a {
+    text-decoration: none;
+    margin: 0 !important;
+}

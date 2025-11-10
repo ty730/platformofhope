@@ -14,6 +14,7 @@ import MobileNavbar from './Components/MobileNav/MobileNavbar'
 import GetHelp from './Pages/GetHelp';
 import Store from './Pages/Store';
 import Order from './Pages/Order';
+import OrderConfirmation from './Pages/OrderConfirmation';
 import emailjs from '@emailjs/browser';
 import ScrollToTop from './Components/ScrollToTop';
 import International from './Pages/International';
@@ -56,6 +57,7 @@ function App() {
             <Route path="/donate" exact element={<Donate />} />
             <Route path="/store" exact element={<Store />} />
             <Route path="/order" exact element={<Order />} />
+            <Route path="/orderConfirmation" exact element={<OrderConfirmation />} />
             <Route path="/international" exact element={<International />} />
           </Routes>
         <Footer />

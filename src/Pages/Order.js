@@ -98,22 +98,30 @@ function Order() {
                             <div className='payment-option'>
                                 <img src={venmo} alt=""/>
                                 <h4>Venmo</h4>
-                                <input type='radio' value='Venmo' name='payment-method' required />
+                                <div className='centered-radio'>
+                                    <input type='radio' value='Venmo' name='payment-method' required />
+                                </div>
                             </div>
                             <div className='payment-option'>
                                 <img src={paypal} alt=""/>
                                 <h4>Paypal</h4>
-                                <input type='radio' value='PayPal' name='payment-method' required />
+                                <div className='centered-radio'>
+                                    <input type='radio' value='PayPal' name='payment-method' required />
+                                </div>
                             </div>
                             <div className='payment-option'>
                                 <img src={zelle} alt=""/>
                                 <h4>Zelle</h4>
-                                <input type='radio' value='Zelle' name='payment-method' required />
+                                <div className='centered-radio'>
+                                    <input type='radio' value='Zelle' name='payment-method' required />
+                                </div>
                             </div>
                             <div className='payment-option'>
                                 <img src={cashapp} alt=""/>
                                 <h4>Cash App</h4>
-                                <input type='radio' value='Cash App' name='payment-method' required />
+                                <div className='centered-radio'>
+                                    <input type='radio' value='Cash App' name='payment-method' required />
+                                </div>
                             </div>
                         </fieldset>
                         <hr />

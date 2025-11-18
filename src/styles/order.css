@@ -243,3 +243,9 @@ button.order-button:hover {
 .confirmation-back-buttons button  {
     width: 100%;
 }
+
+.centered-radio {
+    display: block; 
+    width: fit-content; 
+    margin: 0 auto; 
+}

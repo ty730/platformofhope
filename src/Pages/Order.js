@@ -146,7 +146,7 @@ function Order() {
                         <div>
                             <div className="input-label">
                                 <label>Apt/Unit</label>
-                                <input type="text" name='unit' required autoComplete='address-line2' />
+                                <input type="text" name='unit' autoComplete='address-line2' />
                             </div>
                             <StateSelector />
                             <div className="input-label">

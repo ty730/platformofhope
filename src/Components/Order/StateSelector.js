@@ -31,6 +31,7 @@ function StateSelector() {
             type="hidden"
             name="state"
             value={selectedState ? selectedState.value : ""}
+            autoComplete="address-level1"
         />
     </div>
   );

@@ -52,8 +52,7 @@ function Order() {
         </Helmet>
         <div className="order-header">
             <h2>Merchandise Order - {productName}</h2>
-            <h4>Before ordering pay by visiting one of our links to buy the {productName} and pay {productCost}</h4>
-            <p>Before shipping the {productName} to you we will verify that you donated via your chosen method and username.</p>
+            <h4>Use the links to pay for your purchase ({productCost}). Items will be shipped within 3 business days.</h4>
         </div>
         <Row className="order-content-container">
             <Col className="payment-container">
@@ -61,25 +60,25 @@ function Order() {
                     <a href="https://www.venmo.com/platformofhope" target="_blank" rel="noopener noreferrer" className="my-2">
                         <button className='venmo'>
                             <img src={venmo} alt=""/>
-                            <p className="ml-1">Buy with Venmo</p>
+                            <p className="ml-1">Pay with Venmo</p>
                         </button>
                     </a>
                     <a href="https://www.paypal.com/paypalme/PlatformofHope" target="_blank" rel="noopener noreferrer" className="my-2">
                         <button className='paypal'>
                             <img src={paypal} alt=""/>
-                            <p className="ml-1">Buy with PayPal</p>
+                            <p className="ml-1">Pay with PayPal</p>
                         </button>
                     </a>
                     <a href="https://www.zelle.com/" target="_blank" rel="noopener noreferrer" className="my-2">
                         <button className='zelle'>
                             <img src={zelle} alt=""/>
-                            <p className="ml-1">Buy with Zelle (doris@platformofhope.org)</p>
+                            <p className="ml-1">Pay with Zelle (doris@platformofhope.org)</p>
                         </button>
                     </a>
                     <a href="https://cash.app/$PlatformofHope" target="_blank" rel="noopener noreferrer" className="my-2">
                         <button className='cashapp'>
                             <img src={cashapp} alt=""/>
-                            <p className="ml-1">Buy with Cash App</p>
+                            <p className="ml-1">Pay with Cash App</p>
                         </button>
                     </a>
                     {/* 
@@ -120,7 +119,7 @@ function Order() {
                         <hr />
                         <div className="input-label">
                             <label>Username used to pay</label>
-                            <input type="text" name='username' required />
+                            <input type="text" name='username' required autoComplete='username' />
                         </div>
                     </div>
                     <div className="shipping-information">
@@ -128,37 +127,37 @@ function Order() {
                         <div className="input-label">
                             <label>Name</label>
                             <div className='name-input-container'>
-                                <input type="text" placeholder='First name' name='firstname' required />
-                                <input type="text" placeholder='Last name' name='lastname' required />
+                                <input type="text" placeholder='First name' name='fname' required autoComplete='given-name' />
+                                <input type="text" placeholder='Last name' name='lname' required autoComplete='family-name' />
                             </div>
                         </div>
                         <div className="input-label">
                             <label>Address</label>
-                            <input type="text" name='address' required />
+                            <input type="text" name='address' required autoComplete='address-line1' />
                         </div>
                         <div>
                             <div className="input-label">
                                 <label>Apt/Unit</label>
-                                <input type="text" name='unit' required />
+                                <input type="text" name='unit' required autoComplete='address-line2' />
                             </div>
                             <StateSelector />
                             <div className="input-label">
                                 <label>City</label>
-                                <input type="text" name='city' required />
+                                <input type="text" name='city' required autoComplete='address-level2' />
                             </div>
                             <div className="input-label">
                                 <label>Zip Code</label>
-                                <input type="text" name='zipcode' required />
+                                <input type="text" name='zip' required autoComplete='postal-code' />
                             </div>
                         </div>
                         <div>
                             <div className="input-label">
                                 <label>Email</label>
-                                <input type="text" name='email' required />
+                                <input type="text" name='email' required autoComplete='email' />
                             </div>
                             <div className="input-label">
                                 <label>Phone Number</label>
-                                <input type="text" name='phone' />
+                                <input type="text" name='phone' autoComplete='tel' />
                             </div>
                         </div>
                         <h3 className='info-h3'>Additional Information</h3>
@@ -183,7 +182,7 @@ function Order() {
                     <h3>Total</h3>
                     <h3>{productCost}.00 USD</h3>
                 </div>
-                <p className='order-text'>Before placing your order make sure you have paid via your choice of payment </p>
+                <p className='order-text'>Use the links to pay for your purchase. Items will be shipped within 3 business days.</p>
                 <button type='submit' form='order-form' className='order-button'>PLACE ORDER</button>
             </Col>
         </Row>

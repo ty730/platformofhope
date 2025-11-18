@@ -88,7 +88,11 @@
 
 .buy-buttons img {
     max-height: 25px;
-    margin: 0
+    max-width: 25px;
+    margin: 0;
+    display: block;
+    width: auto;
+    height: auto;
 }
 
 .buy-buttons button {
@@ -98,10 +102,6 @@
     align-items: center;
     border-radius: 5px;
     background-color: #FAF5FF !important;
-}
-
-.buy-buttons button.venmo {
-    background-color: #DBEAFE !important;
 }
 
 .buy-buttons button.linktree {
@@ -123,4 +123,13 @@
 .buy-buttons a {
     text-decoration: none;
     margin: 0 !important;
+}
+
+.international-column {
+    margin-bottom: 25px;
+}
+
+.international-column h2 {
+    font-size: 3rem;
+    line-height: 2.6rem;
 }

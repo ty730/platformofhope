@@ -783,6 +783,10 @@ hr {
 /* Responsive */
 @media  screen and (max-width: 900px)
 {
+  .donate-header h2, .store-header h2, .order-header h2, .international-header h2 {
+    line-height: 3.2rem;
+  }
+
   .upcomingEvents
   {
     justify-content: center;

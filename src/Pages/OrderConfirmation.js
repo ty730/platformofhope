@@ -13,7 +13,7 @@ function OrderConfirmation() {
     if (!productId) {
         return <Navigate to="/store" replace />;
     }
-    const { cost: productCost, img: productImg, name: productName } = PRODUCTS[productId]
+    const { cost: productCost, img: productImg, name: productName } = PRODUCTS[productId];
 
   return (
     <div className="order">
@@ -22,7 +22,7 @@ function OrderConfirmation() {
         </Helmet>
         <div className="order-header">
             <h2>Order Confirmation</h2>
-            <p>We have received your order. Thank you for supporting Platform of Hope by ordering a Platform of Hope {productName}!</p>
+            <h4>We have received your order. Thank you for supporting Platform of Hope by ordering a Platform of Hope {productName}!</h4>
         </div>
         <Row className="order-confirmation-column justify-content-center">
             <OrderSummary 

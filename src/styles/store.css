@@ -1,3 +1,22 @@
+.store-header {
+    margin-bottom: 30px;
+}
+
+.store h3, .store h4, .store-header p, .store-button, .modal-footer p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.store h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.store h4 {
+    font-size: 14px;
+}
 
 .product-card {
     border: 0.4px #4F4F4F solid;
@@ -13,6 +32,10 @@
 
 .product-card img {
     max-width: 150px;
+}
+
+.product-card img:hover {
+    opacity: 0.8;
 }
 
 .product-card h4 {
@@ -31,6 +54,29 @@
     font-weight: 400;
 }
 
-.store-header {
-    margin-bottom: 30px;
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel-item div, .modal-footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header span {
+    font-size: 40px;
+}    
+
+.carousel-image {
+    max-width: 350px;
+    max-height: 550px;
+}
+
+.modal-footer p {
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
 }

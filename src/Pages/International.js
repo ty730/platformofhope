@@ -24,7 +24,7 @@ function International() {
       </div>
       <Row className='international-content-container'>
         <Col className='international-column'>
-          <h2>International Faith Circles Kisumu, Kenya</h2>
+          <h2>International Faith Circles <span>Kisumu, Kenya</span></h2>
           <img src={flyer} alt="Kisumu Flyer" />
           <p>Platform of Hope International is expanding its mission to Kisumu, Kenya — creating a vibrant space for connection, growth, and spiritual insight across cultures.</p>
           <p>The International Faith Circle of Kisumu brings together leaders, families, and communities for non-denominational Bible-based conversations that make faith practical and alive in daily life. These gatherings inspire hope, strengthen local communities, and build global relationships rooted in shared faith and compassion.</p>
@@ -32,7 +32,7 @@ function International() {
           <p>“Where faith meets life, hope grows.”</p>
         </Col>
         <Col className='international-column'>
-          <h2>International Group Homes in Nairobi, Kenya</h2>
+          <h2>International Group Homes in <span>Nairobi, Kenya</span></h2>
           <img src={soccer} alt="Soccer" />
           <p>Caring Beyond Borders — One Home, One Heart at a Time.</p>
           <p>Platform of Hope has adopted three group homes in Nairobi, Kenya, extending our outreach to children and youth in need of care, education, and emotional support.</p>

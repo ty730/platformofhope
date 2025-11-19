@@ -129,7 +129,11 @@
     margin-bottom: 25px;
 }
 
-.international-column h2 {
+.international-column h2, .international-column h2 span {
     font-size: 3rem;
     line-height: 2.6rem;
+}
+
+.international-column h2 span {
+    white-space: nowrap;
 }

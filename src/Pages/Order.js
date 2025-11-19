@@ -24,7 +24,7 @@ function Order() {
 
     function onSubmitForm(e) {
         e.preventDefault();
-        if (process.env.REACT_APP_ENV === 'test') { // TODO: change to 'production' when ready
+        if (process.env.REACT_APP_ENV !== 'local') { // TODO: change to 'production' when ready
             emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_ORDER_TEMPLATE_ID, e.target)
                 .then((result) => {
                     console.log(result.text);
@@ -91,6 +91,9 @@ function Order() {
                     */}
                 </div>
                 <form id='order-form' className="outreach-form" onSubmit={onSubmitForm}>
+                    <input type="hidden" name="product-id" value={productId}></input>
+                    <input type="hidden" name="product-name" value={productName}></input>
+                    <input type="hidden" name="product-cost" value={productCost}></input>
                     <div className="payment-options-container">
                         <h3>Payment Option That You Used To Pay</h3>
                         <hr />

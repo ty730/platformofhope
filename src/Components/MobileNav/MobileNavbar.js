@@ -24,6 +24,8 @@ const MobileNavbar = ({ isOpen, handleClick }) => {
             <NavWrapper>
                 <NavLinks>
                     <NavLink to="/">Home</NavLink>
+                    <NavLink to="/store">Store</NavLink>
+                    <NavLink to="/international">International</NavLink>
                     <NavLink to="/services">Services</NavLink>
                     <NavLink to="/about">About</NavLink>
                     <NavLink to="/newsandevents">News & Events</NavLink>

@@ -10,11 +10,11 @@ import {
     NavLinks,
     NavLink,
     NavButton,
-    MobileIcon
+    MobileIcon,
 } from "./NavbarStyles";
 // import { FaBars } from 'react-icons/fa';
-import { GiHamburgerMenu } from 'react-icons/gi';
-const NavBar = ({handleClick}) => {
+import { GiHamburgerMenu } from "react-icons/gi";
+const NavBar = ({ handleClick }) => {
     return (
         <>
             <Container>
@@ -38,16 +38,19 @@ const NavBar = ({handleClick}) => {
                     </MobileIcon>
                     <NavLinks>
                         <NavLink>
+                            <Link to="/store">Store</Link>
+                        </NavLink>
+                        <NavLink>
+                            <Link to="/international">International</Link>
+                        </NavLink>
+                        <NavLink>
                             <Link to="/services">Services</Link>
                         </NavLink>
                         <NavLink>
                             <Link to="/about">About Us</Link>
                         </NavLink>
-
                         <NavLink>
-                            <Link to="/newsandevents">
-                                News & Events
-                            </Link>
+                            <Link to="/newsandevents">News & Events</Link>
                         </NavLink>
                         <NavLink>
                             <Link to="/contact">Contact</Link>
@@ -55,11 +58,16 @@ const NavBar = ({handleClick}) => {
                         <NavLink>
                             <Link to="/partners">Partners</Link>
                         </NavLink>
-                        <Link to="/gethelp" ><NavButton className="secondary">GET HELP</NavButton></Link>
-                        <Link to="/donate" ><NavButton className="primary">DONATE</NavButton></Link>
+                        <Link to="/gethelp">
+                            <NavButton className="secondary">
+                                GET HELP
+                            </NavButton>
+                        </Link>
+                        <Link to="/donate">
+                            <NavButton className="primary">DONATE</NavButton>
+                        </Link>
                         {/*<Link to="/store" ><NavButton className="primary">STORE</NavButton></Link>*/}
                     </NavLinks>
-
                 </NavContainer>
             </Container>
         </>

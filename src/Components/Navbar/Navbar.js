@@ -47,7 +47,7 @@ const NavBar = ({handleClick}) => {
                         <NavLink>
                             <Link to="/newsandevents">
                                 News & Events
-                </Link>
+                            </Link>
                         </NavLink>
                         <NavLink>
                             <Link to="/contact">Contact</Link>

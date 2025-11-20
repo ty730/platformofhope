@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import '../../styles/store.css'
-import ProductModal from './ProductModal';
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "../../styles/store.css";
+import ProductModal from "./ProductModal";
 
-function ProductCard({ cost, imgSrc, name, productId}) {
+function ProductCard({ cost, imgSrc, name, productId }) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
@@ -11,12 +11,12 @@ function ProductCard({ cost, imgSrc, name, productId}) {
     };
     return (
         <div className="product-card">
-            <img src={imgSrc} alt={name} onClick={handleShow}/>
-            <h4 className='capitalize'>{name}</h4>
+            <img src={imgSrc} alt={name} onClick={handleShow} />
+            <h4 className="capitalize">{name}</h4>
             <p>{cost}</p>
             <Link
                 to={{
-                    pathname: '/order',
+                    pathname: "/order",
                     search: new URLSearchParams({
                         productId: productId,
                     }).toString(),
@@ -24,7 +24,12 @@ function ProductCard({ cost, imgSrc, name, productId}) {
             >
                 <button>ORDER NOW</button>
             </Link>
-            <ProductModal show={show} handleClose={handleClose} title={name} productId={productId}/>
+            <ProductModal
+                show={show}
+                handleClose={handleClose}
+                title={name}
+                productId={productId}
+            />
         </div>
     );
 }

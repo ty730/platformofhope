@@ -3,17 +3,21 @@ import { useState } from "react";
 import "../../styles/store.css";
 import ProductModal from "./ProductModal";
 
-function ProductCard({ cost, imgSrc, name, productId }) {
+function ProductCard({ cost, imgSrc, name, productId, isFeatured }) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
         setShow(true);
     };
     return (
-        <div className="product-card">
-            <img src={imgSrc} alt={name} onClick={handleShow} />
+        <div className={`product-card ${isFeatured ? "featured" : ""}`}>
+            <img
+                src={imgSrc}
+                alt={name}
+                onClick={!isFeatured ? handleShow : () => {}}
+            />
             <h4 className="capitalize">{name}</h4>
-            <p>{cost}</p>
+            {isFeatured ? null : <p>{cost}</p>}
             <Link
                 to={{
                     pathname: "/order",

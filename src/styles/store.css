@@ -30,6 +30,10 @@
     box-shadow: 1px 3px 4px 0 rgba(25, 28, 31, 0.12);
 }
 
+.product-card.featured {
+    padding: 20px 50px 20px 50px;
+}
+
 .product-card img {
     max-width: 150px;
 }
@@ -38,8 +42,12 @@
     opacity: 0.8;
 }
 
+.product-card.featured img:hover {
+    opacity: 1;
+}
+
 .product-card h4 {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0;

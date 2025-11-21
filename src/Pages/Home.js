@@ -14,8 +14,21 @@ import { Link } from "react-router-dom";
 import homeVideo from "../videos/test.mp4";
 import { FaArrowRight } from "react-icons/fa";
 import { Helmet } from "react-helmet";
+import {
+    PRODUCTS,
+    TOWEL_PRODUCT_ID,
+    TUMBLER_COLOR_PRODUCT_ID,
+    MUG_PRODUCT_ID,
+} from "../data/store/products.const";
+import ProductCard from "../Components/Store/ProductCard";
 
 function Home() {
+    const featuredProducts = [
+        TOWEL_PRODUCT_ID,
+        TUMBLER_COLOR_PRODUCT_ID,
+        MUG_PRODUCT_ID,
+    ];
+
     const homeColumn = [
         {
             imageLink: handsheart,
@@ -82,28 +95,29 @@ function Home() {
                 </svg>
             </div>
             <div className="home-section">
-                <div className="home-col-title">
-                    <h1>Together we can make a Difference</h1>
-                    <p>
-                        No matter how old you are, where you live, or what you
-                        can give, you can help those in need.
-                    </p>
-                    <div />
+                <div className="store-advertisement-container">
+                    <Link to="/store" className="store-advertisement-title">
+                        <h2>Check out our new Platform of Hope Store</h2>
+                        <FaArrowRight size={30} />
+                    </Link>
+                    <p>See more items like the featured products below</p>
                 </div>
-                <Row>
-                    {homeColumn.map(function (items) {
-                        return (
-                            <HomeColumn
-                                key={items.title}
-                                title={items.title}
-                                paragraph={items.paragraph}
-                                image={items.imageLink}
-                                alt={items.alt}
-                                link={items.link}
+                <div className="column-container">
+                    {Object.entries(PRODUCTS)
+                        .filter(([key, value]) =>
+                            featuredProducts.includes(key),
+                        )
+                        .map(([productId, product]) => (
+                            <ProductCard
+                                isFeatured={true}
+                                key={productId}
+                                cost={product.cost}
+                                imgSrc={product.img}
+                                name={product.name}
+                                productId={productId}
                             />
-                        );
-                    })}
-                </Row>
+                        ))}
+                </div>
             </div>
 
             <div className="featuredEventsContainer">
@@ -199,6 +213,31 @@ function Home() {
                         </Col>
                     </Row>
                 </div>
+            </div>
+
+            <div className="home-section">
+                <div className="home-col-title">
+                    <h1>Together we can make a Difference</h1>
+                    <p>
+                        No matter how old you are, where you live, or what you
+                        can give, you can help those in need.
+                    </p>
+                    <div />
+                </div>
+                <Row>
+                    {homeColumn.map(function (items) {
+                        return (
+                            <HomeColumn
+                                key={items.title}
+                                title={items.title}
+                                paragraph={items.paragraph}
+                                image={items.imageLink}
+                                alt={items.alt}
+                                link={items.link}
+                            />
+                        );
+                    })}
+                </Row>
             </div>
 
             {/* Phases */}

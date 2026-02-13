@@ -67,12 +67,26 @@ function NewsAndEvents() {
     const [show, setShow] = useState(false);
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
+    const [time, setTime] = useState("");
     const [location, setLocation] = useState("");
 
     const handleClose = () => setShow(false);
     const handleShow = (event) => {
         setShow(true);
         setTitle(event.title);
+        if (event.end.getHours() !== 0) {
+            const options = {
+                hour: "numeric",
+                hour12: true,
+            };
+            const startTime = new Intl.DateTimeFormat("en-US", options).format(
+                event.start,
+            );
+            const endTime = new Intl.DateTimeFormat("en-US", options).format(
+                event.end,
+            );
+            setTime(startTime + " - " + endTime);
+        }
         setDescription(event.start.toDateString());
         setLocation(event.location);
     };
@@ -157,7 +171,9 @@ function NewsAndEvents() {
     return (
         <div>
             <Helmet>
-                <title>Donate - Platform of Hope in Atlanta, Georgia</title>
+                <title>
+                    News & Events - Platform of Hope in Atlanta, Georgia
+                </title>
             </Helmet>
             <div className="news-events-image">
                 <h1>News & Events</h1>
@@ -191,6 +207,7 @@ function NewsAndEvents() {
                     handleClose={handleClose}
                     title={title}
                     description={description}
+                    time={time}
                     location={location}
                 />
             </div>

@@ -152,7 +152,10 @@ function Home() {
                                                         {" "}
                                                         <UpcomingEvents
                                                             title={event.title}
-                                                            date={event.start}
+                                                            startDate={
+                                                                event.start
+                                                            }
+                                                            endDate={event.end}
                                                         ></UpcomingEvents>
                                                     </Link>
                                                 ))}
@@ -184,7 +187,8 @@ function Home() {
                                             {" "}
                                             <UpcomingEvents
                                                 title={event.title}
-                                                date={event.start}
+                                                startDate={event.start}
+                                                endDate={event.end}
                                             ></UpcomingEvents>
                                         </Link>
                                     ))}

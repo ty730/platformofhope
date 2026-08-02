@@ -4,7 +4,6 @@ import HomeColumn from "../Components/HomeColumn/HomeColumn";
 import handsheart from "../images/home-icons/handsheart.png";
 import holdhands from "../images/home-icons/holdhands.png";
 import prayinghands from "../images/home-icons/prayingicon.png";
-import flyer from "../images/event-flyers/backpacks-of-hope-flyer.jpg";
 import { Row, Col } from "react-bootstrap";
 import logo from "../images/pohlogo.png";
 import homeImage from "../images/poh-10-years.PNG";
@@ -67,7 +66,7 @@ function Home() {
                     <h1>Helping One Family At A Time.</h1>
                     <p>
                         Platform of Hope is an initiative designed to feed,
-                        house, clothe, and employ homeless families while
+                        house, clothe, and council underserved families while
                         empowering and transforming lives of the economically
                         underserved. We successfully provide support and restore
                         lives of homeless families in Atlanta, Georgia and
@@ -118,26 +117,6 @@ function Home() {
                         <Col xl={8} lg={8} md={12}>
                             <div className="upcomingEvents d-flex align-items-center justify-content-center">
                                 <Row>
-                                    <Col
-                                        md={12}
-                                        lg={6}
-                                        sm={12}
-                                        offset={3}
-                                        className="d-flex align-items-center justify-content-center pb-md-4 flex-column"
-                                    >
-                                        <div className="upcomingEventsImage d-flex flex-column">
-                                            <a
-                                                href="https://linktr.ee/platformofhopeinc"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                <img
-                                                    src={flyer}
-                                                    alt="Annual School Supply Drive"
-                                                />
-                                            </a>
-                                        </div>
-                                    </Col>
                                     <Col
                                         xl={4}
                                         lg={6}

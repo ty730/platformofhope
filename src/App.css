@@ -163,26 +163,6 @@ ul {
   margin-top: 4%;
 }
 
-.home-container {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("./images/newpohextended.jpg");
-  background-size: cover;
-  min-height: 700px;
-  background-position: center 42px;
-}
-
-@media screen and (max-width: 900px) {
-  .home-container {
-    background-position: center 20px;
-  }
-}
-
-/* .home-container .shadow-test
-{
-
-    filter: drop-shadow( 15px 10px 2px rgba(0, 0, 0, 0.2));
-
-} */
-
 .home-swiper {
    background-color: #f3f3f3;
    display: flex;
@@ -706,6 +686,11 @@ hr {
   text-align: center;
   margin-top: 0.5rem;
 
+}
+
+.home-image {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .store-advertisement-container {
@@ -1348,9 +1333,5 @@ div.rbc-row.rbc-month-header {
   }
   .home-svg {
     transform: translate(0px, -1px);
-  }
-  .home-container {
-    background-position: center -10px;
-    min-height: 550px;
   }
 }

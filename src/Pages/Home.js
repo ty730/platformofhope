@@ -7,6 +7,7 @@ import prayinghands from "../images/home-icons/prayingicon.png";
 import flyer from "../images/event-flyers/backpacks-of-hope-flyer.jpg";
 import { Row, Col } from "react-bootstrap";
 import logo from "../images/pohlogo.png";
+import homeImage from "../images/poh-10-years.PNG";
 import { Events } from "../data/events/events";
 import UpcomingEvents from "../Components/UpcomingEvents";
 import Phases from "../Components/Phases";
@@ -80,20 +81,11 @@ function Home() {
                 </div>
                 <img src={logo} alt="logo" />
             </div>
-
-            <div className="home-container">
-                <svg
-                    className="home-svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                >
-                    <path
-                        fill="#ffffff"
-                        fillOpacity="1"
-                        d="M0,160L26.7,144C53.3,128,107,96,160,112C213.3,128,267,192,320,197.3C373.3,203,427,149,480,149.3C533.3,149,587,203,640,192C693.3,181,747,107,800,85.3C853.3,64,907,96,960,144C1013.3,192,1067,256,1120,266.7C1173.3,277,1227,235,1280,224C1333.3,213,1387,235,1413,245.3L1440,256L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
-                    ></path>
-                </svg>
-            </div>
+            <img
+                className="home-image"
+                src={homeImage}
+                alt="Platform of Hope"
+            />
             <div className="home-section">
                 <div className="store-advertisement-container">
                     <Link to="/store" className="store-advertisement-title">
